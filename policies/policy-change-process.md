@@ -1,10 +1,10 @@
-Policy change process policy
-============================
+Policy on Proposing Technical Policy Changes
+============================================
 
 This policy represents the way how any additions or changes to the existing
 policies are proposed, edited, finalized, and approved.
 
-Policy change proposal
+Policy Change Proposal
 ----------------------
 
 The policy changes or additions are submitted as pull requests in the
@@ -20,15 +20,15 @@ Any policy change proposal SHOULD have a single topic.
 The description of the pull request SHOULD provide overview of the changes
 and the reasons why the change is proposed.
 
-After the pull request is created the author SHOULD announce the policy
+After the pull request is created the author MUST announce the policy
 change proposal on the openssl-project mailing list.
 
-The editorial process
+The Editorial Process
 ---------------------
 
-Adjustments of the change proposal happens via the normal GitHub pull request
+Adjustments of the change proposal happen via the normal GitHub pull request
 review interaction. The pull request MUST be opened for at least two weeks
-after the initial announce of the change proposal.
+after the initial announcement of the change proposal.
 
 The OTC SHOULD discuss the proposal during a meeting.
 
@@ -48,7 +48,7 @@ Approval
 --------
 
 The policy change is approved by means of a regular OTC vote. If the vote
-passes, the policy change is approved, rejected otherwise.
+passes, the policy change is approved, otherwise it is rejected.
 
 Approval is marked by labelling the pull request with `Approved` label.
 
