@@ -10,7 +10,6 @@ Policy Change Proposal
 The policy changes or additions are submitted as pull requests in the
 technical-policies repository on GitHub OpenSSL project. Anyone with
 GitHub account can submit a policy change proposal pull request.
-
 Each policy is placed in an individual file in Markdown format in the
 policies subdirectory.
 
@@ -26,6 +25,9 @@ change proposal on the openssl-project mailing list.
 
 The Review Process
 ---------------------
+
+If the submitter is not a member of OTC, an OTC member is selected to watch
+over the review process and propose the final approval vote.
 
 Adjustments to the change proposal happen via the normal GitHub pull request
 review interaction. The pull request MUST be opened for at least two weeks
