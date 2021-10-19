@@ -10,6 +10,7 @@ Policy Change Proposal
 The policy changes or additions are submitted as pull requests in the
 technical-policies repository on GitHub OpenSSL project. Anyone with
 GitHub account can submit a policy change proposal pull request.
+
 Each policy is placed in an individual file in Markdown format in the
 policies subdirectory.
 
