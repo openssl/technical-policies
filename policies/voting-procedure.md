@@ -2,14 +2,14 @@ The Public Voting Procedure of OTC
 ==================================
 
 The following regulations complement the [OTC Voting Procedures] stated
-in the project bylaws. This policy affects only the public votes.
+in the project bylaws. This policy affects only public votes.
 
 [OTC Voting Procedures]: https://www.openssl.org/policies/omc-bylaws.html#otc-voting
 
 Vote Proposal
 -------------
 
-The votes are proposed in pull requests and issues of technical-policies
+The votes are proposed in pull requests and issues of the technical-policies
 repository on GitHub OpenSSL project.
 
 The vote regarding a policy change proposal is recorded directly in the
@@ -32,7 +32,8 @@ The Final Vote Records
 
 After the vote is closed the proposer of the vote records the final outcome
 and individual member votes in a separate file in the votes subdirectory of
-the repository.
+the repository. The commit with the vote record is pushed directly into
+the master branch of the repository. No pull request is needed.
 
 The file is formatted as follows:
 
