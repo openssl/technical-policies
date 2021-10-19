@@ -59,7 +59,7 @@ other than typo fixes or minor formatting changes after that.
 The policy change is approved by means of a regular OTC vote. If the vote
 passes, the policy change is approved, otherwise it is rejected.
 
-Approval is marked by labelling the pull request with the `Approved` label.
+Approval is marked by labelling the pull request with the `Accepted` label.
 
 Rejection is marked by labelling the pull request with the `Rejected` label
 and closing the pull request without merging.
