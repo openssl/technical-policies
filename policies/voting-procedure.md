@@ -39,7 +39,7 @@ The file is formatted as follows:
 
 ```
 Topic: .
-Proposed by .
+Proposed by: .
 Issue link: https://github.com/openssl/technical-policies/issues/...
 Public: yes
 Opened: yyyy-mm-dd
