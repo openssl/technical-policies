@@ -38,12 +38,13 @@ the master branch of the repository. No pull request is needed.
 The file is formatted as follows:
 
 ```
-topic: .
+Topic: .
 Proposed by .
+Issue link: https://github.com/openssl/technical-policies/issues/...
 Public: yes
-opened: yyyy-mm-dd
-closed: yyyy-mm-dd
-accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: T)
+Opened: yyyy-mm-dd
+Closed: yyyy-mm-dd
+Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: T)
 
   OTC Member A  [  ]
   OTC Member B  [  ]
