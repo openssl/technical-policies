@@ -24,7 +24,7 @@ Prior to commencing design work the OTC shall identify:
 2) The scope of the specific problem area to be addressed
 3) Any additional design constraints that the OTC wishes to impose
 4) Any other constraints that may apply (e.g. timescales)
-5) The individual(s) that will work on developing the design (refered to as the
+5) The individual(s) that will work on developing the design (referred to as the
    "design team" in this document)
 
 Typically these will be identified during an OTC meeting and documented in the
@@ -59,7 +59,7 @@ The following design steps should be used to create a design document:
 2. Identify candidate solutions
 3. Select solution
 4. Refine and document
-5. Agree solution
+5. Approve solution
 
 ### (Optional) Identify key design sub-problems
 
@@ -114,29 +114,29 @@ In this step the design team provide further detail on the selected solution
 option. There should be sufficient detail to enable the implementation work to
 progress and to understand the trajectory of the solution into the future. Some
 details may be omitted until a later stage of the development project if
-appropriate and they are not needed until later. The assumptions of a solution
-should be clearly listed along with any omissions.
+appropriate and such a level of detail is not needed until later. The
+assumptions of a solution should be clearly listed along with any omissions.
 
 The design document should be available for public comment in the form of a
 pull request.
 
-### Agree solution
+### Approve solution
 
-In this step the OTC agree the solution as it is described in the design
-document as produced by the design team. Once agreed the implementation may
+In this step the OTC approve the solution as it is described in the design
+document as produced by the design team. Once approved the implementation may
 proceed and the design document should be merged into the main source repository.
 
-The OTC may choose not to agree a solution. In this case the process should
+The OTC may choose not to approve a solution. In this case the process should
 iterate back to the "Refine and document" step to incorporate feedback from the
 OTC. In some cases more significant rework may be required, in which case the
 OTC may choose to step back to any previous step in this design process.
 
-In some cases the OTC may agree a solution which has certain details
+In some cases the OTC may approve a solution which has certain details
 deliberately omitted in order to defer work on those details until a later stage
 of the implementation project. In such cases this process iterates back to the
 "Refine and document" stage to fill in those details when they are eventually
-required, and the subsequent amended design document must be agreed again by the
-OTC.
+required, and the subsequent amended design document must be approved again by
+the OTC.
 
 Transparency and Community Involvement
 --------------------------------------
@@ -147,7 +147,7 @@ eventual agreement by OTC. As a minimum:
 
 * The draft design document containing the candidate solutions should be
 available as a pull request for public comment for at least one week prior to
-the selection of the solution. As an alternative, community members may be
+the selection of the solution. In addition to that, community members may be
 offered an open invite to join the solution selection meeting.
 
 * The refined documented design should be available for public comment as a pull
