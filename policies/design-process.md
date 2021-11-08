@@ -1,9 +1,14 @@
 Policy for Creating Designs
 ===========================
 
-From time to time the OTC may require that certain problems should create a
-design document before implementation should start. In that case this policy
-will apply.
+From time to time the OTC may require that certain problems should have a
+design document created for them before implementation should start. In that
+case this policy will apply.
+
+Pull Requests that implement a solution, or part of a solution, covered by a
+design document should clearly reference that design document. Pull requests
+that modify a solution covered by a design document should not be accepted
+unless the design document is also updated to describe the modified solution.
 
 The design approach described in this document should be considered iterative.
 Only "just enough" design should be done to get the implementation project to
@@ -29,10 +34,18 @@ Outputs
 -------
 
 The result of this process should be a design document in markdown format,
-reviewed via a pull request and approved for merge into the otc git repository.
+reviewed via a pull request and approved for merge into the main source git
+repository. The design document must include:
+
+ - Any assumptions that have been made
+ - Any omissions that may be filled in later
+ - Any APIs that the implementation will provide
+ - A specification of the tests that will be expected as part of the
+   implementation. This should cover the APIs as they are meant to be called,
+   what the return values are, etc.
 
 Other outputs may include feedback on the requirements and constraints that
-were the input into the process. For example some candidate solutions that are
+were the input into the process. For example, some candidate solutions that are
 considered may not satisfy all constraints or requirements. In such a case the
 candidate solution should be rejected unless feedback on the requirements and
 constraints modifies them to allow the solution to be selected.
@@ -61,7 +74,7 @@ the sub-problems that require individual designs.
 
 ### Identify candidate solutions
 
-Once the problem area is understood candidate solutions (one or more) that meet
+Once the problem area is understood, candidate solutions (one or more) that meet
 the requirements and constraints should be identified. Each candidate solution
 should be documented in only as much detail as is required to explain the
 primary characteristics of the solution approach so that it can be compared
@@ -101,7 +114,8 @@ In this step the design team provide further detail on the selected solution
 option. There should be sufficient detail to enable the implementation work to
 progress and to understand the trajectory of the solution into the future. Some
 details may be omitted until a later stage of the development project if
-appropriate and they are not needed until later.
+appropriate and they are not needed until later. The assumptions of a solution
+should be clearly listed along with any omissions.
 
 The design document should be available for public comment in the form of a
 pull request.
@@ -110,7 +124,7 @@ pull request.
 
 In this step the OTC agree the solution as it is described in the design
 document as produced by the design team. Once agreed the implementation may
-proceed and the design document should be merged into the otc repository.
+proceed and the design document should be merged into the main source repository.
 
 The OTC may choose not to agree a solution. In this case the process should
 iterate back to the "Refine and document" step to incorporate feedback from the
@@ -133,9 +147,8 @@ eventual agreement by OTC. As a minimum:
 
 * The draft design document containing the candidate solutions should be
 available as a pull request for public comment for at least one week prior to
-the selection of the solution. As an alternative community members may be
+the selection of the solution. As an alternative, community members may be
 offered an open invite to join the solution selection meeting.
 
-* The eventual refined documented design should be available for public comment
-as a pull request for at least one week prior to eventual agreement of the
-solution
+* The refined documented design should be available for public comment as a pull
+request for at least one week prior to eventual agreement of the solution
