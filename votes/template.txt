@@ -1,0 +1,18 @@
+Topic:
+Proposed by:
+Issue link: https://github.com/openssl/technical-policies/....
+Public: yes
+Opened: YYYY-MM-DD
+Closed: YYYY-MM-DD
+Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+
+  Dmitry     [  ]
+  Matt       [  ]
+  Pauli      [  ]
+  Tim        [  ]
+  Richard    [  ]
+  Shane      [  ]
+  Tomas      [  ]
+  Kurt       [  ]
+  Matthias   [  ]
+  Nicola     [  ]
