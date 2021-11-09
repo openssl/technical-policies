@@ -1,0 +1,20 @@
+Topic: Accept openssl/technical-policies PR#2 - the policy change
+       process proposal as of commit 5740178. This will become an official OTC
+       policy.
+Proposed by: Tomáš Mráz
+Issue link: https://github.com/openssl/technical-policies/pull/2
+Public: yes
+Opened: 2021-11-09
+Closed: 2021-11-09
+Accepted:  yes  (for: 8, against: 0, abstained: 0, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Richard    [+1]
+  Shane      [  ]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [+1]
