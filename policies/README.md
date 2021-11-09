@@ -7,4 +7,6 @@ are placed here.
 Naming of the files
 ===================
 
-TBD
+The policy files are named `policy-short-id.md` where the `policy-short-id`
+is a short mnemonic identifier of the policy such as `voting-procedure` or
+`design-process` or similar.
