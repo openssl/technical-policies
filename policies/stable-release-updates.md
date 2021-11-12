@@ -44,14 +44,15 @@ existing public specifications that we claim to conform to. Where the
 documentation explicitly contradicts the specifications the documented behavior
 is what matters.
 
-A **functionality change** is **not**:
+A **bug fix** is **not**:
 
 - performance enhancement
 - memory usage reduction
 - replacement implementation of algorithms
 - refactoring
 
-An **end-user documentation** is not:
+An **end-user documentation** is **not**:
+
 - comments in the code (including public header files)
 - internal documentation (doc/internal)
 
