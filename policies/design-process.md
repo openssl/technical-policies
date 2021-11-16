@@ -1,9 +1,10 @@
 Policy for Creating Designs
 ===========================
 
-From time to time the OTC may require that certain problems should have a
-design document created for them before implementation should start. In that
-case this policy will apply.
+From time to time the OTC may decide that certain problems should have a
+design document created for them before implementation should start. Such a
+decision should be minuted in OTC meeting minutes or recorded via a vote. In
+that case this policy will apply.
 
 Pull Requests that implement a solution, or part of a solution, covered by a
 design document should clearly reference that design document. Pull requests
@@ -35,11 +36,14 @@ Outputs
 
 The result of this process should be a design document in markdown format,
 reviewed via a pull request and approved for merge into the main source git
-repository. The design document must include:
+repository via an OTC decision (minutes in OTC meeting minutes or recorded via
+a vote). The design document must include:
 
  - Any assumptions that have been made
  - Any omissions that may be filled in later
- - Any APIs that the implementation will provide
+ - Any APIs that the implementation will provide. This should include some
+   minimal documentation of the APIs (not necessarily end-user focussed) to show
+   how they should be used.
  - A specification of the tests that will be expected as part of the
    implementation. This should cover the APIs as they are meant to be called,
    what the return values are, etc.
@@ -101,7 +105,7 @@ Once the candidate solutions have been identified and documented a solution
 must be selected by the OTC. There should be an opportunity for the OpenSSL
 community or non-OTC members to provide input into the decision. This could
 either be in the form of comments on a draft Pull Request describing the
-candidate solutions, or it could be in the form of an open invite for community
+candidate solutions, or it could be in the form of an invite for community
 members to join the workshop where the solution is selected.
 
 Optionally the OTC could select no solution and instead direct the design team
@@ -148,7 +152,7 @@ eventual agreement by OTC. As a minimum:
 * The draft design document containing the candidate solutions should be
 available as a pull request for public comment for at least one week prior to
 the selection of the solution. In addition to that, community members may be
-offered an open invite to join the solution selection meeting.
+offered an invite to join the solution selection meeting.
 
 * The refined documented design should be available for public comment as a pull
 request for at least one week prior to eventual agreement of the solution
