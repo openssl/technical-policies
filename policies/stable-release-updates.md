@@ -1,5 +1,5 @@
-Stable Release Update Policy
-============================
+Stable Release Updates Policy
+=============================
 
 This policy covers allowed changes on stable release branches.
 
