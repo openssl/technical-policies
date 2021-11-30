@@ -1,0 +1,19 @@
+Topic: Accept openssl/technical-policies PR#3 - the design process policy as of
+commit df046b7cb2e. This will become an official OTC policy.
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/pull/3
+Public: yes
+Opened: 2021-11-23
+Closed: 2021-11-30
+Accepted:  yes  (for: 10, against: 0, abstained: 0, not voted: 0)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+1]
+  Matthias   [+1]
+  Nicola     [+1]
