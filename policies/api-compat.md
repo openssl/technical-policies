@@ -1,6 +1,11 @@
 Policy on API compatibility in minor releases
 =============================================
 
+Public API of the OpenSSL libraries is defined as functions, macros, data
+structure declarations, typedefs, and data variables in header files in the
+`include/openssl` subdirectory of the source tree and `include/openssl`
+subdirectory of the build tree.
+
 **No changes to existing public API functions and data are permitted.** This
 includes, but is not limited to:
 
