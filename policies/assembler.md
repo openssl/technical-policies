@@ -12,7 +12,7 @@ Updates to existing assembler optimistations in a stable release branch are only
 acceptable where such updates would be allowed under the ["Stable Release
 Updates" policy][1].
 
-Where assembler optimisations are accetable they should be implemented using
+Where assembler optimisations are acceptable they should be implemented using
 [perlasm][2].
 
 [1]: https://github.com/openssl/technical-policies/blob/master/policies/stable-release-updates.md
