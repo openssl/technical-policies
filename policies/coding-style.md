@@ -55,8 +55,8 @@ line, and the closing brace first:
     }
 ```
 
-This applies to all non-function statement blocks (if, switch, for,
-while, do):
+This applies to all non-function statement blocks (`if`, `switch`, `for`,
+`while`, `do`):
 
 ```c
     switch (suffix) {
@@ -91,7 +91,7 @@ opening brace at the beginning of the next line:
     }
 ```
 
-Note that the closing brace is empty on a line of its own, EXCEPT in the
+Note that the closing brace is empty on a line of its own, __except__ in the
 cases where it is followed by a continuation of the same statement, such
 as a `while` in a do-statement or an `else` in an if-statement, like this:
 
@@ -265,10 +265,11 @@ and are usually declared like this:
     typedef struct name_st NAME;
 ```
 
-For examples, look in ossl_type.h, but note that there are many exceptions
+For examples, look in [ossl_typ.h][7], but note that there are many exceptions
 such as BN_CTX. Typedef'd enum is used much less often and there is no
 convention, so consider not using a typedef. When doing that, the enum
-name should be lowercase and the values (mostly) uppercase.
+name should be lowercase and the values (mostly) uppercase.  Note that enum
+arguments to public functions are not permitted.
 
 The ASN.1 structures are an exception to this. The rationale is that if
 a structure (and its fields) is already defined in a standard it's more
@@ -299,7 +300,7 @@ The maximum length of a function is often inversely proportional to the
 complexity and indentation level of that function. So, if you have a
 conceptually simple function that is just one long (but simple) switch
 statement, where you have to do lots of small things for a lot of different
-cases, it's OK to have a longer function.
+cases, it's okay to have a longer function.
 
 If you have a complex function, however, consider using helper functions
 with descriptive names. You can ask the compiler to in-line them if you
@@ -415,7 +416,8 @@ Names of macros defining constants and labels in enums are in uppercase:
     #define CONSTANT 0x12345
 ```
 
-Enums are preferred when defining several related constants.
+Enums are preferred when defining several related constants.  Note, however,
+that enum arguments to public functions are not permitted.
 
 Macro names should be in uppercase, but macros resembling functions may
 be written in lower case. Generally, inline functions are preferable to
@@ -466,7 +468,7 @@ must enclose the expression in parentheses:
     #define CONSTEXP (CONSTANT | 3)
 ```
 
-Beware of similar issues with macros using parameters. The GNU cpp manual
+Beware of similar issues with macros using parameters. The [GNU cpp manual][8]
 deals with macros exhaustively.
 
 ## Chapter 10: Allocating memory
@@ -565,7 +567,7 @@ script that generates one. This allows use symbolic names for variables
 specific assembler. It simplifies implementation of recurring instruction
 sequences with regular permutation of inputs. By adhering to specific
 coding rules, perlasm is also used to support multiple ABIs and assemblers,
-see crypto/perlasm/x86_64-xlate.pl for an example.
+see [crypto/perlasm/x86_64-xlate.pl][9] for an example.
 
 Another option for processor-specific (primarily SIMD) capabilities is
 called _compiler intrinsics_. We avoid this, because it's not very much
@@ -620,5 +622,7 @@ language C.
 [3]: <http://cm.bell-labs.com/cm/cs/cbook> "The C Programming Language, Second Edition"
 [4]: <http://cm.bell-labs.com/cm/cs/tpop/> "The Practice of Programming"
 [5]: <https://www.gnu.org/manual/> "GNU manuals"
-[6]: <http://www.open-std.org/JTC1/SC22/WG14/> "International standardization working group for the programming
-language C"
+[6]: <http://www.open-std.org/JTC1/SC22/WG14/> "International standardization working group for the programming language C"
+[7]: <https://github.com/openssl/openssl/blob/master/include/openssl/ossl_typ.h> "include/openssl/ossl_typ.h"
+[8]: <https://gcc.gnu.org/onlinedocs/> "GCC online documentation"
+[9]: <https://github.com/openssl/openssl/blob/master/crypto/perlasm/x86_64-xlate.pl> "crypto/perlasm/x86_64-xlate.pl"
