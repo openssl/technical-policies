@@ -31,13 +31,14 @@ in:
  - Build system
  - Demos
 
-Pull Requests that only affect minor cosmetic output do not require tests
+Pull Requests that only affect minor cosmetic output do not require tests.
 
 By agreement of the Pull Request reviewers it is acceptable for the tests to be
 added via a different Pull Request to the main Pull Request.
 
-By agreement of the Pull Request reviewers tests may be omitted for difficult
-to reproduce error conditions.
+By agreement of the Pull Request reviewers a test may be omitted where writing
+the test would result in disproportionately more effort than writing the code
+being tested. For example, difficult to reproduce error conditions.
 
 Performance Testing
 -------------------
