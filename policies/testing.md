@@ -11,25 +11,27 @@ not affect functional behaviour.
 Except where noted below:
 
 - All Pull Requests adding new functionality to the applications, libraries,
-providers or engines must include suitable tests.
+  providers or engines must include suitable tests.
 - All Pull Requests fixing a functional behaviour defect in the applications,
-libraries, providers or engines must include a test for that defect.
+  libraries, providers or engines must include a test for that defect.
 
 Pull Requests that do not change the functional behaviour of the applications,
 libraries, providers or engines do not require tests to be added. For example
 the following types of changes do not require tests:
- - Changes to comments, formatting, internal naming or similar
- - Fixes for performance
- - Refactoring
+
+- Changes to comments, formatting, internal naming or similar
+- Fixes for performance
+- Refactoring
 
 To be explicit the above statement means that tests are not required for changes
 in:
- - Documentation (including CHANGES.md/NEWS.md)
- - The test suite
- - perl utilities
- - Include files
- - Build system
- - Demos
+
+- Documentation (including CHANGES.md/NEWS.md)
+- The test suite
+- perl utilities
+- Include files
+- Build system
+- Demos
 
 Pull Requests that only affect minor cosmetic output do not require tests.
 
@@ -47,9 +49,10 @@ Performance testing should be performed automatically via CI on a regular basis
 for certain components as defined by the OTC.
 
 Examples of performance testing that should be considered include:
+
 - Individual algorithm performance operating over different input sizes
 - SSL/TLS handshake time over multiple handshakes and for different protocol
-versions and resumption/non-resumption handshakes
+  versions and resumption/non-resumption handshakes
 
 Performance figures should be collected and tracked over time.
 
