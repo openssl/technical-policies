@@ -1,5 +1,5 @@
 Topic: Accept openssl/technical-policies PR#3 - the design process policy as of
-commit df046b7cb2e. This will become an official OTC policy.
+       commit df046b7cb2e. This will become an official OTC policy.
 Proposed by: Matt Caswell
 Issue link: https://github.com/openssl/technical-policies/pull/3
 Public: yes

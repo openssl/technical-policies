@@ -1,0 +1,19 @@
+Topic: Accept openssl/technical-policies PR#16 - Coding style policy as of
+commit 22ea6d1. This will become an official OTC policy.
+Proposed by: Paul Dale
+Issue link: https://github.com/openssl/technical-policies/pull/16
+Public: yes
+Opened: 2022-01-12
+Closed: 2022-01-25
+Accepted:  yes  (for: 8, against: 0, abstained: 1, not voted: 1)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Richard    [ 0]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+1]
+  Matthias   [+1]
+  Nicola     [  ]

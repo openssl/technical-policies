@@ -1,10 +1,10 @@
-topic: Accept PR #16705 into 3.0 subject to the normal review process
+Topic: Accept PR #16705 into 3.0 subject to the normal review process
 Proposed by Matt Caswell
 Issue link: https://github.com/openssl/technical-policies/issues/12
 Public: yes
-opened: 2021-12-07
-closed: 2021-12-07
-accepted: yes (for: 4, against: 1, abstained: 3, not voted: 2)
+Opened: 2021-12-07
+Closed: 2021-12-07
+Accepted: yes (for: 4, against: 1, abstained: 3, not voted: 2)
 
   Dmitry     [+0]
   Matt       [+1]

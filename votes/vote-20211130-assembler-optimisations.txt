@@ -1,0 +1,19 @@
+Topic: Accept openssl/technical-policies PR#9 - Policy for
+         accepting assembler optimisations
+         This will become an official OTC policy.
+Proposed by Matt Caswell
+Public: yes
+Opened: 2021-11-30
+Closed: 2022-01-03
+Accepted:  yes  (for: 8, against: 1, abstained: 0, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [-1]
+  Matthias   [  ]
+  Nicola     [  ]
