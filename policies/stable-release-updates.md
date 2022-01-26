@@ -50,6 +50,9 @@ A **bug fix** is **not**:
 - memory usage reduction
 - replacement implementation of algorithms
 - refactoring
+- addressing deviations from the [coding style policy].
+
+[coding style policy]: https://github.com/openssl/technical-policies/blob/master/policies/coding-style.md
 
 An **end-user documentation** is:
 
