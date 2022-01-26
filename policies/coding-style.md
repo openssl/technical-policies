@@ -323,7 +323,16 @@ because it is a simple way to add valuable information for the reader.
 The name in the prototype declaration should match the name in the function
 definition.
 
-### Chapter 6.1: Extending existing functions
+### Chapter 6.1: Checking function aguments
+
+A _public_ function should verify that it's arguments are sensible.
+This includes, but is not limited to, verifying that:
+- non-optional pointer arguments are not NULL and
+- numeric arguments are within expected ranges.
+
+Where an argument is not sensible, an error should be returned.
+
+### Chapter 6.2: Extending existing functions
 
 From time to time it is necessary to extend an existing function. Typically this
 will mean adding additional arguments, but it may also include removal of some.
