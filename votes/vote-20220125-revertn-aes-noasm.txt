@@ -3,7 +3,7 @@ Topic: OTC approves the OMC request for an exception to the stable release
        constant time one introduced in PR#10828 to the prior non-constant
        time version.
 Proposed by: Tim
-Issue link: https://github.com/openssl/technical-policies/19
+Issue link: https://github.com/openssl/technical-policies/issues/19
 Public: yes
 Opened: 2022-01-25
 Closed: 2022-01-25
