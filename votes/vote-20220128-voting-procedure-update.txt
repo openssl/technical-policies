@@ -1,0 +1,19 @@
+Topic: Accept openssl/technical-policies PR#17 - Voting policy update as of
+commit 46fbe55. This will become an official OTC policy.
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/pull/17
+Public: yes
+Opened: 2022-01-28
+Closed: 2022-02-01
+Accepted:  yes  (for: 9, against: 0, abstained: 1, not voted: 0)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [ 0]
+  Matthias   [+1]
+  Nicola     [+1]
