@@ -6,8 +6,10 @@ This policy covers allowed changes on stable release branches.
 Definitions
 -----------
 
-A **stable release** is a patch release from an existing supported minor
-release branch.
+A **stable release** is a series beginning with a major or minor release that
+is not a pre-release, and all its updates.
+
+A **patch release** is an update within a stable release.
 
 A **public interface** is any function, structure or macro declared in a public
 header file.
