@@ -1,0 +1,19 @@
+Topic: Accept openssl/technical-policies PR#18 - Documentation policy as of
+commit 49f3b24. This will become an official OTC policy.
+Proposed by: Pauli
+Issue link: https://github.com/openssl/technical-policies/pull/18
+Public: yes
+Opened: 2022-02-03
+Closed: 2022-02-08
+Accepted:  yes  (for: 7, against: 1, abstained: 0, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Richard    [  ]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [-1]
+  Matthias   [+1]
+  Nicola     [  ]
