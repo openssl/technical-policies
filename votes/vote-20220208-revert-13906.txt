@@ -1,0 +1,19 @@
+Topic: revert change in PR #13906 for 3.0 & master and provide an alternative
+mechanism for the desired behaviour.
+Proposed by: Pauli
+Issue link: https://github.com/openssl/technical-policies/issues/25
+Public: yes
+Opened: 2022-02-08
+Closed: 2022-02-08
+Accepted:  yes  (for: 7, against: 0, abstained: 0, not voted: 3)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [  ]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [  ]
