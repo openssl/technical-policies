@@ -323,9 +323,9 @@ because it is a simple way to add valuable information for the reader.
 The name in the prototype declaration should match the name in the function
 definition.
 
-### Chapter 6.1: Checking function aguments
+### Chapter 6.1: Checking function arguments
 
-A _public_ function should verify that it's arguments are sensible.
+A _public_ function should verify that its arguments are sensible.
 This includes, but is not limited to, verifying that:
 - non-optional pointer arguments are not NULL and
 - numeric arguments are within expected ranges.
