@@ -1,0 +1,19 @@
+Topic: Public functions should check their arguments as of commit 1e37b5f.
+       This will become an official OTC policy.
+Proposed by: Pauli
+Issue link: https://github.com/openssl/technical-policies/pull/21
+Public: yes
+Opened: 2022-02-10
+Closed: 2022-02-17
+Accepted:  yes  (for: 8, against: 0, abstained: 1, not voted: 1)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Richard    [  ]
+  Shane      [+1]
+  Tomas      [ 0]
+  Kurt       [+1]
+  Matthias   [+1]
+  Nicola     [+1]
