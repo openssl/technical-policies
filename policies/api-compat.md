@@ -1,7 +1,7 @@
 Policy on API compatibility in minor releases
 =============================================
 
-Public API of the OpenSSL libraries is defined as functions, macros, data
+The public [API] of the OpenSSL libraries is defined as functions, macros, data
 structure declarations, typedefs, and data variables in header files in the
 `include/openssl` subdirectory of the source tree and `include/openssl`
 subdirectory of the build tree.
@@ -14,11 +14,15 @@ includes, but is not limited to:
 - changing a macro to a function and
 - corrections of spelling.
 
-Only API additions are allowed in minor releases.
+Only API additions are allowed in [minor] releases.
 
-Although the changes as listed above might be regarded as ABI compatible, they
+Although the changes as listed above might be regarded as [ABI] compatible, they
 cause various possible breakage when building applications depending on these
 APIs and thus they are not allowed in minor releases.
 
 If necessary, a new API call can be added to implement the required changes in
 minor releases.
+
+[ABI]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#abi
+[API]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#api
+[minor]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#minor-release

@@ -20,7 +20,7 @@ Any other votes are recorded as separate issues in the repository.
 Casting the Votes
 -----------------
 
-The individual members of OTC cast their votes directly in the issue or
+The individual members of [OTC] cast their votes directly in the issue or
 pull request where the vote was proposed.
 
 When the votes are cast during an OTC meeting, the person responsible for
@@ -71,3 +71,5 @@ not.
 The issue is then closed. In case the vote is in a pull request for a policy
 change and the vote passed the pull request for the policy change is squashed
 and merged into the repository.
+
+[OTC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#otc

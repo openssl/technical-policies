@@ -100,9 +100,9 @@ New options added to the configuration scripts must be documented in the
 
 ## Chapter 9: Changes and news
 
-Significant modifications should be documented in the `CHANGES.md` file.
+Significant modifications should be documented in the [CHANGES] file.
 
-Very significant features and changes should be documented in the `NEWS.md`
+Very significant features and changes should be documented in the [NEWS]
 file.
 
 In both cases, the added note should be short and to the point.
@@ -120,3 +120,6 @@ However, common sense applies.  Always err in favour of including more
 comments than less or none.  Code that you've just written that is
 _obvious_ will not necessarily be to someone else two years later.
 
+
+[CHANGES]: https://github.com/openssl/general-policies/blob/master/policies/definitions.md#changes
+[NEWS]: https://github.com/openssl/general-policies/blob/master/policies/definitions.md#news
