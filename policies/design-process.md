@@ -1,7 +1,7 @@
 Policy for Creating Designs
 ===========================
 
-From time to time the OTC may decide that certain problems should have a
+From time to time the [OTC] may decide that certain problems should have a
 design document created for them before implementation should start. Such a
 decision should be minuted in OTC meeting minutes or recorded via a vote. In
 that case this policy will apply.
@@ -156,3 +156,5 @@ offered an invite to join the solution selection meeting.
 
 * The refined documented design should be available for public comment as a pull
 request for at least one week prior to eventual agreement of the solution
+
+[OTC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#otc
