@@ -10,10 +10,10 @@ Accepted:  yes  (for: 7, against: 0, abstained: 0, not voted: 3)
   Dmitry     [+1]
   Matt       [+1]
   Pauli      [+1]
-  Tim        [  ]
+  Tim        [+1]         # 2022-02-22
   Richard    [+1]
   Shane      [+1]
   Tomas      [+1]
   Kurt       [+1]         # 2022-02-08
   Matthias   [+1]
-  Nicola     [  ]
+  Nicola     [+0]         # 2022-02-22
