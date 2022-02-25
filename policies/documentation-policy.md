@@ -112,7 +112,13 @@ In both cases, the added note should be short and to the point.
 The `make doc-nits` command should be run before submitting a pull
 request and any problems it locates must be addressed.
 
-## Chapter 11: Common sense
+## <a name="language"></a>Chapter 11: Language
+
+The language used for documentation shall be _British English_.
+In general the language, abbreviations, layout and formatting should also
+correspond to the [LDP] guidelines.
+
+## Chapter 12: Common sense
 
 Comments in the code are to improve readability and comprehension.
 Where the code is obvious, there is no need to include a comment.
@@ -123,3 +129,4 @@ _obvious_ will not necessarily be to someone else two years later.
 
 [CHANGES]: https://github.com/openssl/general-policies/blob/master/policies/definitions.md#changes
 [NEWS]: https://github.com/openssl/general-policies/blob/master/policies/definitions.md#news
+[LDP]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#ldp
