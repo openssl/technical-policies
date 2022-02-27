@@ -56,8 +56,8 @@ a vote against, `[+0]` an abstention with an inclination in favour,
 `[ 0]` a neutral abstention, `[-0]` an abstention with an inclination
 against, and `[  ]` meaning not voted.
 
-The vote files are named `vote-yyyymmdd-vote-short-id.txt` where the `yyyymmdd`
-is the date when the vote was proposed and the `vote-short-id` is a short
+The vote files are named `vote-yyyy-mm-dd-vote-short-id.txt` where `yyyy-mm-dd`
+denotes the date when the vote was proposed and `vote-short-id` is a short
 mnemonic identifier of the vote such as `voting-procedure` or `accept-pr-1234`
 or similar.
 
