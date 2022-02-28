@@ -2,10 +2,9 @@ OpenSSL Technical Policies
 ==========================
 
 This repository contains the technical policies and procedures established by
-the OTC in accordance with the [project bylaws] and the requirements specified
-by the OMC.
+the [OTC] in accordance with the [project bylaws] and the requirements specified
+by the [OMC].
 
-[project bylaws]: https://www.openssl.org/policies/omc-bylaws.html
 
 The policies
 ------------
@@ -27,8 +26,8 @@ an OTC vote. The details are regulated by the [policy-change-process] and the
 The voting records
 ------------------
 
-Each formal vote of the OpenSSL Technical Comittee (OTC) is in the [votes](./votes)
-subdirectory in a separate file.
+Each formal vote of the OTC is stored in the [votes](./votes) subdirectory in a
+separate file.
 
 The voting records are named `yyyymmdd-vote-name.txt` where the `yyyymmdd` is the
 date when the vote was proposed and the `vote-name` is a short memorable
@@ -55,3 +54,9 @@ The individual member votes are recorded as `[+1]` a vote in favour, `[-1]`
 a vote against, `[+0]` an abstention with an inclination in favour,
 `[ 0]` a neutral abstention, `[-0]` an abstention with an inclination
 against, and `[  ]` meaning not voted.
+
+
+
+[OMC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#otc
+[OTC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#omc
+[project bylaws]: https://www.openssl.org/policies/omc-bylaws.html
