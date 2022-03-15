@@ -1,0 +1,18 @@
+Topic: Backport #17857 to 3.0
+comment: EVP_MD performance fix (refcount cache contention)
+Proposed by: pauli
+Public: yes
+Opened: 2022-03-15
+Closed: 2022-03-15
+Accepted:  yes  (for: 6, against: 0, abstained: 3, not voted: 1)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+0]
+  Tim        [ 0]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [+0]
