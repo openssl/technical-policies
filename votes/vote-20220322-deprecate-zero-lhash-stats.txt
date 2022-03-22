@@ -1,0 +1,20 @@
+Topic: lhash statistics functions to always report 0 in both master and 3.0.
+       In addition we should deprecate the functions in master.
+details: PR https://github.com/openssl/openssl/pull/17931
+Proposed by: Pauli
+Issue link: https://github.com/openssl/technical-policies/issues/35
+Public: yes
+Opened: 2022-03-22
+Closed: 2022-03-22
+Accepted:  yes  (for: 7, against: 0, abstained: 0, not voted: 1)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [ 0]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [+0]
