@@ -1,0 +1,17 @@
+topic: Clarify the definition of stable release, and add definition of patch release
+Proposed by Richard
+Public: yes
+opened: 2022-03-04
+closed: 2022-03-23
+accepted:  yes  (for: 4, against: 0, abstained: 3, not voted: 3)
+
+  Dmitry     [  ]
+  Matt       [+1]
+  Pauli      [ 0]
+  Tim        [+1]
+  Richard    [+1]
+  Shane      [+0]
+  Tomas      [  ]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [ 0]
