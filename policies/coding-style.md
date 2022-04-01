@@ -591,21 +591,66 @@ should be used. This is more commonly referred to as C90. ISO/IEC 9899:1999
 (also known as C99) is not supported on some platforms that OpenSSL is
 used on and therefore should be avoided.
 
-## Chapter 15: Miscellaneous
+## Chapter 15: Expressions
 
-Do not use `!` to check if a pointer is NULL, or to see if a str...cmp
-function found a match.  For example, these are wrong:
-
+Avoid needless parentheses.<br/>
+For example, do not write
 ```c
-    if (!(p = BN_new())) ...
-    if (!strcmp(a, "FOO")) ...
+    if ((p == NULL) && (!f(((2 * x) + y) == (z++))))
+ ```
+but
+```c
+    if (p == NULL && !f(2 * x + y == z++)).
 ```
 
-Do this instead:
+For clarity, always put parentheses when mixing `&&` and `||` operations.<br/>
+For example,
+ ```c
+    if ((a && b) || c)
+ ```
 
+Put parentheses around macro bodies that can be used as expressions.<br/>
+Put parentheses around uses of macro arguments
+(unless they are passed on as-is to a further macro or function).<br/>
+For example,
+ ```c
+#define SQUARE(a) ((a) * (b))
+```
+
+In comparisons with constants (including `NULL`)
+place the constant on the right-hand side of the comparison operator.<br/>
+For example,
 ```c
-    if ((p = BN_new()) == NULL)...
-    if (strcmp(a, "FOO") == 0) ...
+    while (i++ < 10 && p != NULL)
+```
+
+Do not use implicit checks for
+numbers (not) being `0` or pointers (not) being `NULL`.<br/>
+For example, do not write
+```c
+    if (i)
+    if (!(x & MASK))
+    if (!strcmp(a, "FOO"))
+    if (!(p = BN_new()))
+```
+but do this instead:
+```c
+    if (i != 0)
+    if ((x & MASK) == 0)
+    if (strcmp(a, "FOO") == 0)
+    if ((p = BN_new()) == NULL)
+```
+
+Do not place binary logical operators `&&` and `||` at the end of a line
+but put them at the beginning of the following line.<br/>
+They may get an extra indentation (+4 characters).<br/>
+For example,
+```c
+    if (long_condition_expression_1
+            && condition_expression_2) {
+        statement_1;
+        statement_2;
+    }
 ```
 
 ## Chapter 16: References
