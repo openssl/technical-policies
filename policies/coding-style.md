@@ -614,7 +614,7 @@ Put parentheses around uses of macro arguments
 (unless they are passed on as-is to a further macro or function).<br/>
 For example,
  ```c
-#define SQUARE(a) ((a) * (b))
+#define SQUARE(a) ((a) * (a))
 ```
 
 In comparisons with constants (including `NULL`)
@@ -641,9 +641,32 @@ but do this instead:
     if ((p = BN_new()) == NULL)
 ```
 
-Do not place binary logical operators `&&` and `||` at the end of a line
-but put them at the beginning of the following line.<br/>
-They may get an extra indentation (+4 characters).<br/>
+If you need to break an expression into multiple lines,
+make the line break before an operator, not after.
+It is preferred that such a line break is made
+before as low priority an operator as possible.<br>
+Examples:
+
+* not this:
+  ```c
+  if (somewhat_long_function_name(foo) == 1 && a_long_variable_name
+      == 2)
+  ```
+  but rather:
+  ```c
+  if (somewhat_long_function_name(foo) == 1
+      && a_long_variable_name == 2)
+  ```
+
+* This is, however, still ok:
+  ```c
+  if (this_thing->this_freakishly_super_long_name(somewhat_long_name, 3)
+      == PRETTY_DARN_LONG_MACRO_NAME)
+  ```
+
+Whan appearing at the beginning of a line,
+the binary logical operators `&&` and `||`
+may get an extra indentation (+4 characters).<br/>
 For example,
 ```c
     if (long_condition_expression_1
