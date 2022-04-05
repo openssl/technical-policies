@@ -593,39 +593,40 @@ used on and therefore should be avoided.
 
 ## Chapter 15: Expressions
 
-Avoid needless parentheses.<br/>
+Avoid needless parentheses.
 For example, do not write
 ```c
     if ((p == NULL) && (!f(((2 * x) + y) == (z++))))
- ```
+```
 but
 ```c
     if (p == NULL && !f(2 * x + y == z++)).
 ```
 
-For clarity, always put parentheses when mixing `&&` and `||` operations.<br/>
+For clarity, always put parentheses when mixing `&&` and `||` operations.
 For example,
- ```c
+```c
     if ((a && b) || c)
- ```
+```
 
-Put parentheses around macro bodies that can be used as expressions.<br/>
+Put parentheses around macro bodies that can be used as expressions.
+
 Put parentheses around uses of macro arguments
-(unless they are passed on as-is to a further macro or function).<br/>
+(unless they are passed on as-is to a further macro or function).
 For example,
- ```c
+```c
 #define SQUARE(a) ((a) * (a))
 ```
 
 In comparisons with constants (including `NULL`)
-place the constant on the right-hand side of the comparison operator.<br/>
+place the constant on the right-hand side of the comparison operator.
 For example,
 ```c
     while (i++ < 10 && p != NULL)
 ```
 
 Do not use implicit checks for
-numbers (not) being `0` or pointers (not) being `NULL`.<br/>
+numbers (not) being `0` or pointers (not) being `NULL`.
 For example, do not write
 ```c
     if (i)
@@ -644,7 +645,7 @@ but do this instead:
 If you need to break an expression into multiple lines,
 make the line break before an operator, not after.
 It is preferred that such a line break is made
-before as low priority an operator as possible.<br>
+before as low priority an operator as possible.
 Examples:
 
 * not this:
@@ -664,9 +665,8 @@ Examples:
       == PRETTY_DARN_LONG_MACRO_NAME)
   ```
 
-Whan appearing at the beginning of a line,
-the binary logical operators `&&` and `||`
-may get an extra indentation (+4 characters).<br/>
+When appearing at the beginning of a line,
+operators may get an extra indentation (+4 characters).
 For example,
 ```c
     if (long_condition_expression_1
