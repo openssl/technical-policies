@@ -24,8 +24,8 @@ Beta Pre-releases
 -----------------
 
 The API and ABI should be stable and the source code should be feature complete
-by the first beta pre-release for the stable release. The following release
-requirements apply to beta pre-releases.
+by the first beta pre-release. The following release requirements apply to beta
+pre-releases.
 
 - The code is functionaly complete in regards to the particular release
   objectives as set by OMC and OTC.
@@ -33,17 +33,18 @@ requirements apply to beta pre-releases.
 - There are no remaining API changes required for the release.
   _This applies only to beta releases of a major release as API changes
   are not allowed on minor releases._
-- All untriaged issues must be triaged.
+- There are no remaining API additions required for the release.
+- All untriaged issues older than 2 days must be triaged.
 - All regressions on the development branch from which the
   release is to be done must have a milestone assigned by OTC.
   _Regressions are considered from the previous stable release. The process
   how OTC assigns the milestone is not exactly defined on purpose._
 - All issues or pull requests with beta milestone for the beta release
   are closed.
-- There is no outstanding untriaged Coverity issue.
+- There are no outstanding untriaged Coverity issues.
 - Coveralls coverage has not decreased overall from the previous release.
-- The CI must pass on tip of the development branch before the release commits
-  were added to the tree, including the daily CI builds.
+- The CI must pass on the tip of the development branch before the release
+  commits are added to the tree, including the daily CI builds.
 - The tree must be frozen at least for one day, which also ensures the daily CI
   builds run on the development tree tip.
 - In case of the first beta release the OTC should explicitly approve
@@ -57,16 +58,16 @@ requirements for the beta releases but they are repeated here for clarity.
 As the release comes after the beta releases there is no need to repeat the
 stability requirements as those should be held already by the beta releases.
 
-- All untriaged issues must be triaged.
+- All untriaged issues older than 2 days must be triaged.
 - All regressions on the development branch from which the
   release is to be done must have a milestone assigned by OTC.
   _Regressions are considered from the previous stable release. The process
   how OTC assigns the milestone is not exactly defined on purpose._
 - All issues or pull requests with milestone for the release are closed.
-- There is no outstanding untriaged Coverity issue.
+- There are no outstanding untriaged Coverity issues.
 - Coveralls coverage has not decreased overall from the previous release.
-- The CI must pass on tip of the development branch before the release commits
-  were added to the tree, including the daily CI builds.
+- The CI must pass on the tip of the development branch before the release
+  commits are added to the tree, including the daily CI builds.
 - The tree must be frozen at least for one day, which also ensures the daily CI
   builds run on the development tree tip.
 - In case of the first stable release from the development branch the OTC should
