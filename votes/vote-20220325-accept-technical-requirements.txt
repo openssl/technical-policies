@@ -1,0 +1,18 @@
+Topic: Accept the technical requirements document provided in openssl/openssl#17577
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/issues/37#issuecomment-1094140100
+Public: yes
+Opened: YYYY-03-25
+Closed: YYYY-04-08
+Accepted:  yes  (for: 8, against: 1, abstained: 1, not voted: 0)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Richard    [+1]
+  Shane      [ 0]
+  Tomas      [+1]
+  Kurt       [-1]
+  Matthias   [+1]
+  Nicola     [+1]
