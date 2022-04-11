@@ -73,10 +73,12 @@ Exceptions
 ----------
 
 Minor policy edits that do not change the existing meaning of the edited
-policies do not require this voting process. These edits are done via
-pull requests that are approved by two OTC members where neither of them
-is the author of the submission. The pull request should be labelled with
-the `minor edit` label.
+policies do not require this voting process. Typical examples of such edits
+are spelling, grammar, and formatting fixes.
+
+These edits are done via pull requests that are approved by two OTC members
+where neither of them is the author of the submission. The pull request
+should be labelled with the `minor edit` label.
 
 Approved submissions shall only be applied after a 24-hour delay from the
 approval.
