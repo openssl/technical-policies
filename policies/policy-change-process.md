@@ -1,8 +1,10 @@
 Policy on Proposing Technical Policy Changes
 ============================================
 
-This policy represents the way that any additions or changes to the existing
-policies are proposed, edited, finalized, and approved.
+This policy represents the way that any additions or non-trivial changes to the
+existing policies are proposed, edited, finalized, and approved.
+
+For minor changes see the [Exceptions](#exceptions) section.
 
 Policy Change Proposal
 ----------------------
@@ -66,3 +68,15 @@ and closing the pull request without merging.
 
 If the policy change is approved, the pull request is merged to the
 master branch of the technical-policies repository.
+
+Exceptions
+----------
+
+Minor policy edits that do not change the existing meaning of the edited
+policies do not require this voting process. These edits are done via
+pull requests that are approved by two OTC members where neither of them
+is the author of the submission. The pull request should be labelled with
+the `minor edit` label.
+
+Approved submissions shall only be applied after a 24-hour delay from the
+approval.
