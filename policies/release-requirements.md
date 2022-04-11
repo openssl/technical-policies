@@ -8,17 +8,17 @@ releases:
 - [alpha] (pre-)releases
 - [beta] (pre-)releases
 
-This policy defines the requirements on the state of the source tree that
-must be met before the release can be done.
+This policy defines the requirements on the state of a branch in the source
+tree that must be met before a release from that branch can be done.
 
 Alpha Pre-releases
 ------------------
 
 As this is just a preview release for testing things that have been worked
-on the development branch of the source code the requirements are minimal.
+on in the development branch, the requirements are minimal.
 
-- The CI must pass on tip of the development branch before the release commits
-  were added to the tree.
+- The CI must pass on the tip of the development branch before the release
+  commits were added to the tree.
 
 Beta Pre-releases
 -----------------
