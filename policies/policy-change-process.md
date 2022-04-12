@@ -1,10 +1,11 @@
 Policy on Proposing Technical Policy Changes
 ============================================
 
-This policy represents the way that any additions or non-trivial changes to the
+This policy represents the way that any additions or changes to the
 existing policies are proposed, edited, finalized, and approved.
 
-For minor changes see the [Exceptions](#exceptions) section.
+The process for minor changes is described in the [Exceptions](#exceptions)
+section.
 
 Policy Change Proposal
 ----------------------
