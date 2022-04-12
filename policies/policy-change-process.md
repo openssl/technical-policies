@@ -73,7 +73,7 @@ master branch of the technical-policies repository.
 Exceptions
 ----------
 
-Minor policy edits that do not change the existing meaning of the edited
+Minor policy edits that do not change the meaning of the edited
 policies do not require this voting process. Typical examples of such edits
 are spelling, grammar, and formatting fixes.
 
