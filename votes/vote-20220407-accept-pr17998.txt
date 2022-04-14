@@ -1,0 +1,18 @@
+Topic: Accept PR #17998 into master and 3.0 branches
+Proposed by: Tomas
+Issue link: https://github.com/openssl/technical-policies/issues/41
+Public: yes
+Opened: 2022-04-07
+Closed: 2022-04-14
+Accepted:  yes  (for: 5, against: 0, abstained: 5, not voted: 0)
+
+  Dmitry     [ 0]
+  Matt       [ 0]
+  Pauli      [+1]
+  Tim        [ 0]
+  Richard    [ 0]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [ 0]
+  Matthias   [+1]
+  Nicola     [+1]
