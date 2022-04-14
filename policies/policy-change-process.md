@@ -4,8 +4,8 @@ Policy on Proposing Technical Policy Changes
 This policy represents the way that any additions or changes to the
 existing policies are proposed, edited, finalized, and approved.
 
-The process for minor changes is described in the [Exceptions](#exceptions)
-section.
+The process for minor changes is described in the
+[Minor Edits](#minor-edits) section.
 
 Policy Change Proposal
 ----------------------
@@ -70,8 +70,8 @@ and closing the pull request without merging.
 If the policy change is approved, the pull request is merged to the
 master branch of the technical-policies repository.
 
-Exceptions
-----------
+Minor Edits
+-----------
 
 Minor policy edits that do not change the meaning of the edited
 policies do not require this voting process. Typical examples of such edits
