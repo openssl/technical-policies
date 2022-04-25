@@ -254,7 +254,8 @@ being mis-understood. Similarly, _tmp_ can be just about any type of
 variable that is used to hold a temporary value.
 
 If you are afraid that someone might mix up your local variable names,
-perhaps the function is too long; see Chapter 6.
+perhaps the function is too long;
+see the [chapter on functions](#user-content-chapter-6-functions).
 
 ## Chapter 5: Typedefs
 
@@ -469,16 +470,25 @@ Do not write macros that are l-values:
 
 This will cause problems if, e.g., FOO becomes an inline function.
 
-Be careful of precedence. Macros defining constants using expressions
-must enclose the expression in parentheses:
+Be careful of precedence.
+Macros defining an expression must enclose the expression in parentheses
+unless the expression is a literal or a function application:
 
 ```c
-    #define CONSTANT 0x4000
-    #define CONSTEXP (CONSTANT | 3)
+    #define SOME_LITERAL 0x4000
+    #define CONSTEXP (SOME_LITERAL | 3)
+    #define CONSTFUN foo(0, CONSTEXP)
 ```
 
-Beware of similar issues with macros using parameters. The [GNU cpp manual][8]
-deals with macros exhaustively.
+Beware of similar issues with macros using parameters.
+Put parentheses around uses of macro arguments
+unless they are passed on as-is to a further macro or function.
+For example,
+```c
+#define MACRO(a,b) ((a) * func(a, b))
+```
+
+The [GNU cpp manual][8] deals with macros exhaustively.
 
 ## Chapter 10: Allocating memory
 
@@ -512,7 +522,7 @@ subject to these rules. Generally they indicate failure by returning some
 out-of-range result. The simplest example is functions that return pointers;
 they return NULL to report failure.
 
-## Chapter 12:  Editor modelines
+## Chapter 12: Editor modelines
 
 Some editors can interpret configuration information embedded in source
 files, indicated with special markers. For example, emacs interprets
@@ -542,7 +552,7 @@ This includes markers for indentation and mode configuration. People may
 use their own custom mode, or may have some other magic method for making
 indentation work correctly.
 
-## Chapter 13:  Processor-specific code
+## Chapter 13: Processor-specific code
 
 In OpenSSL's case the only reason to resort to processor-specific code
 is for performance. As it still exists in a general platform-independent
@@ -584,7 +594,7 @@ less complicated than coding pure assembly, and it doesn't provide the
 same performance guarantee across different micro-architecture. Nor is
 it portable enough to meet our multi-platform support goals.
 
-## Chapter 14:  Portability
+## Chapter 14: Portability
 
 To maximise portability the version of C defined in ISO/IEC 9899:1990
 should be used. This is more commonly referred to as C90. ISO/IEC 9899:1999
@@ -593,7 +603,7 @@ used on and therefore should be avoided.
 
 ## Chapter 15: Expressions
 
-Avoid needless parentheses.
+Avoid needless parentheses as far as reasonable.
 For example, do not write
 ```c
     if ((p == NULL) && (!f(((2 * x) + y) == (z++))))
@@ -603,22 +613,19 @@ but
     if (p == NULL && !f(2 * x + y == z++)).
 ```
 
-For clarity, always put parentheses when mixing `&&` and `||` operations.
+For clarity, always put parentheses when mixing `&&` and `||` operations,
+comparison operators like `<=` and `==`, and bitwise operators.
 For example,
 ```c
     if ((a && b) || c)
+    if ((a <= b) == ((c >= d) != (e < f)))
+    x = (a & b) ^ (c | d)
 ```
 
-Put parentheses around macro bodies that can be used as expressions.
+Regarding parentheses in macro definitions see the
+[chapter on macros](#user-content-chapter-9-macros-and-enums).
 
-Put parentheses around uses of macro arguments
-(unless they are passed on as-is to a further macro or function).
-For example,
-```c
-#define SQUARE(a) ((a) * (a))
-```
-
-In comparisons with constants (including `NULL`)
+In comparisons with constants (including `NULL` and other constant macros)
 place the constant on the right-hand side of the comparison operator.
 For example,
 ```c
@@ -666,7 +673,7 @@ Examples:
   ```
 
 When appearing at the beginning of a line,
-operators may get an extra indentation (+4 characters).
+operators can, but do not have to, get an extra indentation (+ 4 characters).
 For example,
 ```c
     if (long_condition_expression_1
