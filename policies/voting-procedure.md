@@ -17,6 +17,10 @@ pull request of the policy change proposal.
 
 Any other votes are recorded as separate issues in the repository.
 
+All votes governed by this procedure should be announced through an
+e-mail to the
+[OpenSSL Project mailing list](https://mta.openssl.org/mailman/listinfo/openssl-project).
+
 Casting the Votes
 -----------------
 
