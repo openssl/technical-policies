@@ -255,7 +255,7 @@ variable that is used to hold a temporary value.
 
 If you are afraid that someone might mix up your local variable names,
 perhaps the function is too long;
-see the [chapter on functions](#user-content-chapter-6-functions).
+see the [chapter on functions](#chapter-6-functions).
 
 ## Chapter 5: Typedefs
 
@@ -623,7 +623,7 @@ For example,
 ```
 
 Regarding parentheses in macro definitions see the
-[chapter on macros](#user-content-chapter-9-macros-and-enums).
+[chapter on macros](#chapter-9-macros-and-enums).
 
 In comparisons with constants (including `NULL` and other constant macros)
 place the constant on the right-hand side of the comparison operator.
