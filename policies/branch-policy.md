@@ -12,7 +12,7 @@ The openssl repository contains the following maintained branches:
   Implicitly it means that any API/ABI breaking changes are not allowed
   on the master branch unless OMC defines the next release will be a major
   release.
-- Any changes merged to the master branch must be ported to the next major
+- Any changes merged to the master branch must be ported to the future major
   and future minor branches if they are applicable. This can be done by
   directly cherry-picking the changes when merging if there are no conflicts.
   By this we must ensure that no features or bug fixes are unintentionally
@@ -20,18 +20,17 @@ The openssl repository contains the following maintained branches:
 
 ### The supported release branches
 
-- Only bug fixes and documentation changes are allowed.
 - The development of the next patch releases of supported minor releases
   happens there.
+- According to [stable release update policy] only bug fixes and
+  documentation changes are allowed.
 - By exception given by OMC also other types of pull requests can be merged.
-- During the final year of support, we do not commit to anything other than
-  security fixes.
 - Bug fix and documentation pull requests must be always merged to the
   latest branch (including the master branch) where the bug or documentation
   deficiency is present. It can be then merged (backported or directly
   cherry-picked) to all older branches where the deficiency is present.
 
-### A next major branch
+### A future major branch
 
 - The development of the next major release happens there. Implicitly it
   means that any API/ABI breaking changes are allowed but OMC can (and
@@ -53,10 +52,10 @@ The openssl repository contains the following maintained branches:
   the minor release.
 - No major refactoring is allowed.
 - Any changes (features, bug-fixes, documentation, ...) done on the future
-  minor branch must be ported or directly cherry-picked to the next major
+  minor branch must be ported or directly cherry-picked to the future major
   branch if applicable.
 - Exceptions are possible for example when we are removing deprecated
-  functionality in the next major branch.
+  functionality in the future major branch.
 - There might be no future minor branch opened at times when the expected
   future release would be a major release.
 
@@ -71,7 +70,7 @@ The existing stable release branches are named `openssl-x.y`.
 As a legacy exception to the rule above, the branch where the development of
 OpenSSL-1.1.1 fix releases is happening is called `OpenSSL_1_1_1-stable`.
 
-Next-major: The branch where the development of the next major release is
+Future-major: The branch where the development of the future major release is
 happening is called `openssl-x.0` where `x` is the next major version number.
 If at some point a decision is made to change the major version, the branch
 is renamed accordingly.
@@ -86,3 +85,5 @@ Release tags: The releases are tagged with tags named `openssl-x.y.z` for stable
 patch releases, `openssl-x.y.0-alphaN` for alpha releases, and
 `openssl-x.y.0-betaN` for beta releases. As a legacy exception the fix releases
 of OpenSSL-1.1.1 are named `OpenSSL_1_1_1<fix-letter(s)>`.
+
+[stable release update policy]: https://github.com/openssl/technical-policies/blob/master/policies/stable-release-updates.md
