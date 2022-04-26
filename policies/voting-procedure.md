@@ -17,9 +17,10 @@ pull request of the policy change proposal.
 
 Any other votes are recorded as separate issues in the repository.
 
-All votes governed by this procedure should be announced through an
-e-mail to the
-[OpenSSL Project mailing list](https://mta.openssl.org/mailman/listinfo/openssl-project).
+All votes governed by this procedure must be announced through an
+e-mail to the [OpenSSL Project mailing list].
+The announcement email must contain a hyperlink to the GitHub issue
+or pull request where the vote is carried out.
 
 Casting the Votes
 -----------------
@@ -77,3 +78,4 @@ change and the vote passed the pull request for the policy change is squashed
 and merged into the repository.
 
 [OTC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#otc
+[OpenSSL Project mailing list]: https://mta.openssl.org/mailman/listinfo/openssl-project
