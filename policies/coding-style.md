@@ -200,6 +200,9 @@ such as this partial list:
     =  +  -  <  >  *  /  %  |  &  ^  <=  >=  ==  !=  ?  : +=
 ```
 
+Put a space after commas
+and after semicolons in `for` statements, but not in `for(;;)`.
+
 Do not put a space after unary operators:
 
 ```c
@@ -214,11 +217,20 @@ operators or after the prefix increment and decrement unary operators:
     --bar
 ```
 
-Do not put a space around the '.' and "->" structure member operators:
+Do not put a space around the `.` and `->` structure member operators:
 
 ```c
     foo.bar
     foo->bar
+```
+
+* Do not use multiple consecutive spaces
+except for indentation and for multi-line alignment of definitions, e.g.:
+```c
+#define FOO_INVALID  -1   /* invalid or inconsistent arguments */
+#define FOO_INTERNAL 0    /* Internal error, most likely malloc */
+#define FOO_OK       1    /* success */
+#define FOO_GREAT    100  /* some specific outcome */
 ```
 
 Do not leave trailing whitespace at the ends of lines. Some editors with
@@ -231,6 +243,13 @@ Git will warn you about patches that introduce trailing whitespace, and
 can optionally strip the trailing whitespace; however, if applying
 a series of patches, this may make later patches in the series fail by
 changing their context lines.
+
+Avoid empty lines at the beginning or at the end of a file.
+
+Avoid multiple empty lines in a row.
+
+Have an empty line between variable declarations and subsequent statements.
+Do not mix variable declarations and statements.
 
 ## Chapter 4: Naming
 
@@ -389,7 +408,11 @@ For example:
 
 ## Chapter 8: Commenting
 
-Use the classic "/* ... */" comment markers.  Don't use "// ..." markers.
+Use the classic `/*` ... `*/` comment markers.  Don't use `//` ... markers.
+
+Place comments above or to the right of the code they refer to.
+Comments referring to the code line after
+should be indented equally to that code line.
 
 Comments are good, but there is also a danger of over-commenting. NEVER try
 to explain HOW your code works in a comment. It is much better to write
@@ -416,6 +439,8 @@ It's also important to comment data, whether they are basic types or
 derived types. To this end, use just one data declaration per line (no
 commas for multiple data declarations). This leaves you room for a small
 comment on each item, explaining its use.
+
+Make sure that comments do not contain spelling errors.
 
 ## Chapter 9: Macros and Enums
 
