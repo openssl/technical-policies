@@ -651,7 +651,7 @@ but do this instead:
     if ((p = BN_new()) == NULL)
 ```
 Boolean values shall be used directly as usual, e.g.,
-```
+```c
 if (check(x) && !success(y))
 ```
 
