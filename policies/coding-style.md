@@ -250,28 +250,50 @@ Avoid multiple empty lines in a row.
 
 ## Chapter 4: Naming
 
-C is a Spartan language, and so should your naming be. Do not use long
-names like _ThisVariableIsATemporaryCounter_. Use a name like _tmp_, which
-is much easier to write, and not more difficult to understand.
+C is a Spartan language, and so should your naming be.
 
-Except when otherwise required, avoid mixed-case names.
+Local variable names should be short, and to the point. If you have
+some random integer loop counter, it should probably be called `i` or `j`.
 
-Do not encode the type into a name (so-called Hungarian notation).
+Avoid single-letter names when they can be visually confusing,
+such as `I` and `O`.
+Avoid other single-letter names unless they are telling in the given context.
+For instance, `m` for modulus and `s` for SSL pointers are fine.
+
+Use simple variable names like `tmp` and `name`
+as long as they are non-ambiguous in the given context.
+
+If you are afraid that someone might mix up your local variable names,
+perhaps the function is too long;
+see the [chapter on functions](#chapter-6-functions).
 
 Global variables (to be used only if you REALLY need them) need to
 have descriptive names, as do global functions. If you have a function
 that counts the number of active users, you should call that
 _count_active_users()_ or similar, you should NOT call it _cntusr()_.
 
-Local variable names should be short, and to the point. If you have
-some random integer loop counter, it should probably be called _i_.
-Calling it _loop_counter_ is non-productive, if there is no chance of it
-being mis-understood. Similarly, _tmp_ can be just about any type of
-variable that is used to hold a temporary value.
+For getter functions returning a pointer
+and functions setting a pointer given as a parameter,
+use names containing `get0_` or `get1_` (rather than `get_`)
+or `set0_` or `set1_` (rather than `set_`)
+or `push0_` or `push1_` (rather than `push_`)
+to indicate whether the structure referred to by the pointer remains as it is
+or it is duplicated/up-ref'ed such that an additional `free()` will be needed.
 
-If you are afraid that someone might mix up your local variable names,
-perhaps the function is too long;
-see the [chapter on functions](#chapter-6-functions).
+Use lowercase prefix like `ossl_` for internal symbols
+unless they are `static` (i.e., local to the source file).
+
+Use uppercase prefix like `EVP_` or `OSSL_CMP_` for public (API) symbols.
+
+Do not encode the type into a name (so-called Hungarian notation, e.g., `int iAge`).
+
+Align names to terms and wording used in standards and RFCs.
+
+Avoid mixed-case unless needed by other rules.
+Especially never use `FirstCharacterUpperCase`.
+For instance, use `EVP_PKEY_do_something` rather than `EVP_DigestDoSomething`.
+
+Make sure that names do not contain spelling errors.
 
 ## Chapter 5: Typedefs
 
