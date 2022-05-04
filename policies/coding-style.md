@@ -613,8 +613,10 @@ but
     if (p == NULL && !f(2 * x + y == z++)).
 ```
 
-For clarity, always put parentheses when mixing `&&` and `||` operations,
-comparison operators like `<=` and `==`, and bitwise operators.
+For clarity, always put parenthese
+when mixing the logical `&&` and `||` operators,
+mixing comparison operators like `<=` and `==,`
+or mixing bitwise operators like  `&` and `|` .
 For example,
 ```c
     if ((a && b) || c)
@@ -647,6 +649,10 @@ but do this instead:
     if ((x & MASK) == 0)
     if (strcmp(a, "FOO") == 0)
     if ((p = BN_new()) == NULL)
+```
+Boolean values shall be used directly as usual, e.g.,
+```
+if (check(x) && !success(y))
 ```
 
 If you need to break an expression into multiple lines,
