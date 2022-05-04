@@ -234,27 +234,40 @@ changing their context lines.
 
 ## Chapter 4: Naming
 
-C is a Spartan language, and so should your naming be. Do not use long
-names like _ThisVariableIsATemporaryCounter_. Use a name like _tmp_, which
-is much easier to write, and not more difficult to understand.
+C is a Spartan language, and so should your naming be.
 
-Except when otherwise required, avoid mixed-case names.
+Local variable names should be short, and to the point. If you have
+some random integer loop counter, it should probably be called `i` or `j`.
+Apart from that, avoid single-letter names,
+in particular when they can be visually confusing, such as `I` and `O`.
+Calling a varable `loop_counter` is non-productive, if there is no chance of it
+being mis-understood. Similarly, `tmp` can be just about any type of
+variable that is used to hold a temporary value.
 
-Do not encode the type into a name (so-called Hungarian notation).
+If you are afraid that someone might mix up your local variable names,
+perhaps the function is too long; see Chapter 6.
 
 Global variables (to be used only if you REALLY need them) need to
 have descriptive names, as do global functions. If you have a function
 that counts the number of active users, you should call that
 _count_active_users()_ or similar, you should NOT call it _cntusr()_.
 
-Local variable names should be short, and to the point. If you have
-some random integer loop counter, it should probably be called _i_.
-Calling it _loop_counter_ is non-productive, if there is no chance of it
-being mis-understood. Similarly, _tmp_ can be just about any type of
-variable that is used to hold a temporary value.
+For getter and setter functions use names containing `get0_` or `get1_`
+(rather than `get_`) and `set0_` or `set1_` (rather than `set_`)
+and `push0_` or `push1_` (rather than `push_`)
+to point out whether the value parameter has aliasing or copying semantics.
 
-If you are afraid that someone might mix up your local variable names,
-perhaps the function is too long; see Chapter 6.
+Use lowercase prefix like `ossl_` for internal symbols.
+
+Use uppercase prefix like `EVP_` or `OSSL_CMP_` for public (API) symbols.
+
+Do not encode the type into a name (so-called Hungarian notation).
+
+Align names to terms and wording used in standards and RFCs.
+
+Except when otherwise required, avoid mixed-case names.
+
+Make sure that names do not contain spelling errors.
 
 ## Chapter 5: Typedefs
 
