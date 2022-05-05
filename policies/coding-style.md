@@ -201,7 +201,7 @@ such as this partial list:
 ```
 
 Put a space after commas
-and after semicolons in `for` statements, but not in `for(;;)`.
+and after semicolons in `for` statements, but not in `for (;;)`.
 
 Do not put a space after unary operators:
 
@@ -224,8 +224,8 @@ Do not put a space around the `.` and `->` structure member operators:
     foo->bar
 ```
 
-* Do not use multiple consecutive spaces
-except for indentation and for multi-line alignment of definitions, e.g.:
+Do not use multiple consecutive spaces except in comments,
+for indentation, and for multi-line alignment of definitions, e.g.:
 ```c
 #define FOO_INVALID  -1   /* invalid or inconsistent arguments */
 #define FOO_INTERNAL 0    /* Internal error, most likely malloc */
