@@ -615,7 +615,7 @@ but
 
 For clarity, always put parentheses
 when mixing the logical `&&` and `||` operators,
-mixing comparison operators like `<=` and `==,`
+mixing comparison operators like `<=` and `==`,
 or mixing bitwise operators like `&` and `|`.
 For example,
 ```c
