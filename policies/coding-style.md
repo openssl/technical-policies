@@ -240,9 +240,11 @@ Local variable names should be short, and to the point. If you have
 some random integer loop counter, it should probably be called `i` or `j`.
 Apart from that, avoid single-letter names,
 in particular when they can be visually confusing, such as `I` and `O`.
-Calling a varable `loop_counter` is non-productive, if there is no chance of it
-being mis-understood. Similarly, `tmp` can be just about any type of
-variable that is used to hold a temporary value.
+
+Calling a variable `loop_counter` is non-productive,
+if there is no chance of it being mis-understood.
+Use simple variable names like `tmp` and `name`
+as long as they are non-ambiguous in the given context.
 
 If you are afraid that someone might mix up your local variable names,
 perhaps the function is too long; see Chapter 6.
@@ -268,6 +270,10 @@ Use uppercase prefix like `EVP_` or `OSSL_CMP_` for public (API) symbols.
 Do not encode the type into a name (so-called Hungarian notation).
 
 Align names to terms and wording used in standards and RFCs.
+
+Avoid mixed-case unless needed by other rules.
+Especially never use `FirstCharacterUpperCase`.
+For instance, use `EVP_PKEY_do_something` rather than `EVP_DigestDoSomething`.
 
 Except when otherwise required, avoid mixed-case names.
 
