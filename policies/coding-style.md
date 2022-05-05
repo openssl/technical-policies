@@ -238,8 +238,11 @@ C is a Spartan language, and so should your naming be.
 
 Local variable names should be short, and to the point. If you have
 some random integer loop counter, it should probably be called `i` or `j`.
-Apart from that, avoid single-letter names,
-in particular when they can be visually confusing, such as `I` and `O`.
+
+Avoid single-letter names when they can be visually confusing,
+such as `I` and `O`.
+Avoid other single-letter names unless they are telling in the given context.
+For instance, `m` for modulus and `s` for SSL pointers are fine.
 
 Calling a variable `loop_counter` is non-productive,
 if there is no chance of it being mis-understood.
@@ -274,8 +277,6 @@ Align names to terms and wording used in standards and RFCs.
 Avoid mixed-case unless needed by other rules.
 Especially never use `FirstCharacterUpperCase`.
 For instance, use `EVP_PKEY_do_something` rather than `EVP_DigestDoSomething`.
-
-Except when otherwise required, avoid mixed-case names.
 
 Make sure that names do not contain spelling errors.
 
