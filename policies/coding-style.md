@@ -252,12 +252,13 @@ have descriptive names, as do global functions. If you have a function
 that counts the number of active users, you should call that
 _count_active_users()_ or similar, you should NOT call it _cntusr()_.
 
-For getter functions returning pointers
+For getter functions returning a pointer
 and functions setting a pointer given as a parameter,
-use names containing `get0_` or `get1_`
-(rather than `get_`) and `set0_` or `set1_` (rather than `set_`)
-and `push0_` or `push1_` (rather than `push_`)
-to point out whether the value parameter has aliasing or copying semantics.
+use names containing `get0_` or `get1_` (rather than `get_`)
+or `set0_` or `set1_` (rather than `set_`)
+or `push0_` or `push1_` (rather than `push_`)
+to indicate whether the structure referred to by the pointer remains as it is
+or it is duplicated/up-ref'ed such that an additional `free()` will be needed.
 
 Use lowercase prefix like `ossl_` for internal symbols
 unless they are `static` (i.e., local to the source file).
