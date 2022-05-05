@@ -248,9 +248,6 @@ Avoid empty lines at the beginning or at the end of a file.
 
 Avoid multiple empty lines in a row.
 
-Have an empty line between variable declarations and subsequent statements.
-Do not mix variable declarations and statements.
-
 ## Chapter 4: Naming
 
 C is a Spartan language, and so should your naming be. Do not use long
@@ -342,6 +339,10 @@ because it is a simple way to add valuable information for the reader.
 The name in the prototype declaration should match the name in the function
 definition.
 
+Separate local variable declarations and subsequent statements by an empty line.
+
+Do not mix local variable declarations and statements.
+
 ### Chapter 6.1: Checking function arguments
 
 A _public_ function should verify that its arguments are sensible.
@@ -408,7 +409,7 @@ For example:
 
 ## Chapter 8: Commenting
 
-Use the classic `/*` ... `*/` comment markers.  Don't use `//` ... markers.
+Use the classic `/* ... */` comment markers.  Don't use `// ...` markers.
 
 Place comments above or to the right of the code they refer to.
 Comments referring to the code line after
@@ -618,7 +619,7 @@ used on and therefore should be avoided.
 
 ## Chapter 15: Miscellaneous
 
-Do not use `!` to check if a pointer is NULL, or to see if a str...cmp
+Do not use `!` to check if a pointer is NULL, or to see if a `str...cmp`
 function found a match.  For example, these are wrong:
 
 ```c
