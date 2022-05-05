@@ -613,10 +613,10 @@ but
     if (p == NULL && !f(2 * x + y == z++)).
 ```
 
-For clarity, always put parenthese
+For clarity, always put parentheses
 when mixing the logical `&&` and `||` operators,
 mixing comparison operators like `<=` and `==,`
-or mixing bitwise operators like  `&` and `|` .
+or mixing bitwise operators like `&` and `|`.
 For example,
 ```c
     if ((a && b) || c)
@@ -654,6 +654,8 @@ Boolean values shall be used directly as usual, e.g.,
 ```c
 if (check(x) && !success(y))
 ```
+Note: Many functions can return `0` or a negative value on error
+and the Boolean forms need to be used with care.
 
 If you need to break an expression into multiple lines,
 make the line break before an operator, not after.
