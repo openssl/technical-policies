@@ -15,6 +15,6 @@ Accepted: no   (for: 3, against: 5, abstained: 1, not voted: 1)
    Richard    [-1]
    Shane      [+1]
    Tomas      [-1]
-   Kurt       [  ]
+   Kurt       [-1] # 2022-05-07
    Matthias   [-1]
    Nicola     [+0]
