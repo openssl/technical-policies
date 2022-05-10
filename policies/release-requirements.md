@@ -27,7 +27,7 @@ The API and ABI should be stable and the source code should be feature complete
 by the first beta pre-release. The following release requirements apply to beta
 pre-releases.
 
-- The code is functionaly complete in regards to the particular release
+- The code is functionally complete in regards to the particular release
   objectives as set by OMC and OTC.
 - There is no remaining refactoring required by OMC or OTC for the release.
 - There are no remaining API changes required for the release.
