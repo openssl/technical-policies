@@ -441,8 +441,6 @@ derived types. To this end, use just one data declaration per line (no
 commas for multiple data declarations). This leaves you room for a small
 comment on each item, explaining its use.
 
-Make sure that comments do not contain spelling errors.
-
 ## Chapter 9: Macros and Enums
 
 Names of macros defining constants and labels in enums are in uppercase:
