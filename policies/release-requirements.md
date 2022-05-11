@@ -1,7 +1,7 @@
 Release Requirements Policy
 ===========================
 
-The OpenSSL project team creates the following 6 types of OpenSSL software
+The OpenSSL project team creates the following 5 types of OpenSSL software
 releases:
 
 - [alpha] (pre-)releases
