@@ -6,7 +6,8 @@ releases:
 
 - [alpha] (pre-)releases
 - [beta] (pre-)releases
-- [major] and [minor] releases
+- [major] releases
+- [minor] releases
 - [patch] releases
 
 This policy defines the requirements on the state of a branch in the source
@@ -107,15 +108,15 @@ bug is a regression or not.
 
 In general regressions should be fixed as soon as possible, optimally before
 the next release from the development tree is done. However sometimes that
-might not be reasonably possible or an issue is identified to be a regression
-too short time before the release is planned to be done.
+might not be reasonably possible due to time, resource, or fix complexity
+constraints.
 
 In that case OTC should explicitly acknowledge that the regression is not to be
 fixed before the release is done. That is done by assigning a milestone by
 which the regression must be fixed and the `triaged: OTC evaluated` label.
 
-The triage ideally happens as soon as possible however the triage process can
-be sometimes costly so we aim to have issues triaged no later than 4 days
+The triage ideally happens as soon as possible, however the triage process can
+sometimes be costly, so we aim to have issues triaged no later than 4 days
 after they are reported.
 
 Responsibilities
