@@ -1,0 +1,19 @@
+Topic: Add a process for minor policy edits at commit 4d65590
+       This will become an official OTC policy.
+Proposed by: Tomas
+Issue link: https://github.com/openssl/technical-policies/pull/42
+Public: yes
+Opened: 2022-05-03
+Closed: 2022-05-17
+Accepted: yes   (for: 10, against: 0, abstained: 0, not voted: 0)
+
+   Dmitry     [+1]
+   Matt       [+1]
+   Pauli      [+1]
+   Tim        [+1]
+   Richard    [+1]
+   Shane      [+1]
+   Tomas      [+1]
+   Kurt       [+1]
+   Matthias   [+1]
+   Nicola     [+1]
