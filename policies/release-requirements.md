@@ -122,7 +122,7 @@ after they are reported.
 Responsibilities
 ----------------
 
-The OTC is responsible to ensure the releases confirm to these requirements.
+The OTC is responsible to ensure the releases conform to these requirements.
 How exactly the OTC handles this responsibility is undefined here on purpose
 except for the explicit votes required for the first beta release and the
 major or minor releases.
