@@ -586,10 +586,8 @@ it portable enough to meet our multi-platform support goals.
 
 ## Chapter 14:  Portability
 
-To maximise portability the version of C defined in ISO/IEC 9899:1990
-should be used. This is more commonly referred to as C90. ISO/IEC 9899:1999
-(also known as C99) is not supported on some platforms that OpenSSL is
-used on and therefore should be avoided.
+The version of C defined in ISO/IEC 9899:1999 (C99) should be used.
+Features that became optional in ISO/IEC 9899:2011 (C11) should not be used.
 
 ## Chapter 15: Miscellaneous
 
