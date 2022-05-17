@@ -7,11 +7,8 @@ The openssl repository contains the following maintained branches:
 
 - Any type (bug fix, feature, refactoring, ...) of pull requests is allowed.
 - The development of the next minor or major release happens there.
-  Which kind of release it is is defined by OMC at some point after the
-  branch is opened after the previous release was branched.
-  Implicitly it means that any API/ABI breaking changes are not allowed
-  on this branch unless OMC defines the next release will be a major
-  release.
+  API/ABI breaking changes are allowed on this branch only if the next
+  release will be a major release.
 - Any changes merged to this branch must be ported to the future major
   and future minor branches if they are applicable. This can be done by
   directly cherry-picking the changes when merging if there are no conflicts.
@@ -20,7 +17,7 @@ The openssl repository contains the following maintained branches:
 
 ### The supported release branches
 
-- The development of the next patch releases of supported minor releases
+- The development of the next patch releases of supported stable releases
   happens there.
 - According to [stable release update policy] only bug fixes and
   documentation changes are allowed.
@@ -43,6 +40,9 @@ The openssl repository contains the following maintained branches:
 - There might be no future major branch if the currently developed release
   is a major release and there are no changes accepted for a future major
   release yet.
+- All changes specifically targetting this branch instead of the default
+  development branch must be approved by OTC by consensus during
+  a meeting or a formal vote.
 
 ### A future minor branch
 
@@ -61,6 +61,9 @@ The openssl repository contains the following maintained branches:
 - There might be no future minor branch when the expected future release would
   be a major release or there are no changes accepted for a future minor
   release yet.
+- All changes specifically targetting this branch instead of the default
+  development branch must be approved by OTC by consensus during
+  a meeting or a formal vote.
 
 Branch and tag naming
 ---------------------
