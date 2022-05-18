@@ -667,8 +667,8 @@ or have important caveats:
   which already use these types must be maintained, but new APIs should avoid
   usage of them. Internal code should avoid using these types.
 
-  Use `size_t` to represent array lengths. If a signed value is needed, use
-  `ossl_ssize_t`.
+  Use `size_t` to represent array lengths and indices. If a signed value is
+  needed, use `ossl_ssize_t`.
 
 - Use of `short` or `unsigned short` is deprecated. In the worst case, `short` has
   the same size as `int`.
