@@ -673,10 +673,11 @@ or have important caveats:
 - Use of `short` or `unsigned short` is deprecated. In the worst case, `short` has
   the same size as `int`.
 
-- Use `int` or `unsigned int` only where the range of values required is a subset
-  of the range `[-32767, 32767]`, as this is guaranteed by the C standard.
+- `int` and `unsigned int` can be used.
 
-  Consider using `int32_t` or `uint32_t` instead.
+  The C standard only guarantees that `int` can represent the range
+  `[-32767, 32767]`, but it is an assumption of the OpenSSL codebase that `int`
+  is 32 bits.
 
 - Use `char` for integers only where the range of values required is a subset of
   the range `[0, 127]`, as this range is guaranteed by the C standard. (`char`
@@ -689,7 +690,7 @@ or have important caveats:
 
   However, consider using `int8_t` instead.
 
-- Use `unsigned char` or `uint8_t` for byte buffers. `unsigned char` may also be
+- Use `unsigned char` for byte buffers. `unsigned char` may also be
   used for integers, but consider using `uint8_t` instead.
 
 - Use `char` for strings, but bear in mind that `char` is unsigned by default
