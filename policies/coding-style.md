@@ -642,10 +642,58 @@ it portable enough to meet our multi-platform support goals.
 
 ## Chapter 14: Portability
 
+### Language
+
 To maximise portability the version of C defined in ISO/IEC 9899:1990
 should be used. This is more commonly referred to as C90. ISO/IEC 9899:1999
 (also known as C99) is not supported on some platforms that OpenSSL is
 used on and therefore should be avoided.
+
+### Integer types
+
+The types `int8_t`, `uint8_t`, `int16_t`, `uint16_t`, `int32_t`, `uint32_t`,
+`int64_t` and `uint64_t` are recommended for use. These were only standardised
+in C99 but we define them ourselves if they are not available on a target
+platform.
+
+`size_t` is available. `ossl_ssize_t` should be used instead of `ssize_t` for
+portability.
+
+Most of the built-in integer types in the C language should be avoided
+or have important caveats:
+
+- Use of `long` and `unsigned long` is deprecated, as these types cannot be
+  relied upon to be larger than `int` on all platforms. Existing public APIs
+  which already use these types must be maintained, but new APIs should avoid
+  usage of them. Internal code should avoid using these types.
+
+  Use `size_t` to represent array lengths. If a signed value is needed, use
+  `ossl_ssize_t`.
+
+- Use of `short` or `unsigned short` is deprecated. In the worst case, `short` has
+  the same size as `int`.
+
+- Use `int` or `unsigned int` only where the range of values required is a subset
+  of the range `[-32767, 32767]`, as this is guaranteed by the C standard.
+
+  Consider using `int32_t` or `uint32_t` instead.
+
+- Use `char` for integers only where the range of values required is a subset of
+  the range `[0, 127]`, as this range is guaranteed by the C standard. (`char`
+  is unsigned by default on some platforms.)
+
+  However, consider using `int8_t` instead.
+
+- Use `signed char` only where the range of values required is a subset of
+  the range `[-127, 127]`, as this range is guaranteed by the C standard.
+
+  However, consider using `int8_t` instead.
+
+- Use `unsigned char` or `uint8_t` for byte buffers. `unsigned char` may also be
+  used for integers, but consider using `uint8_t` instead.
+
+- Use `char` for strings, but bear in mind that `char` is unsigned by default
+  on some platforms.
 
 ## Chapter 15: Expressions
 
