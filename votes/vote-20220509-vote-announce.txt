@@ -1,0 +1,19 @@
+Topic: Add vote announcement to voting procedure at commit 0737de7
+       This will become an official OTC policy.
+Proposed by: Tomas
+Issue link: https://github.com/openssl/technical-policies/pull/45
+Public: yes
+Opened: 2022-05-09
+Closed: 2022-05-18
+Accepted:yes    (for: 8, against: 2, abstained: 0, not voted: 0)
+
+   Dmitry     [-1]
+   Matt       [+1]
+   Pauli      [+1]
+   Tim        [-1]
+   Richard    [+1]
+   Shane      [+1]
+   Tomas      [+1]
+   Kurt       [+1]
+   Matthias   [+1]
+   Nicola     [+1]
