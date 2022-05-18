@@ -677,7 +677,7 @@ or have important caveats:
 
   The C standard only guarantees that `int` can represent the range
   `[-32767, 32767]`, but it is an assumption of the OpenSSL codebase that `int`
-  is 32 bits.
+  is at least 32 bits in size.
 
 - Use `char` for integers only where the range of values required is a subset of
   the range `[0, 127]`, as this range is guaranteed by the C standard. (`char`
