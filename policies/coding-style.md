@@ -652,9 +652,9 @@ used on and therefore should be avoided.
 ### Integer types
 
 The types `int8_t`, `uint8_t`, `int16_t`, `uint16_t`, `int32_t`, `uint32_t`,
-`int64_t` and `uint64_t` are recommended for use. These were only standardised
-in C99 but we define them ourselves if they are not available on a target
-platform.
+`int64_t` and `uint64_t` are recommended for use when the exact width is
+important. These were only standardised in C99 but we define them ourselves if
+they are not available on a target platform.
 
 `size_t` is available. `ossl_ssize_t` should be used instead of `ssize_t` for
 portability.
@@ -678,6 +678,8 @@ or have important caveats:
   The C standard only guarantees that `int` can represent the range
   `[-32767, 32767]`, but it is an assumption of the OpenSSL codebase that `int`
   is at least 32 bits in size.
+
+  When using `unsigned int`, write `unsigned int` instead of just `unsigned`.
 
 - Use `char` for integers only where the range of values required is a subset of
   the range `[0, 127]`, as this range is guaranteed by the C standard. (`char`
