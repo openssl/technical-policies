@@ -244,8 +244,6 @@ such as `I` and `O`.
 Avoid other single-letter names unless they are telling in the given context.
 For instance, `m` for modulus and `s` for SSL pointers are fine.
 
-Calling a variable `loop_counter` is non-productive,
-if there is no chance of it being mis-understood.
 Use simple variable names like `tmp` and `name`
 as long as they are non-ambiguous in the given context.
 
@@ -270,7 +268,7 @@ unless they are `static` (i.e., local to the source file).
 
 Use uppercase prefix like `EVP_` or `OSSL_CMP_` for public (API) symbols.
 
-Do not encode the type into a name (so-called Hungarian notation).
+Do not encode the type into a name (so-called Hungarian notation, e.g., `int iAge`).
 
 Align names to terms and wording used in standards and RFCs.
 
