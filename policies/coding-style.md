@@ -670,8 +670,10 @@ or have important caveats:
   Use `size_t` to represent array lengths and indices. If a signed value is
   needed, use `ossl_ssize_t`.
 
-- Use of `short` or `unsigned short` is deprecated. In the worst case, `short` has
-  the same size as `int`.
+- `short` or `unsigned short` should not be used in public APIs or to denote
+  a width. These types should be used only where the range of values required is
+  a subset of the range `[-32767, 32767]`, as this range is guaranteed by the C
+  standard.
 
 - `int` and `unsigned int` can be used.
 
