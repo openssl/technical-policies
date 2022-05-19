@@ -692,7 +692,7 @@ or have important caveats:
 - Use `signed char` only where the range of values required is a subset of
   the range `[-127, 127]`, as this range is guaranteed by the C standard.
 
-  However, consider using `int8_t` instead.
+  As with `char`, consider using `int8_t` instead.
 
 - Use `unsigned char` for byte buffers. `unsigned char` may also be
   used for integers, but consider using `uint8_t` instead.
