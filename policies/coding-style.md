@@ -683,6 +683,9 @@ or have important caveats:
 
   When using `unsigned int`, write `unsigned int` instead of just `unsigned`.
 
+- `long long` and `unsigned long long` are deprecated; use `int64_t` or
+  `uint64_t` instead.
+
 - Use `char` for integers only where the range of values required is a subset of
   the range `[0, 127]`, as this range is guaranteed by the C standard. (`char`
   is unsigned by default on some platforms.)
@@ -699,6 +702,9 @@ or have important caveats:
 
 - Use `char` for strings, but bear in mind that `char` is unsigned by default
   on some platforms.
+
+The above advice does not restrict typedef or macro definitions expressed in
+terms of deprecated integer types made for portability purposes.
 
 ## Chapter 15: Expressions
 
