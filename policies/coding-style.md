@@ -663,9 +663,7 @@ Most of the built-in integer types in the C language should be avoided
 or have important caveats:
 
 - Use of `long` and `unsigned long` is deprecated, as these types cannot be
-  relied upon to be larger than `int` on all platforms. Existing public APIs
-  which already use these types must be maintained, but new APIs should avoid
-  usage of them. Internal code should avoid using these types.
+  relied upon to be larger than `int` on all platforms.
 
   Use `size_t` to represent array lengths and indices. If a signed value is
   needed, use `ossl_ssize_t`.
@@ -702,6 +700,9 @@ or have important caveats:
 
 - Use `char` for strings, but bear in mind that `char` is unsigned by default
   on some platforms.
+
+Existing public APIs using deprecated types must be maintained, but new APIs and
+new code should avoid use of them.
 
 The above advice does not restrict typedef or macro definitions expressed in
 terms of deprecated integer types made for portability purposes.
