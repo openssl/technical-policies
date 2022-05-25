@@ -702,10 +702,13 @@ or have important caveats:
   on some platforms.
 
 Existing public APIs using deprecated types must be maintained, but new APIs and
-new code should avoid use of them.
+new code should avoid use of them. Deprecation does not mean that existing code
+need be converted when it is modified, and other code may still use deprecated
+types where necessary to interoperate with that code. However, deprecated types
+should not be used in completely new code.
 
-The above advice does not restrict typedef or macro definitions expressed in
-terms of deprecated integer types made for portability purposes.
+The above advice also does not restrict typedef or macro definitions expressed
+in terms of deprecated integer types made for portability purposes.
 
 ## Chapter 15: Expressions
 
