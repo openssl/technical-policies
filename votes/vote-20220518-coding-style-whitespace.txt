@@ -1,0 +1,20 @@
+Topic: coding-style.md: add various rules on spaces, lines, and
+comments at commit fcecd20
+       This will become an official OTC policy.
+Proposed by: Tomas
+Issue link: https://github.com/openssl/technical-policies/pull/47
+Public: yes
+Opened: 2022-05-18
+Closed: 2022-05-31
+Accepted: yes   (for: 8, against: 0, abstained: 2, not voted: 0)
+
+   Dmitry     [+1]
+   Matt       [+1]
+   Pauli      [+1]
+   Tim        [+1]
+   Richard    [+1]
+   Shane      [+1]
+   Tomas      [+1]
+   Kurt       [+1]
+   Matthias   [+0]
+   Nicola     [+0]
