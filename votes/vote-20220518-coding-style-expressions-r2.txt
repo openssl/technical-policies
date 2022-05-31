@@ -1,0 +1,20 @@
+Topic: coding-style.md: add various rules for writing C expressions -
+r2 at commit 2dc5c2b 
+       This will become an official OTC policy.
+Proposed by: Tomas
+Issue link: https://github.com/openssl/technical-policies/pull/46
+Public: yes
+Opened: 2022-05-18
+Closed: 2022-05-31
+Accepted: yes   (for: 7, against: 0, abstained: 2, not voted: 1)
+
+   Dmitry     [+1]
+   Matt       [+1]
+   Pauli      [+1]
+   Tim        [ 0]
+   Richard    [+1]
+   Shane      [+1]
+   Tomas      [+1]
+   Kurt       [+1]
+   Matthias   [  ]
+   Nicola     [+0]
