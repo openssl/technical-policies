@@ -1,0 +1,19 @@
+Topic: Add Branch Policy at commit 10bea43
+       This will become an official OTC policy.
+Proposed by: Tomas
+Issue link: https://github.com/openssl/technical-policies/pull/7
+Public: yes
+Opened: 2022-05-25
+Closed: 2022-06-08
+Accepted: yes   (for: 5, against: 1, abstained: 4, not voted: 0)
+
+   Dmitry     [ 0]
+   Matt       [+1]
+   Pauli      [ 0]
+   Tim        [+1]
+   Richard    [+0]
+   Shane      [+0]
+   Tomas      [+1]
+   Kurt       [-1]
+   Matthias   [+1]
+   Nicola     [+1]
