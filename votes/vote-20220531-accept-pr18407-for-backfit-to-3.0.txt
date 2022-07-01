@@ -1,0 +1,18 @@
+Topic: Accept PR#18407 for backfit to 3.0 as a policy exception.
+Proposed by: Nicola
+Issue link: https://github.com/openssl/technical-policies/issues/52
+Public: yes
+Opened: 2022-05-31
+Closed: 2022-06-07
+Accepted: no (for: 3, against: 4, abstained: 3, not voted: 0)
+
+   Dmitry     [+1]
+   Matt       [-1]
+   Pauli      [+1]
+   Tim        [ 0]
+   Richard    [ 0]
+   Shane      [-1]
+   Tomas      [ 0]
+   Kurt       [-1]
+   Matthias   [-1]
+   Nicola     [+1]
