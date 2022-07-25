@@ -1,0 +1,18 @@
+Topic: Deprecate long and add notes on integer types
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/pull/51
+Public: yes
+Opened: 2022-07-25
+Closed: YYYY-MM-DD
+Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+
+  Dmitry     [  ]
+  Matt       [+1]
+  Pauli      [  ]
+  Tim        [  ]
+  Richard    [  ]
+  Shane      [  ]
+  Tomas      [  ]
+  Kurt       [  ]
+  Matthias   [  ]
+  Nicola     [  ]
