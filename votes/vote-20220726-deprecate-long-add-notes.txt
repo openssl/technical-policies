@@ -3,16 +3,16 @@ Proposed by: Matt Caswell
 Issue link: https://github.com/openssl/technical-policies/pull/51
 Public: yes
 Opened: 2022-07-25
-Closed: YYYY-MM-DD
-Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+Closed: 2022-08-02
+Accepted:  no  (for: 3, against: 3, abstained: 4, not voted: 0)
 
-  Dmitry     [  ]
+  Dmitry     [+0]
   Matt       [+1]
   Pauli      [-1]
   Tim        [-1]
   Richard    [ 0]
-  Shane      [  ]
+  Shane      [-1]
   Tomas      [+1]
   Kurt       [+1]
-  Matthias   [  ]
-  Nicola     [  ]
+  Matthias   [ 0]
+  Nicola     [+0]
