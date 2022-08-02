@@ -642,10 +642,73 @@ it portable enough to meet our multi-platform support goals.
 
 ## Chapter 14: Portability
 
+### Language
+
 To maximise portability the version of C defined in ISO/IEC 9899:1990
 should be used. This is more commonly referred to as C90. ISO/IEC 9899:1999
 (also known as C99) is not supported on some platforms that OpenSSL is
 used on and therefore should be avoided.
+
+### Integer types
+
+The types `int8_t`, `uint8_t`, `int16_t`, `uint16_t`, `int32_t`, `uint32_t`,
+`int64_t` and `uint64_t` are recommended for use when the exact width is
+important. These were only standardised in C99 but we define them ourselves if
+they are not available on a target platform.
+
+`size_t` is available. `ossl_ssize_t` should be used instead of `ssize_t` for
+portability.
+
+Most of the built-in integer types in the C language should be avoided
+or have important caveats:
+
+- Use of `long` and `unsigned long` is deprecated, as these types cannot be
+  relied upon to be larger than `int` on all platforms.
+
+  Use `size_t` to represent array lengths and indices. If a signed value is
+  needed, use `ossl_ssize_t`.
+
+- `short` or `unsigned short` should not be used in public APIs or to denote
+  a width. These types should be used only where the range of values required is
+  a subset of the range `[-32767, 32767]`, as this range is guaranteed by the C
+  standard.
+
+- `int` and `unsigned int` can be used.
+
+  The C standard only guarantees that `int` can represent the range
+  `[-32767, 32767]`, but it is an assumption of the OpenSSL codebase that `int`
+  is at least 32 bits in size.
+
+  When using `unsigned int`, write `unsigned int` instead of just `unsigned`.
+
+- `long long` and `unsigned long long` are deprecated; use `int64_t` or
+  `uint64_t` instead.
+
+- Use `char` for integers only where the range of values required is a subset of
+  the range `[0, 127]`, as this range is guaranteed by the C standard. (`char`
+  is unsigned by default on some platforms.)
+
+  However, consider using `int8_t` instead.
+
+- Use `signed char` only where the range of values required is a subset of
+  the range `[-127, 127]`, as this range is guaranteed by the C standard.
+
+  As with `char`, consider using `int8_t` instead.
+
+- Use `unsigned char` for byte buffers. `unsigned char` may also be
+  used for integers, but consider using `uint8_t` instead.
+
+- Use `char` for strings, but bear in mind that `char` is unsigned by default
+  on some platforms.
+
+Existing public APIs using deprecated types must be maintained, but new APIs and
+new code should avoid use of them. Deprecation does not mean that existing code
+need be converted when it is modified, and other code may still use deprecated
+types where necessary to interoperate with that code. However, deprecated types
+should not be used in completely new code.
+
+The above advice also does not restrict typedef or macro definitions expressed
+in terms of deprecated integer types made for portability purposes.
 
 ## Chapter 15: Expressions
 
