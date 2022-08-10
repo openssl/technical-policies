@@ -538,8 +538,9 @@ The [GNU cpp manual][8] deals with macros exhaustively.
 
 ## Chapter 10: Allocating memory
 
-OpenSSL provides the following general purpose memory allocators:
-`OPENSSL_malloc()`, `OPENSSL_realloc()`, `OPENSSL_strdup()` and `OPENSSL_free()`.
+OpenSSL provides many general purpose memory utilities, including, but
+not limited to: `OPENSSL_malloc()`, `OPENSSL_zalloc()`, `OPENSSL_realloc()`,
+`OPENSSL_memdup()`, `OPENSSL_strdup()` and `OPENSSL_free()`.
 Please refer to the API documentation for further information about them.
 
 ## Chapter 11: Function return values and names
@@ -548,17 +549,17 @@ Functions can return values of many different kinds, and one of the
 most common is a value indicating whether the function succeeded or
 failed. Usually this is:
 
-    1: success
-    0: failure
+* 1: success
+* 0: failure
 
 Sometimes an additional value is used:
 
-    -1: something bad (e.g., internal error or memory allocation failure)
+* -1: something bad (e.g., internal error or memory allocation failure)
 
 Other APIs use the following pattern:
 
-    >= 1: success, with value returning additional information
-    <= 0: failure with return value indicating why things failed
+* \>= 1: success, with value returning additional information
+* <= 0: failure with return value indicating why things failed
 
 Sometimes a return value of -1 can mean "should retry" (e.g., BIO, SSL, et al).
 
@@ -749,7 +750,7 @@ by Brian W. Kernighan and Rob Pike.
 Addison-Wesley, Inc., 1999.
 ISBN 0-201-61586-X.
 
-[GNU manuals][5] - where in compliance with K&R and this text - for cpp, gcc,
+[GNU manuals][5] - we're in compliance with K&R and this text - for cpp, gcc,
 gcc internals and indent.
 
 [WG14][6] is the international standardization working group for the programming
