@@ -1,0 +1,20 @@
+Topic: For all currently implemented algorithms, where it is possible,
+       if the public key component is missing when a key is imported
+       into a provider, the public key component should be computed.
+Proposed by: Tomas Mraz
+Issue link: https://github.com/openssl/technical-policies/issues/54
+Public: yes
+Opened: 2022-09-06
+Closed: 
+Accepted:  yes/no  (for: , against: , abstained: , not voted: )
+
+  Dmitry     [ 0]
+  Matt       [  ]
+  Pauli      [+1]
+  Tim        [  ]
+  Richard    [ 0]
+  Shane      [+1]
+  Tomas      [ 0]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [+1]
