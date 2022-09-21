@@ -5,16 +5,16 @@ Proposed by: Tomas Mraz
 Issue link: https://github.com/openssl/technical-policies/issues/54
 Public: yes
 Opened: 2022-09-06
-Closed: 
-Accepted:  yes/no  (for: , against: , abstained: , not voted: )
+Closed: 2022-09-21
+Accepted:  yes  (for: 5, against: 0, abstained: 5, not voted: 0)
 
   Dmitry     [ 0]
-  Matt       [  ]
+  Matt       [ 0]
   Pauli      [+1]
-  Tim        [  ]
+  Tim        [-0]
   Richard    [ 0]
   Shane      [+1]
   Tomas      [ 0]
-  Kurt       [  ]
+  Kurt       [+1]
   Matthias   [+1]
   Nicola     [+1]
