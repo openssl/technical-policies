@@ -1,0 +1,20 @@
+Topic: OTC considers PR#17984 as a bug fix and therefore can be backported to
+       the 3.0 branch
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/....
+Public: yes
+Opened: 2022-10-11
+Closed: YYYY-MM-DD
+Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+
+  Dmitry     [+1]
+  Matt       [ 0]
+  Pauli      [ 0]
+  Tim        [  ]
+  Hugo       [  ]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+0]
+  Kurt       [  ]
+  Matthias   [  ]
+  Nicola     [-0]
