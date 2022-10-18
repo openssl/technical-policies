@@ -10,7 +10,7 @@ Accepted:  yes  (for: 8, against: 0, abstained: 1, not voted: 2)
   Dmitry     [+1]
   Matt       [+1]
   Pauli      [+1]
-  Tim        [  ]
+  Tim        [ 0] # 2022-10-18
   Hugo       [+1]
   Richard    [+1]
   Shane      [+1]
