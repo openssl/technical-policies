@@ -1,0 +1,20 @@
+Topic: Accept PR #19400 in master and 3.0 subject to normal review process
+Comment: As we published 3.0.6 release with the error reporting added a vote is needed to revert the addition.
+Proposed by: Tomas Mraz
+Issue link: https://github.com/openssl/technical-policies/issues/56
+Public: yes
+Opened: 2022-10-18
+Closed: 2022-10-18
+Accepted:  yes  (for: 8, against: 0, abstained: 1, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [  ]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [ 0]
