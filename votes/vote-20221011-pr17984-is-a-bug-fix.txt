@@ -4,17 +4,17 @@ Proposed by: Matt Caswell
 Issue link: https://github.com/openssl/technical-policies/issues/55
 Public: yes
 Opened: 2022-10-11
-Closed: YYYY-MM-DD
-Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+Closed: 2022-10-18
+Accepted:  yes  (for: 5, against: 2, abstained: 5, not voted: 0)
 
   Dmitry     [+1]
   Matt       [ 0]
   Pauli      [ 0]
-  Tim        [  ]
-  Hugo       [  ]
+  Tim        [-1]
+  Hugo       [+1]
   Richard    [+1]
   Shane      [+1]
   Tomas      [+0]
-  Kurt       [  ]
-  Matthias   [  ]
+  Kurt       [-0]
+  Matthias   [+1]
   Nicola     [-0]
