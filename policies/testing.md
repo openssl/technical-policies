@@ -42,6 +42,46 @@ A test may be omitted where writing the test would result in disproportionately
 more effort than writing the code being tested. For example, difficult to
 reproduce error conditions.
 
+Triage Labels
+-------------
+
+Before approving a PR, the applicability of the testing policy to the PR must
+be assessed and an appropriate label applied to the PR. One of the following
+labels must be applied:
+
+- `tests: present`, to be added where suitable tests are included in the same PR.
+- `hold: tests needed`, where the testing policy requires tests but they are not
+  currently included in a PR.
+- `tests: exempted`, where tests are not included in a PR but are not required
+  by this policy (for example, because the PR concerns only documentation,
+  or because writing the test would result in disproportionately more effort;
+  see above).
+- `tests: deferred`, where the tests are required by the testing policy
+  but it is intended to add these tests in a subsequent PR. The label should
+  be removed (for example from a closed PR) once subsequent tests have
+  been merged.
+
+The `hold: tests needed` label blocks merging of the PR and constitutes a hold.
+None of the other labels listed above block merging of a PR.
+
+Only one of the above labels should be set on a PR at a given time.
+
+It will generally be readily apparent which label is applicable
+at any given time. However, if there is a lack of agreement over the
+status of a PR in regards to the test policy, this should be resolved
+via the normal review process. For example, OpenSSL Committers are not required
+to agree to use of the `tests: deferred` label if they do not feel it is
+appropriate.
+
+Use and approval of the `tests: deferred` label is at the discretion of the
+OpenSSL Committers. It is recommended that this label be used only when a
+subsequent PR with tests is anticipated, but no specific rule is imposed on when
+`tests: deferred` may be used at this time. The intention is to begin
+surveillance and obtain visibility into how decisions under the testing policy
+are being made prior to making any more specific prescriptions. For example,
+this labelling allows obtaining a list of merged PRs for which a decision was
+made to defer adding tests, but for which tests have not yet been added.
+
 Performance Testing
 -------------------
 
