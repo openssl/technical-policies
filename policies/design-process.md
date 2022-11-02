@@ -1,160 +1,163 @@
-Policy for Creating Designs
-===========================
+Design Process Policy
+=====================
 
-From time to time the [OTC] may decide that certain problems should have a
-design document created for them before implementation should start. Such a
-decision should be minuted in OTC meeting minutes or recorded via a vote. In
-that case this policy will apply.
+Objectives
+----------
 
-Pull Requests that implement a solution, or part of a solution, covered by a
-design document should clearly reference that design document. Pull requests
-that modify a solution covered by a design document should not be accepted
-unless the design document is also updated to describe the modified solution.
+The objective of the design process is to increase the quality of the software
+engineering process. The production of design documents confers the following
+benefits:
 
-The design approach described in this document should be considered iterative.
-Only "just enough" design should be done to get the implementation project to
-the next stage. Certain design decisions and sub-problems may be deferred until
-some later stage.
+  - Prior to implementation, the present understanding of the problem domain is
+    documented in a readily accessible fashion. The understanding of other
+    OpenSSL contributors is enhanced, as is their ability to identify any
+    potential issues in the design, or to make related code contributions.
 
-Inputs
-------
+  - After implementation, the design document serves as documentation of
+    the architectural and design decisions and rationale which served as the
+    basis of the implementation of the relevant functionality. This is
+    beneficial both to contributors which wish to understand the relevant code,
+    evolve the implementation, or implement related functionality, or to
+    understand non-obvious rationales behind given design decisions.
 
-Prior to commencing design work the OTC shall identify:
+It is recognised that designs will often necessarily change once implementation
+begins. In the majority of cases, the understanding of the problem domain will
+evolve and improve after implementation begins and this will indicate further
+changes to the design. This is an iterative process of progressive refinement.
+It is an explicit objective of this policy to support and encourage this
+agile-style process, as opposed to a waterfall-style process in which designs
+must be approved and finalised prior to implementation.
 
-1) The business requirements for the problem to be solved (obtained from the OMC)
-2) The scope of the specific problem area to be addressed
-3) Any additional design constraints that the OTC wishes to impose
-4) Any other constraints that may apply (e.g. timescales)
-5) The individual(s) that will work on developing the design (referred to as the
-   "design team" in this document)
+Moreover, it may be hard to obtain explicit approval for a design from the OTC
+where there design falls out of the domains of the OTC members' expertise. This
+policy adopts a graded system of review in which the degree of formal approval
+by the OTC which a design must undergo is proportionate to the scope and risks
+of the design. For example, a design which involves new or evolved public APIs
+may require a greater amount of scrutiny, whereas a purely internal design may
+require that the OTC simply be notified of the design document and invited to
+comment, with a presumption of approval in the absence of objections.
 
-Typically these will be identified during an OTC meeting and documented in the
-meeting minutes.
+Requirement for Design Documents
+--------------------------------
 
-Outputs
--------
+A design document is required for any proposed enhancement which adds new APIs
+or evolves or modifies existing APIs.
 
-The result of this process should be a design document in markdown format,
-reviewed via a pull request and approved for merge into the main source git
-repository via an OTC decision (minutes in OTC meeting minutes or recorded via
-a vote). The design document must include:
+For any other kind of proposed enhancement, a design document should be created
+if it incorporates design decisions or aspects significant enough to warrant
+one. For example, if an enhancement adds a new internal module with clearly
+delineated boundaries with an documented internal API which can be consumed by
+other code internal to OpenSSL, a design document is desirable. This example is
+not exhaustive. The proposer may use their discretion in determining whether a
+design document is desirable, but any OTC member may require that a design
+document be produced.
 
- - Any assumptions that have been made
- - Any omissions that may be filled in later
- - Any APIs that the implementation will provide. This should include some
-   minimal documentation of the APIs (not necessarily end-user focussed) to show
-   how they should be used.
- - A specification of the tests that will be expected as part of the
-   implementation. This should cover the APIs as they are meant to be called,
-   what the return values are, etc.
+Levels of Scrutiny
+------------------
 
-Other outputs may include feedback on the requirements and constraints that
-were the input into the process. For example, some candidate solutions that are
-considered may not satisfy all constraints or requirements. In such a case the
-candidate solution should be rejected unless feedback on the requirements and
-constraints modifies them to allow the solution to be selected.
+There are three levels of scrutiny which can be applied to a design, listed
+below in ascending order of severity:
 
-Design Steps
-------------
+ - Notify
+ - Present
+ - Approve
 
-The following design steps should be used to create a design document:
+These levels work as follows:
 
-1. (Optional) Identify key design sub-problems
-2. Identify candidate solutions
-3. Select solution
-4. Refine and document
-5. Approve solution
+ - At the **Notify** level, the OTC is notified of a new design
+   when it is available for review, via an email to the OTC mailing list.
+   OTC members and committers can review and comment on the design.
+   A minimum waiting time of one week applies to ensure OTC members have the
+   opportunity to review the design.
 
-### (Optional) Identify key design sub-problems
+ - At the **Present** level, the OTC is notified of a new design
+   in the same way that it is at the Notify level. The same minimum waiting time
+   applies. The design is also introduced and explained in a presentation given
+   by its presenter to the OTC in a meeting of the OTC. The OTC has
+   opportunities to ask questions and raise concerns at this meeting.
 
-Certain large problem domains may be split into smaller problem areas and a
-separate design document produced for each sub-problem. In such a case this
-policy should be applied recursively to address the design for each sub-problem
-individually before incorporating all of the outputs into a single large
-design document.
+ - At the **Approve** level, the OTC must explicitly approve the design
+   by making a decision as the OTC. The OTC should be notified of a
+   new design in the same way they are notified at the Notify level.
+   A presentation to the OTC may be made but is not required.
 
-For such large problems a design workshop would normally be held to identify
-the sub-problems that require individual designs.
+When a design is produced, it should be submitted to the OpenSSL repository as a
+PR. It should be determined which level of scrutiny is appropriate according to
+this policy and this should be noted in the PR. Any applicable actions (such as
+notifying the OTC via the list) should be carried out once the design is ready
+for review.
 
-### Identify candidate solutions
+Any OTC member may object to the processing of a design at a given level of
+scrutiny. In this case, the next highest level of scrutiny is used. An OTC
+member may also insist that the highest level of scrutiny (Approve) be used.
 
-Once the problem area is understood, candidate solutions (one or more) that meet
-the requirements and constraints should be identified. Each candidate solution
-should be documented in only as much detail as is required to explain the
-primary characteristics of the solution approach so that it can be compared
-against the other candidate solutions and to determine how well it meets the
-requirements and constraints.
+A proposer may choose to use a higher level of scrutiny than is required.
 
-In some cases a candidate solution may be identified that meets most of the
-requirements and constraints but not all. Where this happens the requirements
-and constraints that are not met by the candidate solution should be clearly
-stated.
+Selecting a Level
+-----------------
 
-Typically the design team will be the people that identify and document the
-candidate solutions. In some cases it may be appropriate to hold a design
-workshop to collectively identify the candidate solutions. In this case it will
-typically still be necessary for the design team to document the solution
-options outside of the workshop.
+To determine the level of scrutiny which must be applied to a design by default,
+follow the following process:
 
-The design team may choose to make recommendations about the preferred solution
-option.
+  - Any design which proposes to create new public APIs, or evolve or modify
+    existing public APIs, must use at least the Present level of scrutiny.
 
-### Select solution
+  - Any other design may use the Notify level of scrutiny.
 
-Once the candidate solutions have been identified and documented a solution
-must be selected by the OTC. There should be an opportunity for the OpenSSL
-community or non-OTC members to provide input into the decision. This could
-either be in the form of comments on a draft Pull Request describing the
-candidate solutions, or it could be in the form of an invite for community
-members to join the workshop where the solution is selected.
+Checklists
+----------
 
-Optionally the OTC could select no solution and instead direct the design team
-to iterate over the candidate solutions again and either make refinements or
-identify additional options.
+### Checklist for the Notify Level
 
-### Refine and document
+  - Design document published as a PR on GitHub
+  - OTC notified and invited to comment or object via an email to OTC list
+  - At least one week has passed from OTC notification
 
-In this step the design team provide further detail on the selected solution
-option. There should be sufficient detail to enable the implementation work to
-progress and to understand the trajectory of the solution into the future. Some
-details may be omitted until a later stage of the development project if
-appropriate and such a level of detail is not needed until later. The
-assumptions of a solution should be clearly listed along with any omissions.
+### Checklist for the Present Level
 
-The design document should be available for public comment in the form of a
-pull request.
+  - Design document published as a PR on GitHub
+  - OTC notified and invited to comment or object via an email to OTC list
+  - Presentation given to a quorate OTC meeting by the design's proposer, and
+    OTC has had opportunity to ask questions and discuss the proposal
+  - At least one week has passed from OTC notification
 
-### Approve solution
+### Checklist for the Approve Level
 
-In this step the OTC approve the solution as it is described in the design
-document as produced by the design team. Once approved the implementation may
-proceed and the design document should be merged into the main source repository.
+  - Design document published as a PR on GitHub
+  - OTC makes a decision approving the design. The decision is made according to
+    standard OTC policies.
 
-The OTC may choose not to approve a solution. In this case the process should
-iterate back to the "Refine and document" step to incorporate feedback from the
-OTC. In some cases more significant rework may be required, in which case the
-OTC may choose to step back to any previous step in this design process.
+Implementation
+--------------
 
-In some cases the OTC may approve a solution which has certain details
-deliberately omitted in order to defer work on those details until a later stage
-of the implementation project. In such cases this process iterates back to the
-"Refine and document" stage to fill in those details when they are eventually
-required, and the subsequent amended design document must be approved again by
-the OTC.
+It is not required to wait for a design document to be approved and merged
+before beginning implementation. Implementation should generally begin
+immediately. This facilitates an agile process and helps to improve the design
+document, as implementation will often lead to an improved understanding
+of the problem domain, leading in turn to an improved design document.
 
-Transparency and Community Involvement
---------------------------------------
+A design document PR, or a PR implementing said design, should not be merged
+until the relevant requirements for the level of scrutiny used have been
+satisfied. It is permissible for a design document and an implementation to be
+part of the same PR.
 
-It should be possible for community members to see the progress of designs
-through the process and to pass comment on the proposed design prior to its
-eventual agreement by OTC. As a minimum:
+Revisions to Pending Designs
+----------------------------
 
-* The draft design document containing the candidate solutions should be
-available as a pull request for public comment for at least one week prior to
-the selection of the solution. In addition to that, community members may be
-offered an invite to join the solution selection meeting.
+Where changes to a design document need to be made (for example, due to an
+evolved understanding of the problem domain arising from an implementation in
+progress), if the design document has already been merged, a new PR should be
+raised and this will go through the normal process described above.
 
-* The refined documented design should be available for public comment as a pull
-request for at least one week prior to eventual agreement of the solution
+If the design document has not yet merged:
 
-[OTC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#otc
+  - if the Notify or Present level of scrutiny is being used, it may be changed
+    by the proposer freely. Another notification to the OTC list may be made
+    if the changes are deemed extremely major but is not required.
+
+  - if the Approve level of scrutiny is being used, and the approval has already
+    been finalised or a vote is ongoing, the design should not be changed and a
+    new PR should be raised. The document may be changed freely if it has been
+    decided that the Approve level of scrutiny is to be used but a vote has not
+    yet opened.
+
