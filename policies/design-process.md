@@ -15,10 +15,11 @@ benefits:
 
   - After implementation, the design document serves as documentation of
     the architectural and design decisions and rationale which served as the
-    basis of the implementation of the relevant functionality. This is
+    basis for the implementation of the relevant functionality. This is
     beneficial both to contributors which wish to understand the relevant code,
-    evolve the implementation, or implement related functionality, or to
-    understand non-obvious rationales behind given design decisions.
+    or evolve the implementation, but also to contributors who wish to implement
+    related functionality or understand non-obvious rationales behind given
+    design decisions.
 
 It is recognised that designs will often necessarily change once implementation
 begins. In the majority of cases, the understanding of the problem domain will
@@ -153,7 +154,7 @@ If the design document has not yet merged:
 
   - if the Notify or Present level of scrutiny is being used, it may be changed
     by the proposer freely. Another notification to the OTC list may be made
-    if the changes are deemed extremely major but is not required.
+    if the changes are deemed very major but is not required.
 
   - if the Approve level of scrutiny is being used, and the approval has already
     been finalised or a vote is ongoing, the design should not be changed and a
