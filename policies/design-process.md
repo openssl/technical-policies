@@ -47,7 +47,7 @@ or evolves or modifies existing APIs.
 For any other kind of proposed enhancement, a design document should be created
 if it incorporates design decisions or aspects significant enough to warrant
 one. For example, if an enhancement adds a new internal module with clearly
-delineated boundaries with an documented internal API which can be consumed by
+delineated boundaries with a documented internal API which can be consumed by
 other code internal to OpenSSL, a design document is desirable. This example is
 not exhaustive. The proposer may use their discretion in determining whether a
 design document is desirable, but any OTC member may require that a design
