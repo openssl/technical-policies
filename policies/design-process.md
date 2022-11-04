@@ -29,20 +29,18 @@ It is an explicit objective of this policy to support and encourage this
 agile-style process, as opposed to a waterfall-style process in which designs
 must be approved and finalised prior to implementation.
 
-Moreover, it may be hard to obtain explicit approval for a design from the OTC
-where there design falls out of the domains of the OTC members' expertise. This
-policy adopts a graded system of review in which the degree of formal approval
-by the OTC which a design must undergo is proportionate to the scope and risks
-of the design. For example, a design which involves new or evolved public APIs
-may require a greater amount of scrutiny, whereas a purely internal design may
-require that the OTC simply be notified of the design document and invited to
-comment, with a presumption of approval in the absence of objections.
+This policy adopts a graded system of review in which the degree of formal
+approval by the OTC which a design must undergo is proportionate to the scope
+and risks of the design. For example, a design which involves new or evolved
+public APIs may require a greater amount of scrutiny, whereas a purely internal
+design may require that the OTC simply be notified of the design document and
+invited to comment, with implicit approval in the absence of objections.
 
 Requirement for Design Documents
 --------------------------------
 
 A design document is required for any proposed enhancement which adds new APIs
-or evolves or modifies existing APIs.
+or non-trivially evolves or modifies existing APIs.
 
 For any other kind of proposed enhancement, a design document should be created
 if it incorporates design decisions or aspects significant enough to warrant
@@ -66,16 +64,19 @@ below in ascending order of severity:
 These levels work as follows:
 
  - At the **Notify** level, the OTC is notified of a new design
-   when it is available for review, via an email to the OTC mailing list.
+   when it is available for review, via an email to the openssl-project mailing list.
    OTC members and committers can review and comment on the design.
    A minimum waiting time of one week applies to ensure OTC members have the
    opportunity to review the design.
 
+   The notification does not need to be made by the author of the design
+   document.
+
  - At the **Present** level, the OTC is notified of a new design
    in the same way that it is at the Notify level. The same minimum waiting time
    applies. The design is also introduced and explained in a presentation given
-   by its presenter to the OTC in a meeting of the OTC. The OTC has
-   opportunities to ask questions and raise concerns at this meeting.
+   by its author to the OTC in a meeting of the OTC. The OTC has opportunities
+   to ask questions and raise concerns at this meeting.
 
  - At the **Approve** level, the OTC must explicitly approve the design
    by making a decision as the OTC. The OTC should be notified of a
@@ -85,12 +86,11 @@ These levels work as follows:
 When a design is produced, it should be submitted to the OpenSSL repository as a
 PR. It should be determined which level of scrutiny is appropriate according to
 this policy and this should be noted in the PR. Any applicable actions (such as
-notifying the OTC via the list) should be carried out once the design is ready
-for review.
+notifying the OTC via the openssl-project list) should be carried out once the
+design is ready for review.
 
 Any OTC member may object to the processing of a design at a given level of
-scrutiny. In this case, the next highest level of scrutiny is used. An OTC
-member may also insist that the highest level of scrutiny (Approve) be used.
+scrutiny and require that a higher level be used.
 
 A proposer may choose to use a higher level of scrutiny than is required.
 
@@ -100,8 +100,9 @@ Selecting a Level
 To determine the level of scrutiny which must be applied to a design by default,
 follow the following process:
 
-  - Any design which proposes to create new public APIs, or evolve or modify
-    existing public APIs, must use at least the Present level of scrutiny.
+  - Any design which proposes to create new public APIs, or non-trivially evolve
+    or modify existing public APIs, must use at least the Present level of
+    scrutiny.
 
   - Any other design may use the Notify level of scrutiny.
 
@@ -111,13 +112,15 @@ Checklists
 ### Checklist for the Notify Level
 
   - Design document published as a PR on GitHub
-  - OTC notified and invited to comment or object via an email to OTC list
+  - OTC notified and invited to comment or object via an email to
+    openssl-project list
   - At least one week has passed from OTC notification
 
 ### Checklist for the Present Level
 
   - Design document published as a PR on GitHub
-  - OTC notified and invited to comment or object via an email to OTC list
+  - OTC notified and invited to comment or object via an email to
+    openssl-project list
   - Presentation given to a quorate OTC meeting by the design's proposer, and
     OTC has had opportunity to ask questions and discuss the proposal
   - At least one week has passed from OTC notification
@@ -153,8 +156,8 @@ raised and this will go through the normal process described above.
 If the design document has not yet merged:
 
   - if the Notify or Present level of scrutiny is being used, it may be changed
-    by the proposer freely. Another notification to the OTC list may be made
-    if the changes are deemed very major but is not required.
+    by the proposer freely. Another notification to the openssl-project list may
+    be made if the changes are deemed very major but is not required.
 
   - if the Approve level of scrutiny is being used, and the approval has already
     been finalised or a vote is ongoing, the design should not be changed and a
