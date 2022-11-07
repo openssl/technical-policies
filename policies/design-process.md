@@ -16,7 +16,7 @@ benefits:
   - After implementation, the design document serves as documentation of
     the architectural and design decisions and rationale which served as the
     basis for the implementation of the relevant functionality. This is
-    beneficial both to contributors which wish to understand the relevant code,
+    beneficial both to contributors who wish to understand the relevant code,
     or evolve the implementation, but also to contributors who wish to implement
     related functionality or understand non-obvious rationales behind given
     design decisions.
@@ -39,8 +39,8 @@ invited to comment, with implicit approval in the absence of objections.
 Requirement for Design Documents
 --------------------------------
 
-A design document is required for any proposed enhancement which adds new APIs
-or non-trivially evolves or modifies existing APIs.
+A design document is required for any proposed enhancement which adds
+significant new APIs or non-trivially evolves or modifies existing APIs.
 
 For any other kind of proposed enhancement, a design document should be created
 if it incorporates design decisions or aspects significant enough to warrant
@@ -66,8 +66,8 @@ These levels work as follows:
  - At the **Notify** level, the OTC is notified of a new design
    when it is available for review, via an email to the openssl-project mailing list.
    OTC members and committers can review and comment on the design.
-   A minimum waiting time of one week applies to ensure OTC members have the
-   opportunity to review the design.
+   A minimum waiting time of one week after the notification is made applies to
+   ensure OTC members have the opportunity to review the design.
 
    The notification does not need to be made by the author of the design
    document.
@@ -75,8 +75,9 @@ These levels work as follows:
  - At the **Present** level, the OTC is notified of a new design
    in the same way that it is at the Notify level. The same minimum waiting time
    applies. The design is also introduced and explained in a presentation given
-   by its author to the OTC in a meeting of the OTC. The OTC has opportunities
-   to ask questions and raise concerns at this meeting.
+   to the OTC in a meeting of the OTC. The OTC has opportunities to ask
+   questions and raise concerns at this meeting. This presentation may be given
+   by the author of the design but need not be.
 
  - At the **Approve** level, the OTC must explicitly approve the design
    by making a decision as the OTC. The OTC should be notified of a
