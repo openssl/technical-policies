@@ -1,0 +1,19 @@
+topic: Approve the proposed test labelling policy (technical-policies#57)
+Proposed by Hugo Landau
+Issue link: https://github.com/openssl/technical-policies/pull/57
+Public: yes
+opened: 2022-11-07
+closed: 2022-11-10
+accepted:  yes  (for: 8, against: 0, abstained: 1, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [ 0]
+  Hugo       [+1]
+  Richard    [  ]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+1]
+  Matthias   [+1]
+  Nicola     [  ]
