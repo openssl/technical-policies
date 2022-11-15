@@ -16,4 +16,4 @@ accepted:  yes  (for: 8, against: 0, abstained: 1, not voted: 2)
   Tomas      [+1]
   Kurt       [+1]
   Matthias   [+1]
-  Nicola     [  ]
+  Nicola     [+0]   # 2022-11-10
