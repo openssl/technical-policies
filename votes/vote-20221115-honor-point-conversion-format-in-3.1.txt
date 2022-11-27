@@ -1,0 +1,23 @@
+Topic: Accept PR #19681 in 3.1 subject to normal review process
+Comment: Fundamentally OTC must decide if in the 3.1 release we should
+         honor OSSL_PKEY_PARAM_EC_POINT_CONVERSION_FORMAT as set (and
+         default to UNCOMPRESSED) in our provider implementations, and
+         apply corresponding changes for handling legacy keys.
+Proposed by: Nicola Tuveri
+Issue link: https://github.com/openssl/technical-policies/issues/59
+Public: yes
+Opened: 2022-11-15
+Closed: 2022-11-27
+Accepted:  yes  (for: 7, against: 0, abstained: 2, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+0]
+  Pauli      [ 0]
+  Tim        [+1]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [  ]
+  Nicola     [+1]
