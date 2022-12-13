@@ -1,0 +1,22 @@
+Topic: OTC approves 3.1 beta 1 release on Wed Dec 21 2022 assuming all
+       the outstanding items on the release check-list (#19864) are done
+       including the provisions for Coverity and Coveralls items as
+       mentioned in the check list issue.
+Proposed by: Tomas Mraz
+Issue link: https://github.com/openssl/technical-policies/issues/61
+Public: yes
+Opened: 2022-12-13
+Closed: 2022-12-13
+Accepted:  yes  (for: 8, against: 0, abstained: 0, not voted: 3)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [  ]
+  Hugo       [+1]
+  Richard    [  ]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [+1]
