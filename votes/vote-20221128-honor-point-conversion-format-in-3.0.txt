@@ -1,0 +1,23 @@
+Topic: Backport PR #19681 to 3.0 as a bug fix
+Comment: Fundamentally OTC must decide if in the 3.0 release we should
+         honor OSSL_PKEY_PARAM_EC_POINT_CONVERSION_FORMAT as set (and
+         default to UNCOMPRESSED) in our provider implementations, and
+         apply corresponding changes for handling legacy keys.
+Proposed by: Nicola Tuveri
+Issue link: https://github.com/openssl/technical-policies/issues/60
+Public: yes
+Opened: 2022-12-01
+Closed: 2022-12-14
+Accepted:  yes  (for: 4, against: 0, abstained: 5, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [ 0]
+  Pauli      [+1]
+  Tim        [ 0]
+  Hugo       [+0]
+  Richard    [  ]
+  Shane      [ 0]
+  Tomas      [ 0]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [+1]
