@@ -304,7 +304,7 @@ and are usually declared like this:
     typedef struct name_st NAME;
 ```
 
-For examples, look in [ossl_typ.h][7], but note that there are many exceptions
+For examples, look in [types.h][7], but note that there are many exceptions
 such as BN_CTX. Typedef'd enum is used much less often and there is no
 convention, so consider not using a typedef. When doing that, the enum
 name should be lowercase and the values (mostly) uppercase.  Note that enum
@@ -762,6 +762,6 @@ language C.
 [4]: <http://cm.bell-labs.com/cm/cs/tpop/> "The Practice of Programming"
 [5]: <https://www.gnu.org/manual/> "GNU manuals"
 [6]: <http://www.open-std.org/JTC1/SC22/WG14/> "International standardization working group for the programming language C"
-[7]: <https://github.com/openssl/openssl/blob/master/include/openssl/ossl_typ.h> "include/openssl/ossl_typ.h"
+[7]: <https://github.com/openssl/openssl/blob/master/include/openssl/types.h> "include/openssl/types.h"
 [8]: <https://gcc.gnu.org/onlinedocs/> "GCC online documentation"
 [9]: <https://github.com/openssl/openssl/blob/master/crypto/perlasm/x86_64-xlate.pl> "crypto/perlasm/x86_64-xlate.pl"
