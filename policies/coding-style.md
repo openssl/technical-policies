@@ -756,7 +756,7 @@ gcc internals and indent.
 [WG14][6] is the international standardization working group for the programming
 language C.
 
-[1]: <https://www.kernel.org/doc/Documentation/CodingStyle> "Linux Kernel Coding Style"
+[1]: <https://www.kernel.org/doc/Documentation/process/coding-style.rst> "Linux Kernel Coding Style"
 [2]: <https://www.kernel.org/pub/linux/kernel/COPYING> "Linux Kernel License"
 [3]: <https://openlibrary.org/works/OL4617640W/The_C_Programming_Language> "The C Programming Language, Second Edition"
 [4]: <https://openlibrary.org/works/OL15333872W/The_Practice_of_Programming_(Addison-Wesley_Professional_Computing_Series)> "The Practice of Programming"
