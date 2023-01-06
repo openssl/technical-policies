@@ -51,6 +51,41 @@ not exhaustive. The proposer may use their discretion in determining whether a
 design document is desirable, but any OTC member may require that a design
 document be produced.
 
+Contents of Design Documents
+----------------------------
+
+In general, where produced, a design document should include discussion of:
+
+- Requirements and assumptions, in particular:
+
+    - the requirements that the design is seeking to meet;
+
+    - anything which is expressly not a requirement;
+
+    - the origins or underlying motivations of those requirements (or
+      non-requirements) in turn (for example, do the requirements originate from the
+      OMC or are they themselves a product of other technical requirements?);
+
+    - significant assumptions or limitations of scope being made as part of the
+      design (which might cause a design to become suboptimal or inapplicable if
+      those assumptions cease to be true) as a result of the input requirements.
+
+- What the intended strategy is for how any new APIs being introduced can be
+  effectively maintained, evolved and extended in the future, if at all.
+
+- It is sometimes also useful to provide exposition for the motivations behind a
+  design by offering a Q&A section posing design questions and their answers
+  with rationale. This has the advantage of documenting the historical design
+  decisions which were made and why, and makes it clear when a significant
+  decision is being made.
+
+This is not an exhaustive list and design documents will obviously contain other
+elements, such as discussion of the design itself.
+
+Discussion of requirements and assumptions should generally come at the start of
+the document, and any Q&A section (if included) should generally come at the
+end.
+
 Levels of Scrutiny
 ------------------
 
