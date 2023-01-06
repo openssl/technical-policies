@@ -70,21 +70,53 @@ In general, where produced, a design document should include discussion of:
       design (which might cause a design to become suboptimal or inapplicable if
       those assumptions cease to be true) as a result of the input requirements.
 
+- The available solution space; discuss the various possible solutions and
+  provide narrative discussion of their relative merits, and the reasoning
+  for any preferences. Which solutions are preferable and why? Which solutions
+  are ruled out based on the requirements and why?
+
+- The proposed design. Alternatively, a design document may propose a couple
+  of possible designs (for example, if it is not yet clear which is preferable,
+  or if multiple essentially independent designs will be needed to cover all use
+  cases). If multiple proposals are present, they should be clearly labeled
+  in different sections so they can be referred to easily for discussion.
+
 - What the intended strategy is for how any new APIs being introduced can be
   effectively maintained, evolved and extended in the future, if at all.
 
-- It is sometimes also useful to provide exposition for the motivations behind a
-  design by offering a Q&A section posing design questions and their answers
-  with rationale. This has the advantage of documenting the historical design
-  decisions which were made and why, and makes it clear when a significant
-  decision is being made.
+- In some cases, it may be appropriate to offer examples of motivating use cases
+  for the design (given in prose) or examples of intended exemplary usage of an
+  API, given as rough code fragments or pseudocode.
+
+- More generally, it is sometimes also useful to provide exposition for the
+  motivations behind a design by offering a Q&A section posing design questions
+  and their answers with rationale. This has the advantage of documenting the
+  historical design decisions which were made and why, and makes it clear when a
+  significant decision is being made. Some questions may be left unanswered
+  in a design document which is not yet complete, which serves to document
+  design questions which have yet to be resolved.
 
 This is not an exhaustive list and design documents will obviously contain other
 elements, such as discussion of the design itself.
 
-Discussion of requirements and assumptions should generally come at the start of
-the document, and any Q&A section (if included) should generally come at the
-end.
+Based on the above, the recommended template for a design document is as
+follows:
+
+    Requirements/Problem Statement
+    Problem Discussion
+    Proposal 1
+        API Maintenance Considerations
+    [...Proposal 2, if applicable, etc...]
+        [...API Maintenance Considerations...]
+    Examples
+        Motivating Use Cases
+        Usage Examples
+    Q&A
+
+This template is intended as a rough starting point only. Not all of its
+sections will be relevant to all design documents, and design document authors
+can and should deviate from this structure where this leads to a more
+comprehensible or useful document.
 
 Levels of Scrutiny
 ------------------
