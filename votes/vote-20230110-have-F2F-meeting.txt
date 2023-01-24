@@ -1,0 +1,21 @@
+Topic: OTC should propose to the OMC that we hold an OTC/committer face-2-face
+            meeting in Czech Republic on 19th-21st June 2023
+Proposed by: Dmitry Belyavskyi
+Issue link: https://github.com/openssl/technical-policies/issues/63
+Public: yes
+Opened: 2023-01-10
+Closed: 2023-01-18
+Accepted:  yes  (for: 9, against: 0, abstained: 2, not voted: 0)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [ 0]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [ 0]
+  Tomas      [+1]
+  Kurt       [+1]
+  Matthias   [+1]
+  Nicola     [+1]
+
