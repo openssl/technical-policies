@@ -10,7 +10,7 @@ accepted:  yes  (for: 7, against: 0, abstained: 2, not voted: 2)
   Dmitry     [+1]
   Matt       [+1]
   Pauli      [+1]
-  Tim        [  ]
+  Tim        [+1]   # 2023-03-07
   Hugo       [+1]
   Richard    [+1]
   Shane      [+1]
