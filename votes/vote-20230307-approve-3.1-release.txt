@@ -1,0 +1,20 @@
+topic: Release 3.1.0 final on Tuesday the 14th of March 2023 if
+       CI builds have been clean for two days.
+Proposed by Pauli.
+Issue link: https://github.com/openssl/technical-policies/issues/64
+Public: yes
+opened: 2023-03-07
+closed: 2023-03-07
+accepted:  yes/no  (for: 7, against: 0, abstained: 2, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [  ]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+0]
+  Nicola     [ 0]
