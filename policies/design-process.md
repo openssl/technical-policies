@@ -168,9 +168,9 @@ Selecting a Level
 To determine the level of scrutiny which must be applied to a design by default,
 follow the following process:
 
-  - Any design which proposes to create new public APIs, or non-trivially evolve
-    or modify existing public APIs, must use at least the Present level of
-    scrutiny.
+  - Any design which proposes to create significant new public APIs, or
+    non-trivially evolve or modify existing public APIs, must use at least the
+    Present level of scrutiny.
 
   - Any other design may use the Notify level of scrutiny.
 
