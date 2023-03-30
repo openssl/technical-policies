@@ -132,7 +132,7 @@ These levels work as follows:
 
  - At the **Notify** level, the OTC is notified of a new design
    when it is available for review, via an email to the openssl-project mailing list.
-   OTC members and committers can review and comment on the design.
+   OTC members and committers and the public can review and comment on the design.
    A minimum waiting time of one week after the notification is made applies to
    ensure OTC members have the opportunity to review the design.
 
@@ -203,10 +203,10 @@ Implementation
 --------------
 
 It is not required to wait for a design document to be approved and merged
-before beginning implementation. Implementation should generally begin
-immediately. This facilitates an agile process and helps to improve the design
-document, as implementation will often lead to an improved understanding
-of the problem domain, leading in turn to an improved design document.
+before beginning implementation. Implementation can begin immediately. This
+facilitates an agile process and helps to improve the design document, as
+implementation will often lead to an improved understanding of the problem
+domain, leading in turn to an improved design document.
 
 A design document PR, or a PR implementing said design, should not be merged
 until the relevant requirements for the level of scrutiny used have been
