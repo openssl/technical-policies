@@ -46,6 +46,11 @@ existing public specifications that we claim to conform to. Where the
 documentation explicitly contradicts the specifications the documented behavior
 is what matters.
 
+A **bug fix** is also a fix of a current or near future FIPS compliance
+requirement in the FIPS module code if it does not break existing use-cases.
+(I.e., it is configurable and switched-off by default if it otherwise breaks
+something.)
+
 A **bug fix** is **not**:
 
 - performance enhancement
