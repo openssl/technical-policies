@@ -1,0 +1,18 @@
+Topic: Accept #20752 for backport to 3.1 subject to the usual review process.
+Proposed by: Pauli
+Issue link: https://github.com/openssl/openssl/pull/20752
+Opened: 2023-04-18
+Closed: 2023-04-18
+Accepted:  yes  (for: 4, against: 1, abstained: 4, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [  ]
+  Pauli      [+1]
+  Tim        [-1]
+  Hugo       [+0]
+  Richard    [+0]
+  Shane      [+0]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+1]
+  Nicola     [+0]
