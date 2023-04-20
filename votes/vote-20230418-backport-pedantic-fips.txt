@@ -6,7 +6,7 @@ Closed: 2023-04-18
 Accepted:  yes  (for: 4, against: 1, abstained: 4, not voted: 2)
 
   Dmitry     [+1]
-  Matt       [  ]
+  Matt       [+0]  # 2023-04-20
   Pauli      [+1]
   Tim        [-1]
   Hugo       [+0]
