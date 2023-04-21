@@ -1,0 +1,19 @@
+topic: Accept the design policy proposal (PR #58)
+comment: https://github.com/openssl/technical-policies/pull/58
+Proposed by Hugo.
+Public: yes
+opened: 2023-04-18
+closed: 2023-04-19
+accepted: yes (for: 6, against: 0, abstained: 4, not voted: 1)
+
+  Dmitry     [ 0]
+  Matt       [+1]  # 2023-04-20
+  Pauli      [ 0]
+  Tim        [+1]
+  Hugo       [+1]
+  Richard    [+1]  # 2023-04-19
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Matthias   [+0]
+  Nicola     [ 0]
