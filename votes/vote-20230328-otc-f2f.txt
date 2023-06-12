@@ -1,0 +1,21 @@
+topic: OTC will hold a face to face meeting in Brno on 19th-21st June 2023 open
+       to all OTC members and committers. Attendees must confirm participation by 14th
+       April including whether or not project funding is required.
+comment: https://github.com/openssl/technical-policies/pull/66
+Proposed by Tim.
+Public: yes
+opened: 2023-03-28
+closed: 2023-03-28
+accepted: yes   (for: 11, against: 0, abstained: 0, not voted: 0)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+1]
+  Matthias   [+1]
+  Nicola     [+1]
