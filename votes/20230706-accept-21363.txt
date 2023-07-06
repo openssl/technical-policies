@@ -12,7 +12,7 @@ ONE WEEK VOTE
   Dmitry     [+1]
   Matt       [+1]
   Pauli      [+1]
-  Tim        [  ]
+  Tim        [+0]   # 2023-07-07
   Hugo       [+1]
   Shane      [+1]
   Tomas      [  ]
