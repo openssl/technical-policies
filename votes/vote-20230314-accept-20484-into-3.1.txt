@@ -1,0 +1,19 @@
+Topic: Accept PR #20484 into the 3.1.0 release
+Proposed by: Tim
+Issue link: https://github.com/openssl/technical-policies/issues/64
+Public: yes
+Opened: 2023-03-14
+Closed: 2023-03-14
+Accepted: yes (for: 8, against: 0, abstained: 1, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [+1]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+1] # 2023-03-14
+  Matthias   [+0] # 2023-03-14
+  Nicola     [+0]
