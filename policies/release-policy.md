@@ -20,15 +20,15 @@ launched every April and October. Multiple releases may be active concurrently,
 resulting in overlapping release cycles. Each release is divided into the
 following phases:
 * **Planning**:
-  continuous process, provides input to the Release Definition phase.
+Continuous process, provides input to the Release Definition phase.
 * **Release Definition**:
-  defines release backlog, lasts up to 4 weeks.
+Defines release backlog, lasts up to 4 weeks.
 * **Development**:
-  execution of the release backlog, spans from 20 to 24 weeks.
+Execution of the release backlog, spans from 20 to 24 weeks.
 * **Release**:
-  addressing issues discovered by the community in pre-releases. Up to 6 weeks.
+Addressing issues discovered by the community in pre-releases. Up to 6 weeks.
 * **Support**:
-  a support phase.
+A support phase.
 
 ## Phases
 ### 1. Planning
@@ -98,14 +98,16 @@ is crucial to ensure the quality of the release and, consequently, the success.
 See [Release Requirements Policy] for details on each type of release.
 
 ### 5. Support[^3]
-  * **Full Support** - Upon the final release a one-year Full Support is
-    initiated for regular releases, and a four-year period for LTS releases.
-    During this phase, bugs and security issues are addressed and fixed
-    according to the [Stable Release Updates Policy].
-  * **Maintenance Support** - Immediately after the Full Support phase ends, the
-    Maintenance Support phase begins, lasting for one year. During this phase,
-    the primary focus is on fixing security issues, although other bugs may be
-    addressed at the discretion of OpenSSL engineering.
+  * **Full Support**:
+  Upon the final release a one-year Full Support is initiated for regular
+  releases, and a four-year period for LTS releases. During this phase, bugs and
+  security issues are addressed and fixed according to the [Stable Release
+  Updates Policy].
+  * **Maintenance Support**:
+  Immediately after the Full Support phase ends, the Maintenance Support phase
+  begins, lasting for one year. During this phase, the primary focus is on
+  fixing security issues, although other bugs may be addressed at the discretion
+  of OpenSSL engineering.
 
 [Stable Release Updates Policy]: https://www.openssl.org/policies/technical/stable-release-updates.html
 [Release Requirements Policy]: https://www.openssl.org/policies/technical/release-requirements.html
