@@ -113,11 +113,11 @@ See [Release Requirements Policy] for details on each type of release.
 [Release Requirements Policy]: https://www.openssl.org/policies/technical/release-requirements.html
 
 [^1]: Feature Acceptance Criteria - 🚧 The document is a work in progress.
-[^2]: Release Steering Committee - A group of up to six individuals, with two
-    members from OpenSSL and the remainder being specially invited
-    representatives from the community, dedicated to guiding the release cycle,
-    defining release priorities, authorizing release backlog modifications, and
-    ensuring readiness for various release phases.
+[^2]: Release Steering Committee - A group comprised of four individuals: one
+    internal member from OpenSSL, two specially invited representatives from the
+    community, and the engineering manager. This committee is dedicated to
+    guiding the release cycle, defining release priorities, authorizing release
+    backlog modifications.
 [^3]: We are currently re-evaluating our stable updates release policy. As we
     transition to time-based releases, adjustments may be necessary to maintain
     a sustainable support model.
