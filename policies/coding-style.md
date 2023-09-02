@@ -738,7 +738,30 @@ For example,
     }
 ```
 
-## Chapter 16: References
+## Chapter 16: Asserts
+
+We have 3 kind of asserts. The behaviour depends on being a debug or release build:
+| Function       | failure release | failure debug | success release | success debug |
+| -------------- | --------------- | ------------- | --------------- | ------------- |
+| assert         | nothing         | abort         | nothing         | nothing       |
+| ossl_assert    | returns 0       | abort         | returns 1       | returns 1     |
+| OPENSSL_assert | abort           | abort         | nothing         | nothing       |
+
+Use OPENSSL_assert() in the following cases:
+- In the libraries when the global state of the software is corrupted and there is no way to recover it
+- In applications, test programs and fuzzers
+
+Use ossl_assert() in the libaries when the state can be recovered and an error can be returned. Example code:
+```c
+    if (!ossl_assert(!should_not_happen)) {
+        /* push internal error onto error stack */
+        return BAD;
+    }
+```
+
+Use assert() in libraries when no error can be returned.
+
+## Chapter 17: References
 
 [The C Programming Language][3], Second Edition
 by Brian W. Kernighan and Dennis M. Ritchie.
