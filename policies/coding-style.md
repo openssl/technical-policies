@@ -743,7 +743,7 @@ For example,
 We have 3 kind of asserts. The behaviour depends on being a debug or release build:
 | Function       | failure release | failure debug | success release | success debug |
 | -------------- | --------------- | ------------- | --------------- | ------------- |
-| assert         | nothing         | abort         | nothing         | nothing       |
+| assert         | not evaluated   | abort         | not evaluated   | nothing       |
 | ossl_assert    | returns 0       | abort         | returns 1       | returns 1     |
 | OPENSSL_assert | abort           | abort         | nothing         | nothing       |
 
