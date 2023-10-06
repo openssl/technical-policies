@@ -1,0 +1,19 @@
+Topic: Add assert policy as of commit 8cd764e
+Proposed by: Tomas Mraz
+Issue link: https://github.com/openssl/technical-policies/pull/72
+Public: yes
+Opened: 2023-09-26
+Closed: 2023-10-06
+Accepted:  yes  (for: 8, against: 0, abstained: 1, not voted: 2)
+
+  Dmitry     [+1 ]
+  Matt       [+1]
+  Pauli      [ 0]
+  Tim        [  ]
+  Hugo       [  ]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+1]
+  Matthias   [+1]
+  Nicola     [+1]
