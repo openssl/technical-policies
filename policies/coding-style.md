@@ -741,6 +741,7 @@ For example,
 ## Chapter 16: Asserts
 
 We have 3 kind of asserts. The behaviour depends on being a debug or release build:
+
 | Function       | failure release | failure debug | success release | success debug |
 | -------------- | --------------- | ------------- | --------------- | ------------- |
 | assert         | not evaluated   | abort         | not evaluated   | nothing       |
