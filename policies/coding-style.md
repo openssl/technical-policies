@@ -742,11 +742,32 @@ For example,
 
 We have 3 kind of asserts. The behaviour depends on being a debug or release build:
 
-| Function       | failure release | failure debug | success release | success debug |
-| -------------- | --------------- | ------------- | --------------- | ------------- |
-| assert         | not evaluated   | abort         | not evaluated   | nothing       |
-| ossl_assert    | returns 0       | abort         | returns 1       | returns 1     |
-| OPENSSL_assert | abort           | abort         | nothing         | nothing       |
+<table>
+<tr><th>Function</td>
+    <th>failure release</td>
+    <th>failure debug</td>
+    <th>success release</td>
+    <th>success debug</td>
+</tr>
+<tr><td>assert</td>
+    <td>not evaluated</td>
+    <td>abort</td>
+    <td>not evaluated</td>
+    <td>nothing</td>
+</tr>
+<tr><td>ossl_assert</td>
+    <td>returns 0</td>
+    <td>abort</td>
+    <td>returns 1</td>
+    <td>returns 1</td>
+</tr>
+<tr><td>OPENSSL_assert</td>
+    <td>abort</td>
+    <td>abort</td>
+    <td>nothing</td>
+    <td>nothing</td>
+</tr>
+</table>
 
 Use OPENSSL_assert() **only** in the following cases:
 - In the libraries when the global state of the software is corrupted and there is no way to recover it
