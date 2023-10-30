@@ -743,11 +743,11 @@ For example,
 We have 3 kind of asserts. The behaviour depends on being a debug or release build:
 
 <table>
-<tr><th>Function</td>
-    <th>failure release</td>
-    <th>failure debug</td>
-    <th>success release</td>
-    <th>success debug</td>
+<tr><th>Function</th>
+    <th>failure release</th>
+    <th>failure debug</th>
+    <th>success release</th>
+    <th>success debug</th>
 </tr>
 <tr><td>assert</td>
     <td>not evaluated</td>
