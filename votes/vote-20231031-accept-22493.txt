@@ -1,0 +1,20 @@
+topic: Accept #22493 for 3.2 (including the RNG changes)
+   subject to normal review process.
+comment: https://github.com/openssl/openssl/pull/22493
+Proposed by Hugo.
+Public: yes
+opened: 2023-10-31
+closed: 2023-10-31
+accepted:  yes  (for: 4, against: 1, abstained: 4, not voted: 2)
+
+Dmitry     [ 0]
+Matt       [+1]
+Pauli      [+1]
+Tim        [-1]
+Hugo       [+0]
+Richard    [ 0]
+Shane      [ 0]
+Tomas      [+1]
+Kurt       [  ]
+Matthias   [  ]
+Nicola     [+1]
