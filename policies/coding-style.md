@@ -402,7 +402,7 @@ as follows:
 
 - Unconditional statements are easier to understand and follow
 - It can reduce excessive control structures and nesting
-- It avoids errors caused by failing to updated multiple exit points when the code is modified
+- It avoids errors caused by failing to update multiple exit points when the code is modified
 - It saves the compiler work to optimize redundant code away ;)
 
 For example:
