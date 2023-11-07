@@ -10,8 +10,8 @@ ways, or removed entirely at any time, including between releases.
 
 An experimental feature is not enabled by default and must be explicitly enabled
 at build time in order to be used. The enable flag to enable an experimental
-feature must have the form `enable-unstable-XXX`. The corresponding `ifdef`
-shall have the form `OPENSSL_NO_UNSTABLE_XXX`.
+feature must have the form `enable-experimental-XXX`. The corresponding `ifdef`
+shall have the form `OPENSSL_NO_EXPERIMENTAL_XXX`.
 
 A prominent warning should be issued by the configure script if any experimental
 feature is enabled, with a link to a webpage where people can learn more about
@@ -21,6 +21,12 @@ Experimental features may have associated documentation. This documentation is
 not built by default unless the corresponding experimental feature is enabled.
 Man pages for experimental features shall feature a prominent warning that the
 man page relates to an experimental feature.
+
+New internal header files for experimental features can be placed in `internal/`
+as usual. New public header files for experimental features should be named
+`<experimental/XXX.h>`. Such headers shall only be copied at install time if the
+experimental feature in question is enabled, and should have their contents
+guarded by `ifdef` wherever feasible.
 
 Experimental features exist to support the release engineering process where the
 use of a feature branch is not feasible or desirable. Feature branches should be
@@ -35,8 +41,8 @@ under the security process.
 An experimental feature may have an associated feature scope definition
 document, which is a Markdown file under `doc/experimental-features` which
 provides any relevant context about the feature. In particular, it may clarify
-what is and is not part of the experimental feature (and therefore unstable)
-where this is not automatically implied via the use of build-time flags,
+what is and is not part of the experimental feature (and therefore subject to
+change) where this is not automatically implied via the use of build-time flags,
 `ifdefs`, etc. This document is authoritative for the purposes of what
 constitutes an experimental feature, subject to this policy.
 
