@@ -24,9 +24,9 @@ man page relates to an experimental feature.
 
 New internal header files for experimental features can be placed in `internal/`
 as usual. New public header files for experimental features should be named
-`<experimental/XXX.h>`. Such headers shall only be copied at install time if the
-experimental feature in question is enabled, and should have their contents
-guarded by `ifdef` wherever feasible.
+`<openssl/experimental/XXX.h>`. Such headers shall only be copied at install
+time if the experimental feature in question is enabled, and should have their
+contents guarded by `ifdef` wherever feasible.
 
 Experimental features exist to support the release engineering process where the
 use of a feature branch is not feasible or desirable. Feature branches should be
