@@ -1,7 +1,7 @@
 Stable Release Updates Policy
 =============================
 
-This policy covers allowed changes on stable release branches.
+This policy covers allowed changes on release branches.
 
 Definitions
 -----------
@@ -68,8 +68,8 @@ An **end-user documentation** is **not**:
 - comments in the code (including public header files)
 - internal documentation (doc/internal)
 
-Changes allowed in stable releases
-----------------------------------
+Changes allowed in stable releases and pre-releases after the first beta
+------------------------------------------------------------------------
 
 No API or ABI breaking changes are allowed in a minor or patch release.
 
@@ -94,3 +94,6 @@ Patch release commits are obviously allowed (updates to CHANGES.md, NEWS.md,
 version, and copyright updates).
 
 **Exceptions to this policy require OTC approval.**
+
+*The policy for changes allowed in stable releases applies also to
+pre-release branches after the first beta release.*
