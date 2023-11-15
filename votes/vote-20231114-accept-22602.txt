@@ -1,0 +1,20 @@
+Topic: Accept PR #22602
+Comment: https://github.com/openssl/openssl/pull/22602
+Proposed by Matt.
+Issue link: https://github.com/openssl/technical-policies/issues/81
+Public: yes
+Opened: 2023-11-14
+Closed: 2023-11-14
+Accepted:  no  (for: 1, against: 3, abstained: 5, not voted: 2)
+
+  Dmitry     [ 0]
+  Matt       [-1]
+  Pauli      [ 0]     # 2023-11-14
+  Tim        [ 0]
+  Hugo       [ 0]
+  Richard    [+1]
+  Shane      [-1]
+  Tomas      [-1]
+  Kurt       [  ]
+  Matthias   [-0]
+  Nicola     [-0]
