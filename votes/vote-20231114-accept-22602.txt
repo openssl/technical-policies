@@ -15,6 +15,6 @@ Accepted:  no  (for: 1, against: 3, abstained: 5, not voted: 2)
   Richard    [+1]
   Shane      [-1]
   Tomas      [-1]
-  Kurt       [  ]
+  Kurt       [ 0]     # 2023-11-18
   Matthias   [-0]
   Nicola     [-0]
