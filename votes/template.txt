@@ -8,7 +8,6 @@ Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
 
   Dmitry     [  ]
   Matt       [  ]
-  Pauli      [  ]
   Tim        [  ]
   Hugo       [  ]
   Richard    [  ]
