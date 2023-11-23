@@ -8,7 +8,7 @@ all platforms in the master branch.
 New assembler optimisations are never acceptable for any platform or provider in
 a [stable release] branch.
 
-Updates to existing assembler optimistations in a stable release branch are only
+Updates to existing assembler optimisations in a stable release branch are only
 acceptable where such updates would be allowed under the
 [stable release update policy].
 
