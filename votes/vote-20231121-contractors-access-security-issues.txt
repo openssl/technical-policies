@@ -1,0 +1,20 @@
+Topic: OTC extends standing approval for contractors to have access to the
+security repository and security mailing list when approved at the discretion of
+the engineering manager.
+Proposed by: Nicola
+Issue link: https://github.com/openssl/technical-policies/issues/84
+Public: yes
+Opened: 2023-11-21
+Closed: 2023-11-21
+Accepted:  yes  (for: 9, against: 0, abstained: 0, not voted: 1)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Tim        [+1]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+1]     # 2023-11-24
+  Matthias   [+1]
+  Nicola     [+1]
