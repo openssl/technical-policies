@@ -1,0 +1,14 @@
+###
+name: Automatic web build
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build_web_site:
+    runs-on: [ web-builder-22.04 ]
+    steps:
+      - name: Build_web
+        run: /scripts/build_web.sh
+      
+
