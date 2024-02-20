@@ -1,0 +1,17 @@
+Topic: #23394 (without the NonStop changes) can be backported to 3.2, 3.1 and 3.0
+Proposed by: Hugo
+Issue link: https://github.com/openssl/technical-policies/issues/89
+Public: yes
+Opened: 2024-02-13
+Closed: 2024-02-13
+Accepted:  yes  (for: 3, against: 0, abstained: 5, not voted: 1)
+
+  Dmitry     [ 0]
+  Matt       [ 0]
+  Tim        [+0]
+  Hugo       [+0]
+  Richard    [+1]
+  Shane      [ 0]
+  Tomas      [+1]
+  Kurt       [+1]
+  Nicola     [+0]    # 2023-02-13
