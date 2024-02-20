@@ -1,0 +1,21 @@
+Topic: For OpenSSL-3.2 release, we have relaxed the requirement of "There are no
+outstanding untriaged Coverity issues" as there has been an update introduced to
+scan.coverity.org on 18-Nov-2023 that has identified 30 potential issues. We
+will document this as a known issue. OTC approves 3.2.0 as ready for release.
+Proposed by: Tim
+Issue link: https://github.com/openssl/technical-policies/issues/83
+Public: yes
+Opened: 2023-11-21
+Closed: 2023-11-21
+Accepted:  yes  (for: 9, against: 0, abstained: 0, not voted: 1)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Tim        [+1]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [ 0]    # 2023-11-29
+  Matthias   [+1]
+  Nicola     [+1]

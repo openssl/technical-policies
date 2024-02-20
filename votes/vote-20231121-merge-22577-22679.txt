@@ -1,0 +1,19 @@
+Topic: OTC agrees that #22577 and #22679 can merge immediately without waiting
+for the 24 hour timer and should go into 3.2.0.
+Proposed by: Hugo
+Issue link: https://github.com/openssl/technical-policies/issues/82
+Public: yes
+Opened: 2023-11-21
+Closed: 2023-11-21
+Accepted:  yes (for: 4, against: 0, abstained: 5, not voted: 1)
+
+  Dmitry     [ 0]
+  Matt       [+1]
+  Tim        [ 0]
+  Hugo       [+0]
+  Richard    [ 0]
+  Shane      [-0]
+  Tomas      [+1]
+  Kurt       [ 0]      # 2023-11-29
+  Matthias   [+1]
+  Nicola     [+1]

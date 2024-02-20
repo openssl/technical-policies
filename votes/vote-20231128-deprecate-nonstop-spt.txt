@@ -1,0 +1,20 @@
+Topic: Support for the NonStop SPT threading model and SPT build configs
+       can be removed from 3.2 branch subject to no objections being
+       received from the community within two weeks after this vote passing
+Proposed by: Tim
+Issue link: https://github.com/openssl/technical-policies/issues/86
+Public: yes
+Opened: 2023-11-28
+Closed: 2023-11-28
+Accepted:  yes  (for: 9, against: 0, abstained: 0, not voted: 1)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Tim        [+1]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+1]    # 2023-11-29
+  Matthias   [+1]
+  Nicola     [+1]

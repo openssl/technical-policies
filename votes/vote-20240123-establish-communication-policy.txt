@@ -1,0 +1,17 @@
+Topic: The OTC should establish a public communications policy for OTC members
+Proposed by: Tim
+Issue link: https://github.com/openssl/technical-policies/issues/88
+Public: yes
+Opened: 2024-01-23
+Closed: 2024-01-25
+Accepted: no (for: 2, against: 4, abstained: 3, not voted: 0)
+
+  Dmitry     [-1]
+  Matt       [ 0]
+  Tim        [+1]
+  Hugo       [-1]
+  Richard    [+0]
+  Shane      [+0]
+  Tomas      [+1]
+  Kurt       [-1]
+  Nicola     [-1]
