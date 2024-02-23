@@ -14,4 +14,5 @@ Accepted:  yes  (for: 3, against: 0, abstained: 5, not voted: 1)
   Shane      [ 0]
   Tomas      [+1]
   Kurt       [+1]
-  Nicola     [+0]    # 2023-02-13
+  Nicola     [+0]    # 2024-02-13
+  Pauli      [ 0]    # 2024-02-23
