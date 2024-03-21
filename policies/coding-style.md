@@ -770,6 +770,7 @@ We have 3 kind of asserts. The behaviour depends on being a debug or release bui
 </table>
 
 Use OPENSSL_assert() **only** in the following cases:
+
 - In the libraries when the global state of the software is corrupted and there is no way to recover it
 - In applications, test programs and fuzzers
 
