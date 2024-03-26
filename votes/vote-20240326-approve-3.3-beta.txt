@@ -1,0 +1,22 @@
+Topic: OTC approve the source is ready for 3.3 beta release subject to the following
+occuring prior to beta release:
+- req return value change must be merged (#23773)
+- RCU test should be disabled for Mac platform (#23967)
+- CHANGES and NEWS should be updated
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/issues/92
+Public: yes
+Opened: 2024-03-26
+Closed: 2024-03-26
+Accepted:  yes  (for: 5, against: 0, abstained: 3, not voted: 2)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [  ]
+  Tim        [+1]
+  Hugo       [+0]
+  Richard    [+0]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [+0]
+  Nicola     [  ]
