@@ -1,0 +1,19 @@
+Topic: The EVP_DigestFinal() and EVP_Digest() functions should fail for SHAKE-128 and
+SHAKE-256 unless the xoflen param is set by the application.
+Proposed by: Tomas Mraz
+Issue link: https://github.com/openssl/technical-policies/issues/93
+Public: yes
+Opened: 2024-04-23
+Closed: 2024-04-23
+Accepted:  yes  (for: 6, against: 0, abstained: 1, not voted: 3)
+
+  Dmitry     [+1]
+  Matt       [ 0]
+  Pauli      [+1]
+  Tim        [  ]
+  Hugo       [  ]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Nicola     [+1]
