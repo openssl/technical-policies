@@ -19,4 +19,4 @@ Accepted:  yes  (for: 5, against: 0, abstained: 3, not voted: 2)
   Shane      [+1]
   Tomas      [+1]
   Kurt       [+0]
-  Nicola     [  ]
+  Nicola     [+0]   # 2024-04-04
