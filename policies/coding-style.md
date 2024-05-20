@@ -464,6 +464,13 @@ derived types. To this end, use just one data declaration per line (no
 commas for multiple data declarations). This leaves you room for a small
 comment on each item, explaining its use.
 
+In an effort to better translate our source code into documentation that is more
+easily understandable to future developers, please also consider adding
+Doxygen style comments to any function/data structures/macros/etc that you alter
+or create in the development of patches for OpenSSL.  The intent is to provide a
+more robust set of documentation for our entire code base (with particular focus
+on our internal functions and data structures).
+
 ## Chapter 9: Macros and Enums
 
 Names of macros defining constants and labels in enums are in uppercase:
