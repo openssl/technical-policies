@@ -465,7 +465,7 @@ commas for multiple data declarations). This leaves you room for a small
 comment on each item, explaining its use.
 
 In an effort to better translate our source code into documentation that is more
-easily understandable to future developers, please also consider for adding
+easily understandable to future developers, please also consider adding
 Doxygen style comments to any function/data structures/macros/etc that you alter
 or create in the development of patches for OpenSSL.
 
