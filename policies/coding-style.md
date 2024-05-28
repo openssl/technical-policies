@@ -469,7 +469,60 @@ easily understandable to future developers, please also consider adding
 Doxygen style comments to any function/data structures/macros/etc that you alter
 or create in the development of patches for OpenSSL.  The intent is to provide a
 more robust set of documentation for our entire code base (with particular focus
-on our internal functions and data structures).
+on our internal functions and data structures).  Please use the following sample
+code as a guideline:
+
+```c
+/*
+ * Copyright 2024 The OpenSSL Project Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License 2.0 (the "License").  You may not use
+ * this file except in compliance with the License.  You can obtain a copy
+ * in the file LICENSE in the source distribution or at
+ * https://www.openssl.org/source/license.html
+ */
+
+/**
+ * \file doxysample.c
+ * This is an brief file description that you may add
+ * Subsequent lines contain more detailed information about what you will
+ * find defined in this file.  Its not currently required that you add a file
+ * description, but its available if you like
+ */
+
+ /**
+  * \def MAX(x, y)
+  * document a macro that returns the maximum of two inputs
+  * \param x integer input value
+  * \param y interger input value
+  * \returns the maximum of x and y
+  */
+  #define MAX(x, y) (x > y ? x : y)
+
+/**
+ * \struct foo_st
+ * \brief description of the foo_st struct
+ * Optional more detailed description here
+ */
+typedef foo_st {
+    int a; /**< Describe the a field here */
+    char b; /**< Describe the b field here */
+} FOO;
+
+
+/**
+ * \brief Describe the function add briefly
+ * Add a more detailed description here, like sums two inputs and returns the
+ * results
+ * \param a - input integer to add
+ * \param b - input integer to add
+ * \returns the sum of a and b
+ */
+ int add(int a, int b)
+{
+    return a + b;
+}
+```
 
 ## Chapter 9: Macros and Enums
 
