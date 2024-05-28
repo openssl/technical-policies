@@ -487,7 +487,7 @@ code as a guideline:
  * This is a brief file description that you may add
  * Subsequent lines contain more detailed information about what you will
  * find defined in this file.  It is not currently required that you add a file
- * description, but its available if you like.
+ * description, but it's available if you like.
  */
 
  /**
@@ -512,8 +512,8 @@ typedef foo_st {
 
 /**
  * \brief Describe the function add briefly.
- * Add a more detailed description here, like sums two inputs and returns the.
- * results
+ * Add a more detailed description here, like sums two inputs and returns the
+ * results.
  * \param a - input integer to add
  * \param b - input integer to add
  * \returns the sum of a and b
