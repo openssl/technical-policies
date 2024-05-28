@@ -1,0 +1,19 @@
+Topic: OTC approve the FIPS indicator design presented in PR#23609 subject to the
+normal review process
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/issues/23609
+Public: yes
+Opened: 2024-05-28
+Closed: 2024-05-28
+Accepted:  yes  (for: 6, against: 0, abstained: 0, not voted: 0)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [  ]
+  Tim        [+1]
+  Hugo       [  ]
+  Richard    [  ]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Nicola     [+1]
