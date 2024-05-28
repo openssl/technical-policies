@@ -484,25 +484,25 @@ code as a guideline:
 
 /**
  * \file doxysample.c
- * This is an brief file description that you may add
+ * This is a brief file description that you may add
  * Subsequent lines contain more detailed information about what you will
- * find defined in this file.  Its not currently required that you add a file
- * description, but its available if you like
+ * find defined in this file.  It is not currently required that you add a file
+ * description, but its available if you like.
  */
 
  /**
   * \def MAX(x, y)
-  * document a macro that returns the maximum of two inputs
+  * document a macro that returns the maximum of two inputs.
   * \param x integer input value
-  * \param y interger input value
+  * \param y integer input value
   * \returns the maximum of x and y
   */
   #define MAX(x, y) (x > y ? x : y)
 
 /**
  * \struct foo_st
- * \brief description of the foo_st struct
- * Optional more detailed description here
+ * \brief description of the foo_st struct.
+ * Optional more detailed description here.
  */
 typedef foo_st {
     int a; /**< Describe the a field here */
@@ -511,8 +511,8 @@ typedef foo_st {
 
 
 /**
- * \brief Describe the function add briefly
- * Add a more detailed description here, like sums two inputs and returns the
+ * \brief Describe the function add briefly.
+ * Add a more detailed description here, like sums two inputs and returns the.
  * results
  * \param a - input integer to add
  * \param b - input integer to add
