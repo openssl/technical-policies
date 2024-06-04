@@ -1,0 +1,19 @@
+Topic: Allow the backport of the AES-XTS optimization on Power platform as per
+#24531 to all branches back to 3.0 subject to the standard review process
+normal review process
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/openssl/issues/96
+Public: yes
+Opened: 2024-06-04
+Closed: 2024-06-04
+Accepted:  yes  (for: 4, against: 0, abstained: 3, not voted: 2)
+
+  Dmitry     [ 0]
+  Matt       [+1]
+  Pauli      [+1]
+  Tim        [ 0]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [ 0]
+  Kurt       [  ]
+  Nicola     [  ]
