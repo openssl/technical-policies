@@ -1,5 +1,5 @@
 ###
-name: Automatic web build
+name: Automatic web build lu
 on:
   push:
     branches:
