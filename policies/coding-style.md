@@ -483,7 +483,7 @@ code as a guideline:
  */
 
 /**
- * \file doxysample.c
+ * @file doxysample.c
  * This is a brief file description that you may add
  * Subsequent lines contain more detailed information about what you will
  * find defined in this file.  It is not currently required that you add a file
@@ -491,17 +491,17 @@ code as a guideline:
  */
 
  /**
-  * \def MAX(x, y)
+  * @def MAX(x, y)
   * document a macro that returns the maximum of two inputs.
-  * \param x integer input value
-  * \param y integer input value
-  * \returns the maximum of x and y
+  * @param x integer input value
+  * @param y integer input value
+  * @returns the maximum of x and y
   */
   #define MAX(x, y) (x > y ? x : y)
 
 /**
- * \struct foo_st
- * \brief description of the foo_st struct.
+ * @struct foo_st
+ * @brief description of the foo_st struct.
  * Optional more detailed description here.
  */
 typedef foo_st {
