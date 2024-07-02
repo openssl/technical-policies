@@ -1,0 +1,17 @@
+Topic: Add Doxygen comment requirement to coding style as of commit 184d82f
+Proposed by: Tomas Mraz
+Issue link: https://github.com/openssl/technical-policies/pull/94
+Public: yes
+Opened: 2024-06-18
+Closed: 2024-07-02
+Accepted:  yes  (for: 4, against: 1, abstained: 3, not voted: 1)
+
+  Dmitry     [ 0]
+  Matt       [+1]
+  Pauli      [-1]
+  Tim        [+1]
+  Richard    [ 0]
+  Shane      [+1]
+  Tomas      [ 0]
+  Kurt       [+1]
+  Nicola     [  ]
