@@ -14,5 +14,5 @@ Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
   Shane      [  ]
   Tomas      [  ]
   Kurt       [  ]
-  Matthias   [  ]
+  Paul       [  ]
   Nicola     [  ]
