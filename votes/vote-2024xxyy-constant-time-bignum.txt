@@ -1,0 +1,24 @@
+Topic: The OTC recommends that the implementation of constant time BIGNUM
+       gets high priority.
+Comment: This was raised over six years ago by David Benjamin in #6640.
+         Unfortunately, engineering efforts have continued to be diverted
+         towards fixing timing issues on an ad-hoc basis.
+Proposed by: Paul
+Issue link: https://github.com/openssl/technical-policies/pull/101
+Public: yes
+Opened: YYYY-MM-DD
+Closed: YYYY-MM-DD
+Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+
+  Dmitry     [  ]
+  Matt       [  ]
+  Paul       [  ]
+  Tim        [  ]
+  Hugo       [  ]
+  Richard    [  ]
+  Shane      [  ]
+  Tomas      [  ]
+  Kurt       [  ]
+  Nicola     [  ]
+
+
