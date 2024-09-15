@@ -6,13 +6,13 @@ Comment: This was raised over six years ago by David Benjamin in #6640.
 Proposed by: Paul
 Issue link: https://github.com/openssl/technical-policies/pull/101
 Public: yes
-Opened: YYYY-MM-DD
+Opened: 2024-09-16
 Closed: YYYY-MM-DD
 Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
 
   Dmitry     [  ]
   Matt       [  ]
-  Paul       [  ]
+  Paul       [+1]
   Tim        [  ]
   Hugo       [  ]
   Richard    [  ]
