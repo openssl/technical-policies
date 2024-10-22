@@ -1,0 +1,19 @@
+Topic: The source is approved for release subject to a manual run of coveralls
+       to confirm that the coverage is no worse than the previous release
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/issues/104
+Public: yes
+Opened: 2024-10-22
+Closed: 2024-10-22
+Accepted:  yes  (for: 7, against: 1, abstained: 1, not voted: 1)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Pauli      [-1]
+  Tim        [+1]
+  Hugo       [ 0]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Nicola     [+1]
