@@ -17,11 +17,11 @@ Indentation is four space characters. Do not use the tab character.
 Pre-processor directives use one space for indents:
 
 ```c
-    #if
-    # define
-    #else
-    # define
-    #endif
+#if
+# define
+#else
+# define
+#endif
 ```
 
 ## Chapter 2: Breaking long lines and strings
@@ -29,8 +29,8 @@ Pre-processor directives use one space for indents:
 Don't put multiple statements, or assignments, on a single line.
 
 ```c
-    if (condition) do_this();
-    do_something_everytime();
+if (condition) do_this();
+do_something_everytime();
 ```
 
 The limit on the length of lines is _80_ columns. Statements longer
@@ -50,31 +50,31 @@ following Kernighan and Ritchie, is to put the opening brace last on the
 line, and the closing brace first:
 
 ```c
-    if (x is true) {
-        we do y
-    }
+if (x is true) {
+    we do y
+}
 ```
 
 This applies to all non-function statement blocks (`if`, `switch`, `for`,
 `while`, `do`):
 
 ```c
-    switch (suffix) {
-    case 'G':
-    case 'g':
-        mem <<= 30;
-        break;
-    case 'M':
-    case 'm':
-        mem <<= 20;
-        break;
-    case 'K':
-    case 'k':
-        mem <<= 10;
-        /* fall through */
-    default:
-        break;
-    }
+switch (suffix) {
+case 'G':
+case 'g':
+    mem <<= 30;
+    break;
+case 'M':
+case 'm':
+    mem <<= 20;
+    break;
+case 'K':
+case 'k':
+    mem <<= 10;
+    /* fall through */
+default:
+    break;
+}
 ```
 
 Note, from the above example, that the way to indent a switch statement
@@ -85,10 +85,10 @@ There is one special case, however. Functions have the
 opening brace at the beginning of the next line:
 
 ```c
-    int function(int x)
-    {
-        body of function
-    }
+int function(int x)
+{
+    body of function
+}
 ```
 
 Note that the closing brace is empty on a line of its own, __except__ in the
@@ -96,21 +96,21 @@ cases where it is followed by a continuation of the same statement, such
 as a `while` in a do-statement or an `else` in an if-statement, like this:
 
 ```c
-    do {
-        ...
-    } while (condition);
+do {
+    ...
+} while (condition);
 ```
 
 and
 
 ```c
-    if (x == y) {
-        ...
-    } else if (x > y) {
-        ...
-    } else {
-        ...
-    }
+if (x == y) {
+    ...
+} else if (x > y) {
+    ...
+} else {
+    ...
+}
 ```
 
 In addition to being consistent with K&R, note that that this brace-placement
@@ -121,41 +121,41 @@ supply of new-lines on your screen is not a renewable resource (think
 Do not unnecessarily use braces around a single statement:
 
 ```c
-    if (condition)
-        action();
+if (condition)
+    action();
 ```
 
 and
 
 ```c
-    if (condition)
-        do_this();
-    else
-        do_that();
+if (condition)
+    do_this();
+else
+    do_that();
 ```
 
 If one of the branches is a compound statement, then use braces on both parts:
 
 ```c
-    if (condition) {
-        do_this();
-        do_that();
-    } else {
-        otherwise();
-    }
+if (condition) {
+    do_this();
+    do_that();
+} else {
+    otherwise();
+}
 ```
 
 Nested compound statements should often have braces for clarity, particularly
 to avoid the dangling-else problem:
 
 ```c
-    if (condition) {
-        do_this();
-        if (anothertest)
-            do_that();
-    } else {
-        otherwise();
-    }
+if (condition) {
+    do_this();
+    if (anothertest)
+        do_that();
+} else {
+    otherwise();
+}
 ```
 
 ### Chapter 3.1: Spaces
@@ -164,7 +164,7 @@ OpenSSL style for use of spaces depends (mostly) on whether the name is
 a function or keyword. Use a space after most keywords:
 
 ```c
-    if, switch, case, for, do, while, return
+if, switch, case, for, do, while, return
 ```
 
 Do not use a space after `sizeof`, `typeof`, `alignof`, or `__attribute__`.
@@ -174,30 +174,30 @@ use a variable when at all possible, to ensure that type changes are
 properly reflected:
 
 ```c
-    SOMETYPE *p = OPENSSL_malloc(sizeof(*p) * num_of_elements);
+SOMETYPE *p = OPENSSL_malloc(sizeof(*p) * num_of_elements);
 ```
 
 Do not add spaces around the inside of parenthesized expressions.
 This example is wrong:
 
 ```c
-    s = sizeof( struct file );
+s = sizeof( struct file );
 ```
 
 When declaring pointer data or a function that returns a pointer type,
 the asterisk goes next to the data or function name, and not the type:
 
 ```c
-    char *openssl_banner;
-    unsigned long long memparse(char *ptr, char **retptr);
-    char *match_strdup(substring_t *s);
+char *openssl_banner;
+unsigned long long memparse(char *ptr, char **retptr);
+char *match_strdup(substring_t *s);
 ```
 
 Use one space on either side of binary and ternary operators,
 such as this partial list:
 
 ```c
-    =  +  -  <  >  *  /  %  |  &  ^  <=  >=  ==  !=  ?  : +=
+=  +  -  <  >  *  /  %  |  &  ^  <=  >=  ==  !=  ?  : +=
 ```
 
 Put a space after commas
@@ -206,26 +206,27 @@ and after semicolons in `for` statements, but not in `for (;;)`.
 Do not put a space after unary operators:
 
 ```c
-    &  *  +  -  ~  !  defined
+&  *  +  -  ~  !  defined
 ```
 
 Do not put a space before the postfix increment and decrement unary
 operators or after the prefix increment and decrement unary operators:
 
 ```c
-    foo++
-    --bar
+foo++
+--bar
 ```
 
 Do not put a space around the `.` and `->` structure member operators:
 
 ```c
-    foo.bar
-    foo->bar
+foo.bar
+foo->bar
 ```
 
 Do not use multiple consecutive spaces except in comments,
 for indentation, and for multi-line alignment of definitions, e.g.:
+
 ```c
 #define FOO_INVALID  -1   /* invalid or inconsistent arguments */
 #define FOO_INTERNAL 0    /* Internal error, most likely malloc */
@@ -301,7 +302,7 @@ OpenSSL uses typedef's extensively. For structures, they are all uppercase
 and are usually declared like this:
 
 ```c
-    typedef struct name_st NAME;
+typedef struct name_st NAME;
 ```
 
 For examples, look in [types.h][7], but note that there are many exceptions
@@ -408,26 +409,26 @@ as follows:
 For example:
 
 ```c
-    int fun(int a)
-    {
-        int result = 0;
-        char *buffer = OPENSSL_malloc(SIZE);
+int fun(int a)
+{
+    int result = 0;
+    char *buffer = OPENSSL_malloc(SIZE);
 
-        if (buffer == NULL)
-            return -1;
+    if (buffer == NULL)
+        return -1;
 
-        if (condition1) {
-            while (loop1) {
-                ...
-            }
-            result = 1;
-            goto out;
+    if (condition1) {
+        while (loop1) {
+            ...
         }
-        ...
-    out:
-        OPENSSL_free(buffer);
-        return result;
+        result = 1;
+        goto out;
     }
+    ...
+out:
+    OPENSSL_free(buffer);
+    return result;
+}
 ```
 
 ## Chapter 8: Commenting
@@ -446,14 +447,14 @@ written code. You want your comments to tell WHAT your code does, not HOW.
 The preferred style for long (multi-line) comments is:
 
 ```c
-    /*-
-     * This is the preferred style for multi-line
-     * comments in the OpenSSL source code.
-     * Please use it consistently.
-     *
-     * Description:  A column of asterisks on the left side,
-     * with beginning and ending almost-blank lines.
-     */
+/*-
+ * This is the preferred style for multi-line
+ * comments in the OpenSSL source code.
+ * Please use it consistently.
+ *
+ * Description:  A column of asterisks on the left side,
+ * with beginning and ending almost-blank lines.
+ */
 ```
 
 Note the initial hyphen to prevent indent from modifying the comment.
@@ -529,7 +530,7 @@ typedef foo_st {
 Names of macros defining constants and labels in enums are in uppercase:
 
 ```c
-    #define CONSTANT 0x12345
+#define CONSTANT 0x12345
 ```
 
 Enums are preferred when defining several related constants.  Note, however,
@@ -542,27 +543,27 @@ macros resembling functions.
 Macros with multiple statements should be enclosed in a do - while block:
 
 ```c
-    #define macrofun(a, b, c)   \
-        do {                    \
-            if (a == 5)         \
-                do_this(b, c);  \
-        } while (0)
+#define macrofun(a, b, c)   \
+    do {                    \
+        if (a == 5)         \
+            do_this(b, c);  \
+    } while (0)
 ```
 
 Do not write macros that affect control flow:
 
 ```c
-    #define FOO(x)                 \
-        do {                       \
-            if (blah(x) < 0)       \
-                return -EBUGGERED; \
-        } while(0)
+#define FOO(x)                 \
+    do {                       \
+        if (blah(x) < 0)       \
+            return -EBUGGERED; \
+    } while(0)
 ```
 
 Do not write macros that depend on having a local variable with a magic name:
 
 ```c
-    #define FOO(val) bar(index, val)
+#define FOO(val) bar(index, val)
 ```
 
 It is confusing to the reader and is prone to breakage from seemingly
@@ -571,7 +572,7 @@ innocent changes.
 Do not write macros that are l-values:
 
 ```c
-    FOO(x) = y
+FOO(x) = y
 ```
 
 This will cause problems if, e.g., FOO becomes an inline function.
@@ -581,15 +582,16 @@ Macros defining an expression must enclose the expression in parentheses
 unless the expression is a literal or a function application:
 
 ```c
-    #define SOME_LITERAL 0x4000
-    #define CONSTEXP (SOME_LITERAL | 3)
-    #define CONSTFUN foo(0, CONSTEXP)
+#define SOME_LITERAL 0x4000
+#define CONSTEXP (SOME_LITERAL | 3)
+#define CONSTFUN foo(0, CONSTEXP)
 ```
 
 Beware of similar issues with macros using parameters.
 Put parentheses around uses of macro arguments
 unless they are passed on as-is to a further macro or function.
 For example,
+
 ```c
 #define MACRO(a,b) ((a) * func(a, b))
 ```
@@ -640,17 +642,17 @@ lines marked like this:
 Or like this:
 
 ```c
-    /*
-    Local Variables:
-    compile-command: "gcc -DMAGIC_DEBUG_FLAG foo.c"
-    End:
-    */
+/*
+Local Variables:
+compile-command: "gcc -DMAGIC_DEBUG_FLAG foo.c"
+End:
+*/
 ```
 
 Vim interprets markers that look like this:
 
 ```c
-    /* vim:set sw=8 noet */
+/* vim:set sw=8 noet */
 ```
 
 Do not include any of these in source files. People have their own personal
@@ -680,9 +682,9 @@ string, and end each string except the last with `\n\t` to properly indent
 the next instruction in the assembly output:
 
 ```c
-        asm ("magic %reg1, #42\n\t"
-             "more_magic %reg2, %reg3"
-             : /* outputs */ : /* inputs */ : /* clobbers */);
+asm ("magic %reg1, #42\n\t"
+     "more_magic %reg2, %reg3"
+     : /* outputs */ : /* inputs */ : /* clobbers */);
 ```
 
 Large, non-trivial assembly functions go in pure assembly modules, with
@@ -712,12 +714,15 @@ used on and therefore should be avoided.
 
 Avoid needless parentheses as far as reasonable.
 For example, do not write
+
 ```c
-    if ((p == NULL) && (!f(((2 * x) + y) == (z++))))
+if ((p == NULL) && (!f(((2 * x) + y) == (z++))))
 ```
+
 but
+
 ```c
-    if (p == NULL && !f(2 * x + y == z++)).
+if (p == NULL && !f(2 * x + y == z++)).
 ```
 
 For clarity, always put parentheses
@@ -725,10 +730,11 @@ when mixing the logical `&&` and `||` operators,
 mixing comparison operators like `<=` and `==`,
 or mixing bitwise operators like `&` and `|`.
 For example,
+
 ```c
-    if ((a && b) || c)
-    if ((a <= b) == ((c >= d) != (e < f)))
-    x = (a & b) ^ (c | d)
+if ((a && b) || c)
+if ((a <= b) == ((c >= d) != (e < f)))
+x = (a & b) ^ (c | d)
 ```
 
 Regarding parentheses in macro definitions see the
@@ -737,30 +743,37 @@ Regarding parentheses in macro definitions see the
 In comparisons with constants (including `NULL` and other constant macros)
 place the constant on the right-hand side of the comparison operator.
 For example,
+
 ```c
-    while (i++ < 10 && p != NULL)
+while (i++ < 10 && p != NULL)
 ```
 
 Do not use implicit checks for
 numbers (not) being `0` or pointers (not) being `NULL`.
 For example, do not write
+
 ```c
-    if (i)
-    if (!(x & MASK))
-    if (!strcmp(a, "FOO"))
-    if (!(p = BN_new()))
+if (i)
+if (!(x & MASK))
+if (!strcmp(a, "FOO"))
+if (!(p = BN_new()))
 ```
+
 but do this instead:
+
 ```c
-    if (i != 0)
-    if ((x & MASK) == 0)
-    if (strcmp(a, "FOO") == 0)
-    if ((p = BN_new()) == NULL)
+if (i != 0)
+if ((x & MASK) == 0)
+if (strcmp(a, "FOO") == 0)
+if ((p = BN_new()) == NULL)
 ```
+
 Boolean values shall be used directly as usual, e.g.,
+
 ```c
 if (check(x) && !success(y))
 ```
+
 Note: Many functions can return `0` or a negative value on error
 and the Boolean forms need to be used with care.
 
@@ -790,12 +803,13 @@ Examples:
 When appearing at the beginning of a line,
 operators can, but do not have to, get an extra indentation (+ 4 characters).
 For example,
+
 ```c
-    if (long_condition_expression_1
-            && condition_expression_2) {
-        statement_1;
-        statement_2;
-    }
+if (long_condition_expression_1
+        && condition_expression_2) {
+    statement_1;
+    statement_2;
+}
 ```
 
 ## Chapter 16: Asserts
@@ -835,11 +849,12 @@ Use OPENSSL_assert() **only** in the following cases:
 - In applications, test programs and fuzzers
 
 Use ossl_assert() in the libraries when the state can be recovered and an error can be returned. Example code:
+
 ```c
-    if (!ossl_assert(!should_not_happen)) {
-        /* push internal error onto error stack */
-        return BAD;
-    }
+if (!ossl_assert(!should_not_happen)) {
+    /* push internal error onto error stack */
+    return BAD;
+}
 ```
 
 Use assert() in libraries when no error can be returned.
