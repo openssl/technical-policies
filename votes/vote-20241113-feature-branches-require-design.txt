@@ -3,16 +3,16 @@ Proposed by: Pauli
 Issue link: https://github.com/openssl/technical-policies/pull/105
 Public: yes
 Opened: 2024-11-12
-Closed: YYYY-MM-DD
-Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+Closed: 2024-11-19
+Accepted:  yes  (for: 4, against: 0, abstained: 3, not voted: 3)
 
-  Dmitry     [  ]
-  Matt       [  ]
+  Dmitry     [ 0]
+  Matt       [+1]
   Tim        [  ]
   Hugo       [  ]
-  Richard    [  ]
-  Shane      [  ]
-  Tomas      [  ]
-  Kurt       [  ]
-  Paul       [  ]
+  Richard    [+0]
+  Shane      [+1]
+  Tomas      [ 0]
+  Kurt       [+1]
+  Pauli      [+1]
   Nicola     [  ]
