@@ -1,0 +1,18 @@
+Topic: Accept the design process policy update as of 839bc6b
+Proposed by: Pauli
+Issue link: https://github.com/openssl/technical-policies/pull/105
+Public: yes
+Opened: 2024-11-12
+Closed: YYYY-MM-DD
+Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+
+  Dmitry     [  ]
+  Matt       [  ]
+  Tim        [  ]
+  Hugo       [  ]
+  Richard    [  ]
+  Shane      [  ]
+  Tomas      [  ]
+  Kurt       [  ]
+  Paul       [  ]
+  Nicola     [  ]

@@ -41,6 +41,7 @@ Requirement for Design Documents
 
 A design document is required for any proposed enhancement which adds
 significant new APIs or non-trivially evolves or modifies existing APIs.
+A design document is also required for all feature branches.
 
 For any other kind of proposed enhancement, a design document should be created
 if it incorporates design decisions or aspects significant enough to warrant
