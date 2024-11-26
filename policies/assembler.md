@@ -1,5 +1,4 @@
-Policy for Accepting Assembler Optimisations
-============================================
+# Policy for Accepting Assembler Optimisations
 
 New assembler optimisations for any algorithm having a C based implementation in
 any provider are always acceptable (subject to standard review procedures) for

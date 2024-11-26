@@ -1,13 +1,11 @@
-OpenSSL Technical Policies
-==========================
+# OpenSSL Technical Policies
 
 This repository contains the technical policies and procedures established by
 the [OTC] in accordance with the [project bylaws] and the requirements specified
 by the [OMC].
 
 
-The Policies
-------------
+## The Policies
 
 The policies are stored in the [policies] subdirectory, each in
 a separate markdown file called `policy-name.md` where `policy-name` is a short
@@ -20,8 +18,7 @@ an OTC vote. The details are regulated by the [policy-change-process] and the
 [voting-procedure] policy.
 
 
-The Vote Records
-------------------
+## The Vote Records
 
 The records of the policy votes are stored in the [votes] subdirectory,
 each in a separate file. The format of those records is described in the

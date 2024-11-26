@@ -1,9 +1,8 @@
-Branch Policy
-=============
+# Branch Policy
 
 The openssl repository contains the following maintained branches:
 
-### The default development branch
+## The default development branch
 
 - Any type (bug fix, feature, refactoring, ...) of pull requests is allowed.
 - The development of the next minor or major release happens there.
@@ -15,7 +14,7 @@ The openssl repository contains the following maintained branches:
   By this we must ensure that no features or bug fixes are unintentionally
   lost in future major or minor releases.
 
-### The supported release branches
+## The supported release branches
 
 - The development of the next patch releases of supported stable releases
   happens there.
@@ -28,7 +27,7 @@ The openssl repository contains the following maintained branches:
   It can be then merged (backported or directly cherry-picked) to all
   older branches where the deficiency is present.
 
-### A future major branch
+## A future major branch
 
 - The development of a future major release happens there. Implicitly it
   means that any API/ABI breaking changes are allowed but OMC can (and
@@ -44,7 +43,7 @@ The openssl repository contains the following maintained branches:
   development branch must be approved by OTC by consensus during
   a meeting or a formal vote.
 
-### A future minor branch
+## A future minor branch
 
 - The development of the minor release that is supposed to be released
   after the release currently being developed at the default development branch
@@ -65,8 +64,7 @@ The openssl repository contains the following maintained branches:
   development branch must be approved by OTC by consensus during
   a meeting or a formal vote.
 
-Branch and tag naming
----------------------
+## Branch and tag naming
 
 The branch where the development of the next release is happening is called
 `openssl-x.y` where `x` is the current major version number and `y` is the
@@ -91,8 +89,7 @@ patch releases, `openssl-x.y.0-alphaN` for alpha releases, and
 `openssl-x.y.0-betaN` for beta releases. As a legacy exception the fix releases
 of OpenSSL-1.1.1 are named `OpenSSL_1_1_1<fix-letter(s)>`.
 
-Branch creation
----------------
+## Branch creation
 
 The exact times when the future major and minor branches are created are
 undefined by the policy as that is an OMC responsibility to decide.

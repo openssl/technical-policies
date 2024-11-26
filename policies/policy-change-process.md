@@ -1,5 +1,4 @@
-Policy on Proposing Technical Policy Changes
-============================================
+# Policy on Proposing Technical Policy Changes
 
 This policy represents the way that any additions or changes to the
 existing policies are proposed, edited, finalized, and approved.
@@ -7,8 +6,7 @@ existing policies are proposed, edited, finalized, and approved.
 The process for minor changes is described in the
 [Minor Edits](#minor-edits) section.
 
-Policy Change Proposal
-----------------------
+## Policy Change Proposal
 
 The policy changes or additions are submitted as pull requests in the
 technical-policies repository on GitHub OpenSSL project. Anyone with
@@ -27,8 +25,7 @@ and the reasons why the change is proposed.
 After the pull request has been created the author MUST announce the policy
 change proposal on the openssl-project mailing list.
 
-The Review Process
----------------------
+## The Review Process
 
 If the submitter is not a member of OTC, an OTC member is selected to watch
 over the review process and propose the final approval vote.
@@ -45,14 +42,12 @@ it is not an absolute requirement.
 The review process is fully public in the sense that anyone can add
 comments to the pull request and see comments made by others.
 
-Withdrawal
-----------
+## Withdrawal
 
 To withdraw the change the submitter of the pull request just closes the
 pull request.
 
-The Approval Process
---------------------
+## The Approval Process
 
 When there are no further changes proposed on the pull request and the
 minimum time for which it must be open passes the pull request is marked
@@ -70,8 +65,7 @@ and closing the pull request without merging.
 If the policy change is approved, the pull request is merged to the
 master branch of the technical-policies repository.
 
-Minor Edits
------------
+## Minor Edits
 
 Minor policy edits that do not change the meaning of the edited
 policies do not require this voting process. Typical examples of such edits
