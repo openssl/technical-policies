@@ -1,10 +1,8 @@
-Stable Release Updates Policy
-=============================
+# Stable Release Updates Policy
 
 This policy covers allowed changes on release branches.
 
-Definitions
------------
+## Definitions
 
 A **stable release** is a series beginning with a major or minor release that
 is not a pre-release, and all its updates.
@@ -68,8 +66,7 @@ An **end-user documentation** is **not**:
 - comments in the code (including public header files)
 - internal documentation (doc/internal)
 
-Changes allowed in stable releases and pre-releases after the first beta
-------------------------------------------------------------------------
+## Changes allowed in stable releases and pre-releases after the first beta
 
 No API or ABI breaking changes are allowed in a minor or patch release.
 

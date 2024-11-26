@@ -1,5 +1,4 @@
-Release Requirements Policy
-===========================
+# Release Requirements Policy
 
 The OpenSSL project team creates the following 5 types of OpenSSL software
 releases:
@@ -13,8 +12,7 @@ releases:
 This policy defines the requirements on the state of a branch in the source
 tree that must be met before a release from that branch can be done.
 
-Alpha Pre-releases
-------------------
+## Alpha Pre-releases
 
 As this is just a preview release for testing things that have been worked
 on in the development branch, the requirements are minimal.
@@ -22,8 +20,7 @@ on in the development branch, the requirements are minimal.
 - The CI must pass on the tip of the development branch before the release
   commits were added to the tree.
 
-Beta Pre-releases
------------------
+## Beta Pre-releases
 
 The API and ABI should be stable and the source code should be feature complete
 by the first beta pre-release. The following release requirements apply to beta
@@ -53,8 +50,7 @@ pre-releases.
 - [ ] In case of the first beta release the OTC should explicitly approve
   that the source is ready for a release with a vote.
 
-Major and Minor Releases
-------------------------
+## Major and Minor Releases
 
 As the release comes after the beta releases there is no need to repeat the
 stability requirements as those should be held already by the beta releases.
@@ -75,8 +71,7 @@ stability requirements as those should be held already by the beta releases.
 - [ ] The OTC should explicitly approve that the source is ready for a release with
   a vote.
 
-Patch Releases
---------------
+## Patch Releases
 
 The patch releases follow a similar process to major and minor releases with
 some simplifications as they are much more frequent and the tree stability
@@ -97,8 +92,7 @@ a minimum amount of regressions in between the patch releases.
 - [ ] Embargoed security fixes are excepted from the rule above as they cannot
   be merged to the public tree before the release is being prepared.
 
-Triage Process
---------------
+## Triage Process
 
 The issues and pull requests in GitHub must be assigned a `triaged: *` label by
 an OTC member according to what is the type (feature, bug, documentation,
@@ -119,8 +113,7 @@ The triage ideally happens as soon as possible, however the triage process can
 sometimes be costly, so we aim to have issues triaged no later than 4 days
 after they are reported.
 
-Responsibilities
-----------------
+## Responsibilities
 
 The OTC is responsible to ensure the releases conform to these requirements.
 How exactly the OTC handles this responsibility is undefined here on purpose

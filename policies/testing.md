@@ -1,5 +1,4 @@
-Testing Policy
-==============
+# Testing Policy
 
 This applies to all [stable] and development branches of the main code repository.
 
@@ -42,8 +41,7 @@ A test may be omitted where writing the test would result in disproportionately
 more effort than writing the code being tested. For example, difficult to
 reproduce error conditions.
 
-Triage Labels
--------------
+## Triage Labels
 
 Before approving a PR, the applicability of the testing policy to the PR must
 be assessed and an appropriate label applied to the PR. One of the following
@@ -82,8 +80,7 @@ are being made prior to making any more specific prescriptions. For example,
 this labelling allows obtaining a list of merged PRs for which a decision was
 made to defer adding tests, but for which tests have not yet been added.
 
-Performance Testing
--------------------
+## Performance Testing
 
 Performance testing should be performed automatically via [CI] on a regular basis
 for certain components as defined by the [OTC].
@@ -96,8 +93,7 @@ Examples of performance testing that should be considered include:
 
 Performance figures should be collected and tracked over time.
 
-Recommendations
----------------
+## Recommendations
 
 This section makes recommendations that are not mandatory but should be
 considered.

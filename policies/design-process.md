@@ -1,8 +1,6 @@
-Design Process Policy
-=====================
+# Design Process Policy
 
-Objectives
-----------
+## Objectives
 
 The objective of the design process is to increase the quality of the software
 engineering process. The production of design documents confers the following
@@ -36,8 +34,7 @@ public APIs may require a greater amount of scrutiny, whereas a purely internal
 design may require that the OTC simply be notified of the design document and
 invited to comment, with implicit approval in the absence of objections.
 
-Requirement for Design Documents
---------------------------------
+## Requirement for Design Documents
 
 A design document is required for any proposed enhancement which adds
 significant new APIs or non-trivially evolves or modifies existing APIs.
@@ -52,8 +49,7 @@ not exhaustive. The proposer may use their discretion in determining whether a
 design document is desirable, but any OTC member may require that a design
 document be produced.
 
-Contents of Design Documents
-----------------------------
+## Contents of Design Documents
 
 In general, where produced, a design document should include discussion of:
 
@@ -119,8 +115,7 @@ sections will be relevant to all design documents, and design document authors
 can and should deviate from this structure where this leads to a more
 comprehensible or useful document.
 
-Levels of Scrutiny
-------------------
+## Levels of Scrutiny
 
 There are three levels of scrutiny which can be applied to a design, listed
 below in ascending order of severity:
@@ -163,8 +158,7 @@ scrutiny and require that a higher level be used.
 
 A proposer may choose to use a higher level of scrutiny than is required.
 
-Selecting a Level
------------------
+## Selecting a Level
 
 To determine the level of scrutiny which must be applied to a design by default,
 follow the following process:
@@ -175,8 +169,7 @@ follow the following process:
 
   - Any other design may use the Notify level of scrutiny.
 
-Checklists
-----------
+## Checklists
 
 ### Checklist for the Notify Level
 
@@ -200,8 +193,7 @@ Checklists
   - OTC makes a decision approving the design. The decision is made according to
     standard OTC policies.
 
-Implementation
---------------
+## Implementation
 
 It is not required to wait for a design document to be approved and merged
 before beginning implementation. Implementation can begin immediately. This
@@ -214,8 +206,7 @@ until the relevant requirements for the level of scrutiny used have been
 satisfied. It is permissible for a design document and an implementation to be
 part of the same PR.
 
-Revisions to Pending Designs
-----------------------------
+## Revisions to Pending Designs
 
 Where changes to a design document need to be made (for example, due to an
 evolved understanding of the problem domain arising from an implementation in

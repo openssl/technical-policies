@@ -1,5 +1,4 @@
-Policy on API compatibility in minor releases
-=============================================
+# Policy on API compatibility in minor releases
 
 The public [API] of the OpenSSL libraries is defined as functions, macros, data
 structure declarations, typedefs, and data variables in header files in the

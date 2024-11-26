@@ -1,13 +1,11 @@
-The Public Voting Procedure of OTC
-==================================
+# The Public Voting Procedure of OTC
 
 The following regulations complement the [OTC Voting Procedures] stated
 in the project bylaws. This policy affects only public votes.
 
 [OTC Voting Procedures]: https://www.openssl.org/policies/omc-bylaws.html#otc-voting
 
-Vote Proposal
--------------
+## Vote Proposal
 
 The votes are proposed in pull requests and issues of the technical-policies
 repository on GitHub OpenSSL project.
@@ -22,8 +20,7 @@ e-mail to the [OpenSSL Project mailing list].
 The announcement email must contain a hyperlink to the GitHub issue
 or pull request where the vote is carried out.
 
-Casting the Votes
------------------
+## Casting the Votes
 
 The individual members of [OTC] cast their votes directly in the issue or
 pull request where the vote was proposed.
@@ -32,8 +29,7 @@ When the votes are cast during an OTC meeting, the person responsible for
 taking the meeting minutes or the proposer of the vote copies the votes
 cast during the meeting into the issue.
 
-The Final Vote Records
-----------------------
+## The Final Vote Records
 
 After the vote is closed the proposer of the vote records the final outcome
 and individual member votes in a separate file in the votes subdirectory of
@@ -66,8 +62,7 @@ is the date when the vote was proposed and the `vote-short-id` is a short
 mnemonic identifier of the vote such as `voting-procedure` or `accept-pr-1234`
 or similar.
 
-Closing the Issue
------------------
+## Closing the Issue
 
 The issue or pull request where the vote was proposed is then labelled with
 the `Accepted` or `Rejected` label based on whether the vote was accepted or
