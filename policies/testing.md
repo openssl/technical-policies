@@ -109,8 +109,8 @@ Where performance fixes are implemented consideration should be given to whether
 we need to add a performance test to the performance testing suite.
 
 
-[CHANGES]: https://github.com/openssl/general-policies/blob/master/policies/definitions.md#changes
-[CI]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#ci
-[NEWS]: https://github.com/openssl/general-policies/blob/master/policies/definitions.md#news
-[OTC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#otc
-[stable]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#stable-release
+[CHANGES]: /policies/general/glossary/#changes
+[CI]: /policies/general/glossary/#ci
+[NEWS]: /policies/general/glossary/#news
+[OTC]: /policies/general/glossary/#otc
+[stable]: /policies/general/glossary/#stable-release

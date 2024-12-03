@@ -72,5 +72,5 @@ The issue is then closed. In case the vote is in a pull request for a policy
 change and the vote passed the pull request for the policy change is squashed
 and merged into the repository.
 
-[OTC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#otc
-[OpenSSL Project mailing list]: https://mta.openssl.org/mailman/listinfo/openssl-project
+[OTC]: /policies/general/glossary/#otc
+[OpenSSL Project mailing list]: https://groups.google.com/a/openssl.org/g/openssl-project

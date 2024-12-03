@@ -127,6 +127,6 @@ comments than less or none.  Code that you've just written that is
 _obvious_ will not necessarily be to someone else two years later.
 
 
-[CHANGES]: https://github.com/openssl/general-policies/blob/master/policies/definitions.md#changes
-[NEWS]: https://github.com/openssl/general-policies/blob/master/policies/definitions.md#news
-[LDP]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#ldp
+[CHANGES]: /policies/general/glossary/#changes
+[NEWS]: /policies/general/glossary/#news
+[LDP]: /policies/general/glossary/#ldp

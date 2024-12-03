@@ -123,9 +123,9 @@ major or minor releases.
 For example the responsibility to follow the release requirements can be
 delegated by the OTC to the person (or the team) preparing the release.
 
-[alpha]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#alpha-release
-[beta]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#beta-release
-[major]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#major-release
-[minor]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#minor-release
-[patch]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#patch-release
+[alpha]: /policies/general/glossary/#alpha-release
+[beta]: /policies/general/glossary/#beta-release
+[major]: /policies/general/glossary/#major-release
+[minor]: /policies/general/glossary/#minor-release
+[patch]: /policies/general/glossary/#patch-release
 [triaged]: #triage-process

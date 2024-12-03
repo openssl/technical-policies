@@ -52,7 +52,7 @@ A **bug fix** is **not**:
 - refactoring
 - addressing deviations from the [coding style policy].
 
-[coding style policy]: https://github.com/openssl/technical-policies/blob/master/policies/coding-style.md
+[coding style policy]: /policies/technical/coding-style/
 
 An **end-user documentation** is:
 

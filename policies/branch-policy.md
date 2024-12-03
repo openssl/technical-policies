@@ -94,4 +94,4 @@ of OpenSSL-1.1.1 are named `OpenSSL_1_1_1<fix-letter(s)>`.
 The exact times when the future major and minor branches are created are
 undefined by the policy as that is an OMC responsibility to decide.
 
-[stable release update policy]: https://github.com/openssl/technical-policies/blob/master/policies/stable-release-updates.md
+[stable release update policy]: /policies/technical/stable-release-updates/

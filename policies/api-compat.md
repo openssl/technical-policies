@@ -22,6 +22,6 @@ APIs and thus they are not allowed in minor releases.
 If necessary, a new API call can be added to implement the required changes in
 minor releases.
 
-[ABI]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#abi
-[API]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#api
-[minor]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#minor-release
+[ABI]: /policies/general/glossary/#abi
+[API]: /policies/general/glossary/#api
+[minor]: /policies/general/glossary/#minor-release
