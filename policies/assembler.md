@@ -14,6 +14,6 @@ acceptable where such updates would be allowed under the
 Where assembler optimisations are acceptable they should be implemented using
 [perlasm].
 
-[perlasm]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#perlasm
-[stable release]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#stable-release
-[stable release update policy]: https://github.com/openssl/technical-policies/blob/master/policies/stable-release-updates.md
+[perlasm]: /policies/general/glossary/#perlasm
+[stable release]: /policies/general/glossary/#stable-release
+[stable release update policy]: /policies/technical/stable-release-updates/
