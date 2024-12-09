@@ -1,14 +1,20 @@
-###
-name: Automatic web build
+name: "Automatic web build"
+
 on:
   push:
     branches:
-      - master
+      - "master"
+
 jobs:
   build_web_site:
-    runs-on: [ web-builder-22.04 ]
+    runs-on: "ubuntu-latest"
     steps:
-      - name: Build_web
-        run: /scripts/build_web.sh
-      
-
+      - name: "Trigger deployment workflow"
+        run: |
+          gh workflow run deploy-openssl-library-org.yml
+          sleep 3
+          RUN_ID=$(gh run list -w deploy-openssl-library-org.yml -L 1 --json databaseId -q ".[0].databaseId")
+          gh run watch ${RUN_ID} --exit-status
+        env:
+          GH_REPO: "openssl/openssl-web"
+          GH_TOKEN: ${{ secrets.OPENSSL_MACHINE_TOKEN }}
