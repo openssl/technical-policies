@@ -16,4 +16,4 @@ Accepted:  yes  (for: 7, against: 0, abstained: 0, not voted: 3)
   Tomas      [+1]
   Kurt       [  ]
   Pauli      [+1]  2025-03-26
-  Nicola     [  ]
+  Nicola     [+1]  2025-03-26
