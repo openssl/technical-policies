@@ -1,0 +1,19 @@
+Topic: OTC sign off the beta release subject to the provider compatibility CI
+       issue being fixed.
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/pull/111
+Public: yes
+Opened: 2025-03-25
+Closed: 2025-03-25
+Accepted:  yes  (for: 7, against: 0, abstained: 0, not voted: 3)
+
+  Dmitry     [+1]
+  Matt       [+1]
+  Tim        [+1]
+  Hugo       [+1]
+  Richard    [+1]
+  Shane      [+1]
+  Tomas      [+1]
+  Kurt       [  ]
+  Pauli      [  ]
+  Nicola     [  ]
