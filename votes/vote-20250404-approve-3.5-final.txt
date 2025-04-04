@@ -1,0 +1,19 @@
+Topic: OTC sign off the 3.5 source as ready for final release
+Proposed by: Matt Caswell
+Issue link: https://github.com/openssl/technical-policies/issues/112
+Public: yes
+Opened: 2025-04-04
+Closed: YYY-MM-DD
+Accepted:  yes/no  (for: X, against: Y, abstained: Z, not voted: W)
+
+  Dmitry     [  ]
+  Matt       [+1]
+  Tim        [  ]
+  Hugo       [  ]
+  Richard    [  ]
+  Shane      [  ]
+  Tomas      [  ]
+  Kurt       [  ]
+  Pauli      [  ]
+  Nicola     [  ]
+
