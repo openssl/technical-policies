@@ -4,7 +4,7 @@ Issue link: https://github.com/openssl/technical-policies/issues/112
 Public: yes
 Opened: 2025-04-04
 Closed: 2025-04-08
-Accepted:  yes/no  (for: 9, against: 0, abstained: 0, not voted: 1)
+Accepted:  yes  (for: 9, against: 0, abstained: 0, not voted: 1)
 
   Dmitry     [+1]
   Matt       [+1]
