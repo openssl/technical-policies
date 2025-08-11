@@ -174,7 +174,7 @@ use a variable when at all possible, to ensure that type changes are
 properly reflected:
 
 ```c
-SOMETYPE *p = OPENSSL_malloc(sizeof(*p) * num_of_elements);
+SOMETYPE *p = OPENSSL_alloc_array(num_of_elements, sizeof(*p));
 ```
 
 Do not add spaces around the inside of parenthesized expressions.
