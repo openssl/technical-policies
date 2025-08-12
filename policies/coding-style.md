@@ -167,11 +167,13 @@ a function or keyword. Use a space after most keywords:
 if, switch, case, for, do, while, return
 ```
 
-Do not use a space after `sizeof`, `typeof`, `alignof`, or `__attribute__`.
-They look somewhat like functions and should have parentheses
-in OpenSSL, although they are not required by the language. For `sizeof`,
-use a variable when at all possible, to ensure that type changes are
-properly reflected:
+Do not use a space after the preprocessor keyword `defined`,
+or the C language keywords `sizeof`, `typeof`, `alignof`, or `__attribute__`.
+They look somewhat like functions and should have parentheses in OpenSSL,
+although they are not required by the language.
+
+For `sizeof`, use a variable when at all possible, to ensure that type changes
+are properly reflected:
 
 ```c
 SOMETYPE *p = OPENSSL_malloc(sizeof(*p) * num_of_elements);
@@ -206,7 +208,7 @@ and after semicolons in `for` statements, but not in `for (;;)`.
 Do not put a space after unary operators:
 
 ```c
-&  *  +  -  ~  !  defined
+&  *  +  -  ~  !
 ```
 
 Do not put a space before the postfix increment and decrement unary
