@@ -705,10 +705,10 @@ it portable enough to meet our multi-platform support goals.
 
 ## Chapter 14: Portability
 
-To maximise portability the version of C defined in ISO/IEC 9899:1990
-should be used. This is more commonly referred to as C90. ISO/IEC 9899:1999
-(also known as C99) is not supported on some platforms that OpenSSL is
-used on and therefore should be avoided.
+To maximise portability the version of C defined in ISO/IEC 9899:1999
+should be used. This is more commonly referred to as C99. The C99 should
+be used on master branch. Code which is intended to be backported to
+3.5 and earlier branches should use ISO/IEC 9899:1990 (a.k.a. C90).
 
 ## Chapter 15: Expressions
 
