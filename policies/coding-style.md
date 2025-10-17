@@ -706,9 +706,10 @@ it portable enough to meet our multi-platform support goals.
 ## Chapter 14: Portability
 
 To maximise portability the version of C defined in ISO/IEC 9899:1999
-should be used. This is more commonly referred to as C99. The C99 should
-be used on master branch. Code which is intended to be backported to
-3.5 and earlier branches should use ISO/IEC 9899:1990 (a.k.a. C90).
+should be used. This is more commonly referred to as C99. C99 can be
+used on code targeting 3.6 and newer branches. Code which is intended
+to be backported to 3.5 and earlier branches should use
+ISO/IEC 9899:1990 (a.k.a. C90).
 
 ## Chapter 15: Expressions
 
