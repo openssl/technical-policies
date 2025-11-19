@@ -1,9 +1,8 @@
 # OpenSSL Technical Policies
 
 This repository contains the technical policies and procedures established by
-the [OTC] in accordance with the [project bylaws] and the requirements specified
-by the [OMC].
-
+the OpenSSL Foundation and the OpenSSL Corporation in accordance with the
+[project bylaws].
 
 ## The Policies
 
@@ -25,9 +24,7 @@ each in a separate file. The format of those records is described in the
 [voting-procedure] policy.
 
 
-[OMC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#otc
-[OTC]: https://github.com/openssl/general-policies/blob/master/policies/glossary.md#omc
-[project bylaws]: https://www.openssl.org/policies/omc-bylaws.html
+[project bylaws]: https://openssl-library.org/about/bylaws/
 [policy-change-process]: ./policies/policy-change-process.md
 [voting-procedure]: ./policies/voting-procedure.md
 [policies]: ./policies

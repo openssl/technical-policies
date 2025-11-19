@@ -90,7 +90,5 @@ New tests and test cases are allowed only as part of a bug fix.
 Patch release commits are obviously allowed (updates to CHANGES.md, NEWS.md,
 version, and copyright updates).
 
-**Exceptions to this policy require OTC approval.**
-
 *The policy for changes allowed in stable releases applies also to
 pre-release branches after the first beta release.*

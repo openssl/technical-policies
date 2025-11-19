@@ -20,7 +20,8 @@ The openssl repository contains the following maintained branches:
   happens there.
 - According to [stable release update policy] only bug fixes and
   documentation changes are allowed.
-- By exception given by OMC also other types of pull requests can be merged.
+- By exception given by the OpenSSL Foundation and the OpenSSL Corporation
+  also other types of pull requests can be merged.
 - Bug fix and documentation pull requests must be always merged to the
   latest branch where the bug or documentation deficiency is present including
   the future major and minor branches.
@@ -30,8 +31,9 @@ The openssl repository contains the following maintained branches:
 ## A future major branch
 
 - The development of a future major release happens there. Implicitly it
-  means that any API/ABI breaking changes are allowed but OMC can (and
-  usually will) limit the extent of the breakage allowed.
+  means that any API/ABI breaking changes are allowed but the OpenSSL
+  Foundation and the OpenSSL Corporation can (and usually will) limit the
+  extent of the breakage allowed.
 - Major features are allowed. Examples of a major feature: A completely
   new implementation of a protocol. New API for pluggable crypto modules.
 - Major refactoring is allowed. Examples of major refactoring: Splitting
@@ -40,8 +42,8 @@ The openssl repository contains the following maintained branches:
   is a major release and there are no changes accepted for a future major
   release yet.
 - All changes specifically targetting this branch instead of the default
-  development branch must be approved by OTC by consensus during
-  a meeting or a formal vote.
+  development branch must be approved by the OpenSSL Foundation and
+  OpenSSL Corporation.
 
 ## A future minor branch
 
@@ -49,8 +51,8 @@ The openssl repository contains the following maintained branches:
   after the release currently being developed at the default development branch
   happens there.
 - No API/ABI breaking changes are allowed.
-- No major features are allowed unless explicitly acked by OMC as targeted for
-  the minor release.
+- No major features are allowed unless explicitly acked by the OpenSSL
+  Foundation and the OpenSSL Corporation as targeted for the minor release.
 - No major refactoring is allowed.
 - Any changes (features, bug-fixes, documentation, ...) done on the future
   minor branch must be ported or directly cherry-picked to the future major
@@ -61,8 +63,8 @@ The openssl repository contains the following maintained branches:
   be a major release or there are no changes accepted for a future minor
   release yet.
 - All changes specifically targetting this branch instead of the default
-  development branch must be approved by OTC by consensus during
-  a meeting or a formal vote.
+  development branch must be approved by the OpenSSL Foundation and
+  OpenSSL Corporation.
 
 ## Branch and tag naming
 
@@ -92,6 +94,7 @@ of OpenSSL-1.1.1 are named `OpenSSL_1_1_1<fix-letter(s)>`.
 ## Branch creation
 
 The exact times when the future major and minor branches are created are
-undefined by the policy as that is an OMC responsibility to decide.
+undefined by the policy as that is responsibility of the OpenSSL Foundation
+and the OpenSSL Corporation to decide.
 
 [stable release update policy]: /policies/technical/stable-release-updates/

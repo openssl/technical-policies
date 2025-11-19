@@ -27,8 +27,8 @@ by the first beta pre-release. The following release requirements apply to beta
 pre-releases.
 
 - [ ] The code is functionally complete in regards to the particular release
-  objectives as set by OMC and OTC.
-- [ ] There is no remaining refactoring required by OMC or OTC for the release.
+  objectives as set by the OpenSSL Foundation and the OpenSSL Corporation.
+- [ ] There is no remaining refactoring required for the release.
 - [ ] There are no remaining API changes required for the release.
   _This applies only to beta releases of a major release as API changes
   are not allowed on minor releases._
@@ -47,8 +47,9 @@ pre-releases.
   regression or security fixes should be merged during the freeze.
 - [ ] For 2 days before the release there should be no changes to ensure the daily
   CI builds run on the development tree tip.
-- [ ] In case of the first beta release the OTC should explicitly approve
-  that the source is ready for a release with a vote.
+- [ ] In case of the first beta release the OpenSSL Foundation and the OpenSSL
+  Corporation engineering managers should explicitly approve that the source is
+  ready for a release.
 
 ## Major and Minor Releases
 
@@ -68,8 +69,8 @@ stability requirements as those should be held already by the beta releases.
   or security fixes should be merged during the freeze.
 - [ ] For 2 days before the release there should be no changes to ensure the daily
   CI builds run on the development tree tip.
-- [ ] The OTC should explicitly approve that the source is ready for a release with
-  a vote.
+- [ ] The OpenSSL Foundation and the OpenSSL Corporation engineering managers
+  should explicitly approve that the source is ready for a release.
 
 ## Patch Releases
 
@@ -95,7 +96,7 @@ a minimum amount of regressions in between the patch releases.
 ## Triage Process
 
 The issues and pull requests in GitHub must be assigned a `triaged: *` label by
-an OTC member according to what is the type (feature, bug, documentation,
+a Committer according to what is the type (feature, bug, documentation,
 refactoring, ...) of the issue or pull request. When the triage happens for an
 issue or pull request that is a bug/bug fix, it must be assessed whether the
 bug is a regression or not.
@@ -105,23 +106,18 @@ the next release from the development tree is done. However sometimes that
 might not be reasonably possible due to time, resource, or fix complexity
 constraints.
 
-In that case OTC should explicitly acknowledge that the regression is not to be
-fixed before the release is done. That is done by assigning a milestone by
-which the regression must be fixed and the `triaged: OTC evaluated` label.
-
 The triage ideally happens as soon as possible, however the triage process can
 sometimes be costly, so we aim to have issues triaged no later than 4 days
 after they are reported.
 
 ## Responsibilities
 
-The OTC is responsible to ensure the releases conform to these requirements.
-How exactly the OTC handles this responsibility is undefined here on purpose
-except for the explicit votes required for the first beta release and the
-major or minor releases.
+The OpenSSL Foundation and the OpenSSL Corporation engineering managers are
+jointly responsible to ensure the releases conform to these requirements.
+How exactly the they handle this responsibility is undefined here on purpose.
 
 For example the responsibility to follow the release requirements can be
-delegated by the OTC to the person (or the team) preparing the release.
+delegated by the managers to the person (or the team) preparing the release.
 
 [alpha]: /policies/general/glossary/#alpha-release
 [beta]: /policies/general/glossary/#beta-release

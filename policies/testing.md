@@ -83,7 +83,8 @@ made to defer adding tests, but for which tests have not yet been added.
 ## Performance Testing
 
 Performance testing should be performed automatically via [CI] on a regular basis
-for certain components as defined by the [OTC].
+for certain components as defined by the OpenSSL Foundation and the OpenSSL
+Corporation engineering managers.
 
 Examples of performance testing that should be considered include:
 
@@ -112,5 +113,4 @@ we need to add a performance test to the performance testing suite.
 [CHANGES]: /policies/general/glossary/#changes
 [CI]: /policies/general/glossary/#ci
 [NEWS]: /policies/general/glossary/#news
-[OTC]: /policies/general/glossary/#otc
 [stable]: /policies/general/glossary/#stable-release
