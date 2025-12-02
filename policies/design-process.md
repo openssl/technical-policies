@@ -39,7 +39,7 @@ one. For example, if an enhancement adds a new internal module with clearly
 delineated boundaries with a documented internal API which can be consumed by
 other code internal to OpenSSL, a design document is desirable. This example is
 not exhaustive. The proposer may use their discretion in determining whether a
-design document is desirable, but any Committer may require that a design
+design document is desirable, but any Committer may request that a design
 document be produced.
 
 ## Contents of Design Documents

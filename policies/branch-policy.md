@@ -20,7 +20,7 @@ The openssl repository contains the following maintained branches:
   happens there.
 - According to [stable release update policy] only bug fixes and
   documentation changes are allowed.
-- By exception given by the OpenSSL Foundation and the OpenSSL Corporation
+- By exception given by the OpenSSL Foundation or the OpenSSL Corporation
   also other types of pull requests can be merged.
 - Bug fix and documentation pull requests must be always merged to the
   latest branch where the bug or documentation deficiency is present including
@@ -32,7 +32,7 @@ The openssl repository contains the following maintained branches:
 
 - The development of a future major release happens there. Implicitly it
   means that any API/ABI breaking changes are allowed but the OpenSSL
-  Foundation and the OpenSSL Corporation can (and usually will) limit the
+  Foundation or the OpenSSL Corporation can (and usually will) limit the
   extent of the breakage allowed.
 - Major features are allowed. Examples of a major feature: A completely
   new implementation of a protocol. New API for pluggable crypto modules.
@@ -52,7 +52,7 @@ The openssl repository contains the following maintained branches:
   happens there.
 - No API/ABI breaking changes are allowed.
 - No major features are allowed unless explicitly acked by the OpenSSL
-  Foundation and the OpenSSL Corporation as targeted for the minor release.
+  Foundation or the OpenSSL Corporation as targeted for the minor release.
 - No major refactoring is allowed.
 - Any changes (features, bug-fixes, documentation, ...) done on the future
   minor branch must be ported or directly cherry-picked to the future major
@@ -63,7 +63,7 @@ The openssl repository contains the following maintained branches:
   be a major release or there are no changes accepted for a future minor
   release yet.
 - All changes specifically targetting this branch instead of the default
-  development branch must be approved by the OpenSSL Foundation and
+  development branch must be approved by the OpenSSL Foundation or the
   OpenSSL Corporation.
 
 ## Branch and tag naming
