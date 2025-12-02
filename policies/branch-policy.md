@@ -42,7 +42,7 @@ The openssl repository contains the following maintained branches:
   is a major release and there are no changes accepted for a future major
   release yet.
 - All changes specifically targetting this branch instead of the default
-  development branch must be approved by the OpenSSL Foundation and
+  development branch must be approved by the OpenSSL Foundation or
   OpenSSL Corporation.
 
 ## A future minor branch
@@ -95,6 +95,6 @@ of OpenSSL-1.1.1 are named `OpenSSL_1_1_1<fix-letter(s)>`.
 
 The exact times when the future major and minor branches are created are
 undefined by the policy as that is responsibility of the OpenSSL Foundation
-and the OpenSSL Corporation to decide.
+or the OpenSSL Corporation to decide.
 
 [stable release update policy]: /policies/technical/stable-release-updates/

@@ -117,7 +117,8 @@ jointly responsible to ensure the releases conform to these requirements.
 How exactly the they handle this responsibility is undefined here on purpose.
 
 For example the responsibility to follow the release requirements can be
-delegated by the managers to the person (or the team) preparing the release.
+delegated by the engineering managers to the person (or the team) preparing
+the release.
 
 [alpha]: /policies/general/glossary/#alpha-release
 [beta]: /policies/general/glossary/#beta-release
