@@ -174,7 +174,7 @@ use a variable when at all possible, to ensure that type changes are
 properly reflected:
 
 ```c
-SOMETYPE *p = OPENSSL_malloc(sizeof(*p) * num_of_elements);
+SOMETYPE *p = OPENSSL_alloc_array(num_of_elements, sizeof(*p));
 ```
 
 Do not add spaces around the inside of parenthesized expressions.
@@ -601,9 +601,10 @@ The [GNU cpp manual][8] deals with macros exhaustively.
 ## Chapter 10: Allocating memory
 
 OpenSSL provides many general purpose memory utilities, including, but
-not limited to: `OPENSSL_malloc()`, `OPENSSL_zalloc()`, `OPENSSL_realloc()`,
-`OPENSSL_memdup()`, `OPENSSL_strdup()` and `OPENSSL_free()`.
-Please refer to the API documentation for further information about them.
+not limited to: `OPENSSL_malloc()`, `OPENSSL_zalloc()`, `OPENSSL_alloc_array`,
+`OPENSSL_aligned_alloc`, `OPENSSL_realloc()`, `OPENSSL_clear_realloc`,
+`OPENSSL_memdup()`, `OPENSSL_strdup()`, and `OPENSSL_free()`.  Please refer
+to the API documentation for further information about them.
 
 ## Chapter 11: Function return values and names
 
