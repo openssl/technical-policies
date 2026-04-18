@@ -9,7 +9,8 @@ not affect _functional behaviour_.
 
 Except where noted below:
 
-- All Pull Requests adding new functionality to the applications, libraries or providers must include suitable tests.
+- All Pull Requests adding new functionality to the applications, libraries or 
+  providers must include suitable tests.
 - All Pull Requests fixing a _functional behaviour_ defect in the applications,
   libraries or providers must include a test for that defect.
 
