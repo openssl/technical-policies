@@ -12,10 +12,10 @@ Except where noted below:
 - All Pull Requests adding new functionality to the applications, libraries or 
   providers must include suitable tests.
 - All Pull Requests fixing a _functional behaviour_ defect in the applications,
-  libraries or providers must include a test for that defect.
+  libraries, providers or engines must include a test for that defect.
 
 Pull Requests that do not change the _functional behaviour_ of the applications,
-libraries or providers do not require tests to be added. For example
+libraries, providers or engines do not require tests to be added. For example
 the following types of changes do not require tests:
 
 - Changes to comments, formatting, internal naming or similar
