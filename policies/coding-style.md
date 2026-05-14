@@ -296,6 +296,11 @@ For instance, use `EVP_PKEY_do_something` rather than `EVP_DigestDoSomething`.
 
 Make sure that names do not contain spelling errors.
 
+File and directory names must not contain whitespace characters.
+Use only printable ASCII characters, preferably lowercase letters, digits,
+hyphens, underscores, and dots. Whitespace in paths breaks shell pipelines,
+build tooling, and quoting on many platforms.
+
 ## Chapter 5: Typedefs
 
 OpenSSL uses typedef's extensively. For structures, they are all uppercase
