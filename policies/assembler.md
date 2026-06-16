@@ -14,6 +14,16 @@ acceptable where such updates would be allowed under the
 Where assembler optimisations are acceptable they should be implemented using
 [perlasm].
 
+Compiler intrinsic code can be used where it makes sense.
+If compiler support for intrinsic code is not present, it must be automatically
+disabled during the build (for compilers that are still supported).
+
+Selection of an implementation for an architectural feature must always be
+based on runtime detection of the CPU's capabilities.
+It is not acceptable to fail during runtime due to missing CPU capabilities
+unless the build configuration explicitly targets the concrete CPU family
+that provides the capability.
+
 [perlasm]: /policies/general/glossary/#perlasm
 [stable release]: /policies/general/glossary/#stable-release
 [stable release update policy]: /policies/technical/stable-release-updates/
