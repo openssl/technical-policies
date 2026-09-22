@@ -17,8 +17,11 @@ tree that must be met before a release from that branch can be done.
 As this is just a preview release for testing things that have been worked
 on in the development branch, the requirements are minimal.
 
-- The CI must pass on the tip of the development branch before the release
-  commits were added to the tree.
+- [ ] The CI, including the relevant daily CI jobs must pass on the tip of
+  the development branch before the release commits were added to the tree.
+- [ ] The tree must be frozen at least 3 business days before the release.
+  No changes apart from regression, milestone blocker or security fixes
+  should be merged during the freeze.
 
 ## Beta Pre-releases
 
@@ -41,12 +44,11 @@ pre-releases.
   are closed.
 - [ ] There are no outstanding untriaged Coverity issues.
 - [ ] Coveralls coverage has not decreased overall from the previous release.
-- [ ] The CI must pass on the tip of the development branch before the release
-  commits are added to the tree, including the daily CI builds.
-- [ ] The tree must be frozen for at least 3 business days. No changes apart from
-  regression or security fixes should be merged during the freeze.
-- [ ] For 2 days before the release there should be no changes to ensure the daily
-  CI builds run on the development tree tip.
+- [ ] The CI, including the relevant daily CI jobs must pass on the tip of
+  the development branch before the release commits were added to the tree.
+- [ ] The tree must be frozen at least 3 business days before the release.
+  No changes apart from regression, milestone blocker or security fixes
+  should be merged during the freeze.
 - [ ] In case of the first beta release the OpenSSL Foundation and the OpenSSL
   Corporation engineering managers should explicitly approve that the source is
   ready for a release.
@@ -63,12 +65,11 @@ stability requirements as those should be held already by the beta releases.
 - [ ] There are no outstanding untriaged Coverity issues.
 - [ ] Coveralls coverage has not decreased overall from the previous release from
   the particular development branch.
-- [ ] The CI must pass on the tip of the development branch before the release
-  commits are added to the tree, including the daily CI builds.
-- [ ] The tree must be frozen for at least 7 days. No changes apart from regression
-  or security fixes should be merged during the freeze.
-- [ ] For 2 days before the release there should be no changes to ensure the daily
-  CI builds run on the development tree tip.
+- [ ] The CI, including the relevant daily CI jobs must pass on the tip of
+  the development branch before the release commits were added to the tree.
+- [ ] The tree must be frozen at least 3 business days before the release.
+  No changes apart from regression, milestone blocker or security fixes
+  should be merged during the freeze.
 - [ ] The OpenSSL Foundation and the OpenSSL Corporation engineering managers
   should explicitly approve that the source is ready for a release.
 
@@ -84,14 +85,11 @@ a minimum amount of regressions in between the patch releases.
   _Regressions are considered from the previous minor, major or patch release
   from the development branch._
 - [ ] All issues or pull requests with the milestone for the release are closed.
-- [ ] The CI must pass on the tip of the development branch before the release
-  commits are added to the tree, including the daily CI builds.
-- [ ] The tree must be frozen for at least 3 business days. No changes apart from
-  regression or security fixes should be merged during the freeze.
-- [ ] For 2 days before the release there should be no changes to ensure the daily
-  CI builds run on the development tree tip.
-- [ ] Embargoed security fixes are excepted from the rule above as they cannot
-  be merged to the public tree before the release is being prepared.
+- [ ] The CI, including the relevant daily CI jobs must pass on the tip of
+  the development branch before the release commits were added to the tree.
+- [ ] The tree must be frozen at least 3 business days before the release.
+  No changes apart from regression, milestone blocker or security fixes
+  should be merged during the freeze.
 
 ## Triage Process
 
